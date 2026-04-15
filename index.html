@@ -42,16 +42,59 @@
   --bg:        #f0f3f8;
   --bg2:       #e6eaf2;
   --bg3:       #ffffff;
-  --surface:   rgba(0,0,0,.03);
-  --surface2:  rgba(0,0,0,.05);
-  --border:    rgba(0,0,0,.08);
-  --border2:   rgba(0,0,0,.14);
-  --txt:       #0d1f3c;
-  --txt2:      rgba(13,31,60,.6);
-  --txt3:      rgba(13,31,60,.35);
+  --surface:   rgba(0,0,0,.04);
+  --surface2:  rgba(0,0,0,.07);
+  --border:    rgba(0,0,0,.10);
+  --border2:   rgba(0,0,0,.18);
+  --txt:       #0a1628;
+  --txt2:      #3a4a6b;
+  --txt3:      #6b7a9a;
   --navy:      #0d1f3c;
   --glow:      rgba(245,98,15,.12);
 }
+
+/* Light theme overrides */
+[data-theme="light"] .btn-nav {
+  background: var(--orange-g);
+  color: #fff !important;
+  box-shadow: 0 4px 18px rgba(245,98,15,.4);
+}
+[data-theme="light"] header.scrolled {
+  background: rgba(240,243,248,.92);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 8px 32px rgba(0,0,0,.08);
+}
+[data-theme="light"] .btn {
+  color: #fff !important;
+}
+[data-theme="light"] .btn-ghost {
+  color: var(--txt) !important;
+  border-color: var(--border2);
+}
+[data-theme="light"] .btn-ghost:hover {
+  color: var(--orange) !important;
+}
+[data-theme="light"] .chip {
+  color: #3a4a6b;
+  background: rgba(0,0,0,.06);
+  border-color: rgba(0,0,0,.15);
+}
+[data-theme="light"] .tilt-card h3,
+[data-theme="light"] .why-card h3,
+[data-theme="light"] .s-title,
+[data-theme="light"] .hero-title .line-1,
+[data-theme="light"] .hero-title .line-3 {
+  color: #0a1628;
+}
+[data-theme="light"] .svc-label { color: #0a1628; }
+[data-theme="light"] .svc-btn.active .svc-label { color: var(--orange); }
+[data-theme="light"] .devis-block-title { color: var(--orange); }
+[data-theme="light"] .est-price-num { color: var(--orange); }
+[data-theme="light"] .glass-stat { background: rgba(255,255,255,.9); border-color: rgba(0,0,0,.12); }
+[data-theme="light"] .glass-stat-num { color: #0a1628; }
+[data-theme="light"] .testi-text { color: #3a4a6b; }
+[data-theme="light"] nav a:not(.btn-nav) { color: #3a4a6b; }
+[data-theme="light"] nav a:not(.btn-nav):hover { color: #0a1628; }
+[data-theme="light"] .logo { color: #0a1628; }
 
 /* ══════════════════════════════════════════
    BASE
@@ -1241,7 +1284,7 @@ footer {
         <span class="t-dark">🌙</span>
         <span class="t-light">☀️</span>
       </button>
-      <a href="#contact" class="btn-nav">Devis gratuit</a>
+      <a href="#devis" class="btn-nav">Devis gratuit</a>
     </nav>
     <button class="hamburger" id="hbg" aria-label="Menu">
       <span></span><span></span><span></span>
