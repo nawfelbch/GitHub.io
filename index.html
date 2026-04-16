@@ -94,6 +94,9 @@
 [data-theme="light"] nav a:not(.btn-nav) { color: #3a4a6b; }
 [data-theme="light"] nav a:not(.btn-nav):hover { color: #0a1628; }
 [data-theme="light"] .logo { color: #0a1628; }
+[data-theme="light"] .review-form-wrap { background: rgba(255,255,255,.85); }
+[data-theme="light"] .review-toggle-btn { background: rgba(0,0,0,.04); border-color: rgba(0,0,0,.15); color: #0a1628; }
+[data-theme="light"] .review-toggle-btn:hover { border-color: var(--orange); }
 
 /* ══════════════════════════════════════════
    BASE
@@ -830,17 +833,49 @@ section { padding: 110px 5%; }
 .tarif-feats li::before { content: "✓"; color: var(--orange); font-weight: 700; flex-shrink: 0; }
 
 /* ══════════════════════════════════════════
-   TESTIMONIALS
+   TESTIMONIALS — CAROUSEL
 ══════════════════════════════════════════ */
 #testimonials { background: var(--bg2); }
 
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.8rem;
+/* Wrapper holds arrows + track */
+.testi-carousel-wrap {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Fade edges */
+.testi-carousel-wrap::before,
+.testi-carousel-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.testi-carousel-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg2), transparent);
+}
+.testi-carousel-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg2), transparent);
+}
+
+/* Scrollable track */
+.testi-grid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: .5rem .5rem 1.2rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.testi-grid::-webkit-scrollbar { display: none; }
 
 .testi-card {
   background: var(--surface);
@@ -848,9 +883,39 @@ section { padding: 110px 5%; }
   border-radius: var(--radius);
   padding: 2.2rem;
   position: relative;
-  transition: transform .3s, border-color .3s;
+  transition: transform .3s, border-color .3s, box-shadow .3s;
+  flex: 0 0 320px;
+  scroll-snap-align: start;
 }
-.testi-card:hover { transform: translateY(-5px); border-color: rgba(245,98,15,.2); }
+@media (max-width: 600px) { .testi-card { flex: 0 0 85vw; } }
+.testi-card:hover { transform: translateY(-5px); border-color: rgba(245,98,15,.2); box-shadow: 0 16px 40px rgba(0,0,0,.25); }
+
+/* Nav arrows */
+.testi-nav {
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+  margin-top: 1.8rem;
+}
+.testi-arrow {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border2);
+  background: var(--surface);
+  color: var(--txt);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s, border-color .2s, transform .15s, box-shadow .2s;
+}
+.testi-arrow:hover {
+  background: var(--orange-g);
+  border-color: var(--orange);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(245,98,15,.35);
+}
+.testi-arrow:disabled { opacity: .3; pointer-events: none; }
 
 .testi-quote {
   font-family: var(--font-h);
@@ -889,6 +954,190 @@ section { padding: 110px 5%; }
 }
 .testi-name { font-weight: 600; color: var(--txt); font-size: .92rem; }
 .testi-role { color: var(--txt3); font-size: .8rem; }
+
+/* ══════════════════════════════════════════
+   REVIEW FORM — ACCORDION / DROPDOWN
+══════════════════════════════════════════ */
+.review-section-bottom {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+}
+
+.review-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  background: var(--surface);
+  border: 1.5px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.8rem;
+  color: var(--txt);
+  font-family: var(--font-h);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  transition: background .25s, border-color .25s, box-shadow .25s;
+  position: relative;
+  z-index: 1;
+}
+.review-toggle-btn:hover {
+  border-color: rgba(245,98,15,.4);
+  background: rgba(245,98,15,.06);
+  box-shadow: 0 4px 20px rgba(245,98,15,.1);
+}
+.review-toggle-btn.open {
+  border-color: var(--orange);
+  background: rgba(245,98,15,.08);
+  border-radius: var(--radius) var(--radius) 0 0;
+  border-bottom-color: transparent;
+}
+.rtb-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  background: var(--orange-g);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(245,98,15,.3);
+}
+.rtb-text { flex: 1; text-align: left; }
+.rtb-sub {
+  display: block;
+  font-family: var(--font-b);
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: .02em;
+  color: var(--txt3);
+  text-transform: none;
+  margin-top: .1rem;
+}
+.rtb-arrow {
+  color: var(--txt3);
+  font-size: 1.1rem;
+  transition: transform .35s cubic-bezier(.4,0,.2,1);
+  flex-shrink: 0;
+}
+.review-toggle-btn.open .rtb-arrow { transform: rotate(180deg); color: var(--orange); }
+
+.review-form-wrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .45s cubic-bezier(.4,0,.2,1), opacity .35s ease;
+  opacity: 0;
+  background: var(--surface);
+  border: 1.5px solid var(--orange);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+.review-form-wrap.open {
+  max-height: 900px;
+  opacity: 1;
+}
+
+.review-form-inner {
+  padding: 2rem 2.2rem 2.2rem;
+}
+
+.review-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+.review-form-grid .rfull { grid-column: 1 / -1; }
+
+.star-picker {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  margin-top: .3rem;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.star-picker input { display: none; }
+.star-picker label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--border2);
+  transition: color .15s, transform .15s;
+  line-height: 1;
+}
+.star-picker label:hover,
+.star-picker label:hover ~ label { color: var(--orange); }
+.star-picker label:hover { transform: scale(1.2); }
+.star-picker input:checked ~ label { color: var(--orange); }
+
+.review-submit-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: .4rem;
+  flex-wrap: wrap;
+}
+.review-success {
+  display: none;
+  align-items: center;
+  gap: .5rem;
+  color: #4ade80;
+  font-size: .9rem;
+  font-weight: 600;
+}
+.review-success.show { display: flex; }
+
+/* ══════════════════════════════════════════
+   USER REVIEW CARDS (dynamic)
+══════════════════════════════════════════ */
+.user-testi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  position: relative;
+  animation: cardAppear .45s cubic-bezier(.4,0,.2,1) both;
+  transition: transform .3s, border-color .3s;
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+}
+.user-testi-card:hover { transform: translateY(-4px); border-color: rgba(245,98,15,.2); }
+@keyframes cardAppear {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.user-testi-card .new-badge {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: rgba(74,222,128,.12);
+  border: 1px solid rgba(74,222,128,.25);
+  color: #4ade80;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .15rem .55rem;
+  border-radius: 20px;
+  letter-spacing: .06em;
+}
+
+.review-form-inner .field input,
+.review-form-inner .field textarea,
+.review-form-inner .field select {
+  background: var(--surface2);
+  border: 1.5px solid var(--border2);
+  border-radius: 6px;
+  padding: .75rem 1rem;
+  font-family: var(--font-b);
+  font-size: .93rem;
+  color: var(--txt);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  width: 100%;
+}
+.review-form-inner .field input:focus,
+.review-form-inner .field textarea:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(245,98,15,.12);
+}
+.review-form-inner .field textarea { min-height: 90px; resize: vertical; }
 
 /* ══════════════════════════════════════════
    CONTACT
@@ -1542,41 +1791,106 @@ footer {
       <h2 class="s-title">Avis <span class="acc">clients</span></h2>
       <p class="s-desc">Des professionnels de l'automobile qui ont choisi SECOTO pour la fiabilité et la réactivité de nos équipes.</p>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card reveal">
-        <div class="testi-quote">"</div>
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">Service impeccable, véhicule livré à l'heure et en parfait état. L'état des lieux photo à la prise en charge nous a vraiment rassurés. On renouvelle à chaque fois sans hésiter.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">TM</div>
-          <div>
-            <div class="testi-name">Thomas M.</div>
-            <div class="testi-role">Directeur — Garage Mécauto, Lyon</div>
+    <!-- Carrousel horizontal -->
+    <div class="testi-carousel-wrap">
+      <div class="testi-grid" id="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">Service impeccable, véhicule livré à l'heure et en parfait état. L'état des lieux photo à la prise en charge nous a vraiment rassurés. On renouvelle à chaque fois sans hésiter.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">TM</div>
+            <div>
+              <div class="testi-name">Thomas M.</div>
+              <div class="testi-role">Directeur — Garage Mécauto, Lyon</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">En tant que concessionnaire moto, j'ai besoin d'un partenaire de confiance pour mes transports. SECOTO est réactif, professionnel, et les tarifs sont transparents. Exactement ce qu'il me fallait.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SL</div>
+            <div>
+              <div class="testi-name">Sophie L.</div>
+              <div class="testi-role">Gérante — MotoCity Bordeaux</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">Nous faisons appel à SECOTO pour notre flotte d'entreprise depuis 2 ans. Zéro incident, facturation claire, interlocuteur toujours disponible. Un partenariat sur le long terme.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PD</div>
+            <div>
+              <div class="testi-name">Pierre D.</div>
+              <div class="testi-role">Responsable Flotte — Groupe Dupré & Fils</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="testi-card reveal">
-        <div class="testi-quote">"</div>
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">En tant que concessionnaire moto, j'ai besoin d'un partenaire de confiance pour mes transports. SECOTO est réactif, professionnel, et les tarifs sont transparents. Exactement ce qu'il me fallait.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">SL</div>
-          <div>
-            <div class="testi-name">Sophie L.</div>
-            <div class="testi-role">Gérante — MotoCity Bordeaux</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card reveal">
-        <div class="testi-quote">"</div>
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">Nous faisons appel à SECOTO pour notre flotte d'entreprise depuis 2 ans. Zéro incident, facturation claire, interlocuteur toujours disponible. Un partenariat sur le long terme.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">PD</div>
-          <div>
-            <div class="testi-name">Pierre D.</div>
-            <div class="testi-role">Responsable Flotte — Groupe Dupré & Fils</div>
-          </div>
+    </div>
+
+    <!-- Flèches de navigation -->
+    <div class="testi-nav">
+      <button class="testi-arrow" id="testi-prev" aria-label="Précédent">&#8592;</button>
+      <button class="testi-arrow" id="testi-next" aria-label="Suivant">&#8594;</button>
+    </div>
+
+    <!-- Bouton accordéon + formulaire -->
+    <div class="review-section-bottom reveal">
+      <button class="review-toggle-btn" id="reviewToggleBtn" aria-expanded="false" onclick="toggleReviewForm()">
+        <span class="rtb-icon">✍️</span>
+        <span class="rtb-text">
+          Laisser un avis
+          <span class="rtb-sub">Partagez votre expérience avec SECOTO en quelques secondes</span>
+        </span>
+        <span class="rtb-arrow">▼</span>
+      </button>
+
+      <div class="review-form-wrap" id="reviewFormWrap" aria-hidden="true">
+        <div class="review-form-inner">
+          <form id="reviewForm" onsubmit="submitReview(event)">
+            <div class="review-form-grid">
+              <div class="field">
+                <label>Prénom &amp; Nom *</label>
+                <input type="text" id="rv-name" placeholder="Jean Dupont" required />
+              </div>
+              <div class="field">
+                <label>Entreprise / Fonction</label>
+                <input type="text" id="rv-role" placeholder="Directeur — Garage Auto, Paris" />
+              </div>
+              <div class="field rfull">
+                <label>Note *</label>
+                <div class="star-picker" id="starPicker">
+                  <input type="radio" name="rating" id="s5" value="5" required>
+                  <label for="s5" title="5 étoiles">★</label>
+                  <input type="radio" name="rating" id="s4" value="4">
+                  <label for="s4" title="4 étoiles">★</label>
+                  <input type="radio" name="rating" id="s3" value="3">
+                  <label for="s3" title="3 étoiles">★</label>
+                  <input type="radio" name="rating" id="s2" value="2">
+                  <label for="s2" title="2 étoiles">★</label>
+                  <input type="radio" name="rating" id="s1" value="1">
+                  <label for="s1" title="1 étoile">★</label>
+                </div>
+              </div>
+              <div class="field rfull">
+                <label>Votre avis *</label>
+                <textarea id="rv-text" placeholder="Décrivez votre expérience avec SECOTO…" required></textarea>
+              </div>
+            </div>
+            <div class="review-submit-row">
+              <button type="submit" class="btn" style="padding:.85rem 2rem;font-size:.95rem">
+                Publier mon avis →
+              </button>
+              <div class="review-success" id="review-success">
+                <span>✓</span> Avis publié avec succès !
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -1968,11 +2282,146 @@ footer {
       }
     }, { passive: true });
 
-    /* ── FORM ── */
-    window.submitForm = function(e) {
-      const fs = document.getElementById('fs');
-      if (fs) { e.preventDefault(); fs.style.display = 'block'; e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true); setTimeout(() => { fs.style.display = 'none'; }, 6000); }
+    /* ── TESTIMONIALS CAROUSEL ── */
+    const testiGrid = document.getElementById('testi-grid');
+    const prevBtn   = document.getElementById('testi-prev');
+    const nextBtn   = document.getElementById('testi-next');
+
+    function getCardWidth() {
+      const card = testiGrid.querySelector('.testi-card');
+      if (!card) return 340;
+      return card.offsetWidth + 24;
+    }
+
+    if (prevBtn && nextBtn && testiGrid) {
+      nextBtn.addEventListener('click', () => {
+        testiGrid.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+      });
+      prevBtn.addEventListener('click', () => {
+        testiGrid.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+      });
+    }
+
+    /* ── REVIEW SYSTEM ── */
+    const STORAGE_KEY = 'secoto_reviews_v1';
+
+    function loadReviews() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
+      catch { return []; }
+    }
+
+    function saveReviews(reviews) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
+    }
+
+    function starsHTML(n) {
+      return '★'.repeat(n) + '☆'.repeat(5 - n);
+    }
+
+    function initials(name) {
+      return name.trim().split(/\s+/).map(w => w[0].toUpperCase()).slice(0,2).join('');
+    }
+
+    function formatDate(iso) {
+      return new Date(iso).toLocaleDateString('fr-FR', { day:'2-digit', month:'long', year:'numeric' });
+    }
+
+    function escapeHTML(str) {
+      return String(str)
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;')
+        .replace(/'/g,'&#039;');
+    }
+
+    function createReviewCard(review, isNew = false) {
+      const card = document.createElement('div');
+      card.className = 'testi-card user-testi-card';
+      card.innerHTML = `
+        ${isNew ? '<span class="new-badge">NOUVEAU</span>' : ''}
+        <div class="testi-quote">"</div>
+        <div class="stars" style="color:var(--orange);font-size:.9rem;letter-spacing:.1em;margin-bottom:1rem">${starsHTML(review.rating)}</div>
+        <p class="testi-text">${escapeHTML(review.text)}</p>
+        <div class="testi-author">
+          <div class="testi-avatar">${initials(review.name)}</div>
+          <div>
+            <div class="testi-name">${escapeHTML(review.name)}</div>
+            <div class="testi-role">${escapeHTML(review.role || 'Client SECOTO')} · <span style="color:var(--txt3);font-size:.76rem">${formatDate(review.date)}</span></div>
+          </div>
+        </div>
+      `;
+      return card;
+    }
+
+    function renderReviews() {
+      const reviews = loadReviews();
+      const grid = document.getElementById('testi-grid');
+      grid.querySelectorAll('.user-testi-card').forEach(el => el.remove());
+      [...reviews].reverse().forEach(rv => {
+        grid.appendChild(createReviewCard(rv));
+      });
+    }
+
+    window.toggleReviewForm = function() {
+      const btn  = document.getElementById('reviewToggleBtn');
+      const wrap = document.getElementById('reviewFormWrap');
+      const isOpen = wrap.classList.contains('open');
+      if (isOpen) {
+        wrap.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        wrap.setAttribute('aria-hidden','true');
+      } else {
+        wrap.classList.add('open');
+        btn.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+        wrap.setAttribute('aria-hidden','false');
+        setTimeout(() => wrap.scrollIntoView({ behavior:'smooth', block:'nearest' }), 100);
+      }
     };
+
+    window.submitReview = function(e) {
+      e.preventDefault();
+      const ratingInput = document.querySelector('input[name="rating"]:checked');
+      if (!ratingInput) { alert('Veuillez sélectionner une note.'); return; }
+
+      const review = {
+        name:   document.getElementById('rv-name').value.trim(),
+        role:   document.getElementById('rv-role').value.trim(),
+        rating: parseInt(ratingInput.value),
+        text:   document.getElementById('rv-text').value.trim(),
+        date:   new Date().toISOString()
+      };
+
+      const reviews = loadReviews();
+      reviews.push(review);
+      saveReviews(reviews);
+
+      const grid = document.getElementById('testi-grid');
+      const newCard = createReviewCard(review, true);
+      grid.appendChild(newCard);
+
+      setTimeout(() => {
+        const badge = newCard.querySelector('.new-badge');
+        if (badge) badge.style.opacity = '0';
+      }, 10000);
+
+      const successEl = document.getElementById('review-success');
+      successEl.classList.add('show');
+      e.target.reset();
+
+      setTimeout(() => successEl.classList.remove('show'), 5000);
+      setTimeout(() => {
+        const btn  = document.getElementById('reviewToggleBtn');
+        const wrap = document.getElementById('reviewFormWrap');
+        wrap.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      }, 4000);
+    };
+
+    renderReviews();
 
     /* ── DEVIS SERVICE TOGGLE ── */
     let currentService = 'auto';
