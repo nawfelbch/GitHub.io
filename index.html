@@ -612,44 +612,47 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
         <button class="svc-btn" id="btn-moto" onclick="switchService('moto')"><span class="svc-ico">🏍️</span><span class="svc-label">Transport Moto</span><span class="svc-sub">Par camionnette dédiée</span></button>
       </div>
       <div class="devis-body">
-        <form id="devis-form" onsubmit="submitDevis(event)">
+        <form id="devis-form" name="devis" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitDevis(event)">
+          <input type="hidden" name="form-name" value="devis" />
+          <input type="hidden" name="service" id="hidden-service" value="Convoyage Automobile" />
+          <p style="display:none"><input name="bot-field" /></p>
           <div class="devis-block">
             <div class="devis-block-title">01 — Vos coordonnées</div>
             <div class="dform-grid">
-              <div class="field"><label>Prénom *</label><input type="text" placeholder="Jean" required /></div>
-              <div class="field"><label>Nom *</label><input type="text" placeholder="Dupont" required /></div>
-              <div class="field"><label>Société</label><input type="text" placeholder="Votre entreprise" /></div>
-              <div class="field"><label>Téléphone</label><input type="tel" placeholder="+33 6 00 00 00 00" /></div>
-              <div class="field dfull"><label>Email *</label><input type="email" placeholder="jean.dupont@entreprise.fr" required /></div>
+              <div class="field"><label>Prénom *</label><input type="text" name="prenom" placeholder="Jean" required /></div>
+              <div class="field"><label>Nom *</label><input type="text" name="nom" placeholder="Dupont" required /></div>
+              <div class="field"><label>Société</label><input type="text" name="societe" placeholder="Votre entreprise" /></div>
+              <div class="field"><label>Téléphone</label><input type="tel" name="telephone" placeholder="+33 6 00 00 00 00" /></div>
+              <div class="field dfull"><label>Email *</label><input type="email" name="email" placeholder="jean.dupont@entreprise.fr" required /></div>
             </div>
           </div>
           <div class="devis-block">
             <div class="devis-block-title">02 — Le trajet</div>
             <div class="dform-grid">
-              <div class="field"><label>Ville de départ *</label><input type="text" id="f-depart" placeholder="Paris" required oninput="estimatePrice()" /></div>
-              <div class="field"><label>Ville d'arrivée *</label><input type="text" id="f-arrivee" placeholder="Marseille" required oninput="estimatePrice()" /></div>
-              <div class="field"><label>Distance estimée (km)</label><div style="position:relative"><input type="number" id="f-km" placeholder="ex: 250" min="1" oninput="estimatePrice()" style="padding-right:3rem" /><span style="position:absolute;right:.9rem;top:50%;transform:translateY(-50%);color:rgba(232,237,245,.3);font-size:.82rem;pointer-events:none">km</span></div></div>
-              <div class="field"><label>Date souhaitée</label><input type="date" id="f-date" /></div>
+              <div class="field"><label>Ville de départ *</label><input type="text" name="depart" id="f-depart" placeholder="Paris" required oninput="estimatePrice()" /></div>
+              <div class="field"><label>Ville d'arrivée *</label><input type="text" name="arrivee" id="f-arrivee" placeholder="Marseille" required oninput="estimatePrice()" /></div>
+              <div class="field"><label>Distance estimée (km)</label><div style="position:relative"><input type="number" name="distance_km" id="f-km" placeholder="ex: 250" min="1" oninput="estimatePrice()" style="padding-right:3rem" /><span style="position:absolute;right:.9rem;top:50%;transform:translateY(-50%);color:rgba(232,237,245,.3);font-size:.82rem;pointer-events:none">km</span></div></div>
+              <div class="field"><label>Date souhaitée</label><input type="date" name="date" id="f-date" /></div>
             </div>
           </div>
           <div class="devis-block" id="block-auto">
             <div class="devis-block-title">03 — Le véhicule</div>
             <div class="dform-grid">
-              <div class="field"><label>Marque</label><input type="text" placeholder="Renault, BMW, Peugeot…" /></div>
-              <div class="field"><label>Modèle</label><input type="text" placeholder="Clio, Série 3…" /></div>
-              <div class="field"><label>Immatriculation</label><input type="text" placeholder="AA-000-AA" /></div>
-              <div class="field"><label>Type</label><select><option value="">Sélectionner</option><option>Berline</option><option>SUV / 4x4</option><option>Citadine</option><option>Break</option><option>Cabriolet</option><option>Utilitaire léger</option><option>Autre</option></select></div>
-              <div class="field dfull"><label>Informations complémentaires</label><textarea placeholder="Véhicule en panne, clés à récupérer chez un tiers, heure de disponibilité…" style="min-height:80px"></textarea></div>
+              <div class="field"><label>Marque</label><input type="text" name="marque" placeholder="Renault, BMW, Peugeot…" /></div>
+              <div class="field"><label>Modèle</label><input type="text" name="modele" placeholder="Clio, Série 3…" /></div>
+              <div class="field"><label>Immatriculation</label><input type="text" name="immatriculation" placeholder="AA-000-AA" /></div>
+              <div class="field"><label>Type</label><select name="type_vehicule"><option value="">Sélectionner</option><option>Berline</option><option>SUV / 4x4</option><option>Citadine</option><option>Break</option><option>Cabriolet</option><option>Utilitaire léger</option><option>Autre</option></select></div>
+              <div class="field dfull"><label>Informations complémentaires</label><textarea name="informations" placeholder="Véhicule en panne, clés à récupérer chez un tiers, heure de disponibilité…" style="min-height:80px"></textarea></div>
             </div>
           </div>
           <div class="devis-block" id="block-moto" style="display:none">
             <div class="devis-block-title">03 — La / les moto(s)</div>
             <div class="dform-grid">
-              <div class="field"><label>Marque</label><input type="text" placeholder="Honda, Yamaha, Ducati…" /></div>
-              <div class="field"><label>Modèle</label><input type="text" placeholder="CBR, MT-07…" /></div>
-              <div class="field"><label>Nombre de motos</label><select id="f-nb-motos" oninput="estimatePrice()"><option value="1">1 moto</option><option value="2">2 motos</option><option value="3">3 motos</option><option value="4+">4 motos et plus</option></select></div>
-              <div class="field"><label>Cylindrée</label><select><option value="">Sélectionner</option><option>Moins de 125cc</option><option>125cc – 500cc</option><option>500cc – 1000cc</option><option>Plus de 1000cc</option></select></div>
-              <div class="field dfull"><label>Informations complémentaires</label><textarea placeholder="Moto en panne, accès particulier, heure de disponibilité…" style="min-height:80px"></textarea></div>
+              <div class="field"><label>Marque</label><input type="text" name="marque_moto" placeholder="Honda, Yamaha, Ducati…" /></div>
+              <div class="field"><label>Modèle</label><input type="text" name="modele_moto" placeholder="CBR, MT-07…" /></div>
+              <div class="field"><label>Nombre de motos</label><select name="nombre_motos" id="f-nb-motos" oninput="estimatePrice()"><option value="1">1 moto</option><option value="2">2 motos</option><option value="3">3 motos</option><option value="4+">4 motos et plus</option></select></div>
+              <div class="field"><label>Cylindrée</label><select name="cylindree"><option value="">Sélectionner</option><option>Moins de 125cc</option><option>125cc – 500cc</option><option>500cc – 1000cc</option><option>Plus de 1000cc</option></select></div>
+              <div class="field dfull"><label>Informations complémentaires</label><textarea name="informations_moto" placeholder="Moto en panne, accès particulier, heure de disponibilité…" style="min-height:80px"></textarea></div>
             </div>
           </div>
           <button type="submit" class="btn" style="width:100%;justify-content:center;padding:1.1rem;font-size:1.05rem;margin-top:.5rem">Envoyer ma demande de devis →</button>
@@ -685,12 +688,14 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
           <div style="display:flex;justify-content:space-between;padding:.5rem 0;font-size:.88rem;color:rgba(232,237,245,.55)"><span>Transport moto</span><strong style="color:#f5620f">Sur devis</strong></div>
         </div>
       </div>
-      <form class="reveal" onsubmit="submitContact(event)">
+      <form class="reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitContact(event)">
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display:none"><input name="bot-field" /></p>
         <div class="form-grid">
-          <div class="field"><label>Prénom</label><input type="text" placeholder="Jean" required /></div>
-          <div class="field"><label>Nom</label><input type="text" placeholder="Dupont" required /></div>
-          <div class="field full"><label>Email</label><input type="email" placeholder="jean.dupont@entreprise.fr" required /></div>
-          <div class="field full"><label>Message</label><textarea placeholder="Votre question…" style="min-height:140px"></textarea></div>
+          <div class="field"><label>Prénom</label><input type="text" name="prenom" placeholder="Jean" required /></div>
+          <div class="field"><label>Nom</label><input type="text" name="nom" placeholder="Dupont" required /></div>
+          <div class="field full"><label>Email</label><input type="email" name="email" placeholder="jean.dupont@entreprise.fr" required /></div>
+          <div class="field full"><label>Message</label><textarea name="message" placeholder="Votre question…" style="min-height:140px"></textarea></div>
           <div class="field full"><button type="submit" class="btn" style="width:100%;justify-content:center;padding:1rem;font-size:1.05rem">Envoyer →</button></div>
         </div>
         <div class="form-success" id="fc">✓ Message envoyé ! Nous vous répondons sous 2h.</div>
@@ -881,6 +886,7 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
       document.getElementById('rule-auto').style.display = svc === 'auto' ? '' : 'none';
       document.getElementById('rule-moto').style.display = svc === 'moto' ? '' : 'none';
       document.getElementById('est-service-badge').textContent = svc === 'auto' ? '🚗 Convoyage Auto' : '🏍️ Transport Moto';
+      document.getElementById('hidden-service').value = svc === 'auto' ? 'Convoyage Automobile' : 'Transport Moto';
       document.getElementById('est-inc-list').innerHTML = svc === 'auto'
         ? '<span>État des lieux photo</span><span>Assurance</span><span>Bon de livraison</span><span>Suivi en temps réel</span>'
         : '<span>Arrimage professionnel</span><span>Assurance moto</span><span>Bon de livraison</span><span>Multi-motos</span>';
@@ -899,8 +905,43 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
       subEl.textContent = note + ' · hors options';
     };
 
-    window.submitDevis = e => { e.preventDefault(); const fs = document.getElementById('fs'); fs.style.display = 'block'; e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true); setTimeout(() => { fs.style.display = 'none'; }, 7000); };
-    window.submitContact = e => { e.preventDefault(); const fc = document.getElementById('fc'); fc.style.display = 'block'; e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true); setTimeout(() => { fc.style.display = 'none'; }, 6000); };
+    window.submitDevis = e => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Envoi en cours…';
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+        .then(() => {
+          document.getElementById('fs').style.display = 'block';
+          form.querySelectorAll('input,select,textarea').forEach(el => el.disabled = true);
+          btn.textContent = '✓ Demande envoyée';
+        })
+        .catch(() => {
+          btn.disabled = false;
+          btn.textContent = 'Envoyer ma demande de devis →';
+          alert('Une erreur est survenue. Merci de réessayer ou de nous contacter par WhatsApp.');
+        });
+    };
+
+    window.submitContact = e => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Envoi en cours…';
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+        .then(() => {
+          document.getElementById('fc').style.display = 'block';
+          form.querySelectorAll('input,textarea').forEach(el => el.disabled = true);
+          btn.textContent = '✓ Message envoyé';
+        })
+        .catch(() => {
+          btn.disabled = false;
+          btn.textContent = 'Envoyer →';
+          alert('Une erreur est survenue. Merci de réessayer ou de nous contacter par email.');
+        });
+    };
   })();
   </script>
 
