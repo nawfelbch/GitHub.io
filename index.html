@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SECOTO – Convoyage Auto & Moto · France & Europe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -18,8 +19,8 @@
   --orange:   #f5620f;
   --orange2:  #ff7c35;
   --orange-g: linear-gradient(135deg, #f5620f, #ff9a3c);
-  --font-h:   'Bebas Neue', sans-serif;
-  --font-b:   'DM Sans', sans-serif;
+  --font-h:   'Bebas Neue', 'Arial Narrow', Arial, sans-serif;
+  --font-b:   'DM Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif;
   --radius:   10px;
   --dur:      .3s;
 }
@@ -99,15 +100,22 @@
 /* ══════════════════════════════════════════
    BASE
 ══════════════════════════════════════════ */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  background: #070b14 !important;
+  color-scheme: dark;
+}
 body {
-  font-family: var(--font-b);
-  background: var(--bg);
+  font-family: 'DM Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  background: #070b14 !important;
   color: var(--txt);
   overflow-x: hidden;
   transition: background var(--dur), color var(--dur);
   cursor: none;
+  -webkit-text-size-adjust: 100%;
 }
+[data-theme="light"] body,
+[data-theme="light"] html { background: #f0f3f8 !important; }
 @media (hover: none) { body { cursor: auto; } }
 
 /* ══════════════════════════════════════════
@@ -344,9 +352,9 @@ nav a:not(.btn-nav):hover::after { right: 0; }
   animation: orbFloat 8s ease-in-out infinite;
   pointer-events: none;
 }
-.orb-1 { width: 500px; height: 500px; background: rgba(245,98,15,.05); top: -100px; right: -100px; animation-delay: 0s; }
-.orb-2 { width: 350px; height: 350px; background: rgba(13,60,130,.08); bottom: 0; left: -80px; animation-delay: -3s; }
-.orb-3 { width: 250px; height: 250px; background: rgba(245,98,15,.03); top: 40%; left: 45%; animation-delay: -5s; }
+.orb-1 { width: 500px; height: 500px; background: rgba(245,98,15,.03); top: -100px; right: -100px; animation-delay: 0s; }
+.orb-2 { width: 350px; height: 350px; background: rgba(13,60,130,.05); bottom: 0; left: -80px; animation-delay: -3s; }
+.orb-3 { width: 250px; height: 250px; background: rgba(245,98,15,.02); top: 40%; left: 45%; animation-delay: -5s; }
 @keyframes orbFloat {
   0%,100% { transform: translateY(0) scale(1); }
   50%      { transform: translateY(-40px) scale(1.05); }
@@ -1531,19 +1539,19 @@ footer {
   <section id="counters">
     <div class="counters-grid">
       <div class="counter-item reveal">
-        <span class="counter-num" data-count="500">0+</span>
+        <span class="counter-num">500+</span>
         <span class="counter-label">Véhicules convoyés / mois</span>
       </div>
       <div class="counter-item reveal">
-        <span class="counter-num" data-count="15">0+</span>
+        <span class="counter-num">15+</span>
         <span class="counter-label">Pays couverts en Europe</span>
       </div>
       <div class="counter-item reveal">
-        <span class="counter-num" data-count="24">0h</span>
+        <span class="counter-num">24h</span>
         <span class="counter-label">Délai de prise en charge</span>
       </div>
       <div class="counter-item reveal">
-        <span class="counter-num" data-count="98">0%</span>
+        <span class="counter-num">98%</span>
         <span class="counter-label">Taux de satisfaction</span>
       </div>
     </div>
@@ -2387,34 +2395,6 @@ footer {
         document.body.style.overflow = '';
       }
     });
-
-    /* ── ANIMATED COUNTERS ── */
-    function animateCounter(el, target, suffix, duration) {
-      let start = 0;
-      const step = target / (duration / 16);
-      const timer = setInterval(() => {
-        start = Math.min(start + step, target);
-        el.textContent = Math.floor(start).toLocaleString('fr-FR') + suffix;
-        if (start >= target) clearInterval(timer);
-      }, 16);
-    }
-
-    let countersStarted = false;
-    function startCounters() {
-      if (countersStarted) return;
-      const countersSection = document.getElementById('counters');
-      if (!countersSection) return;
-      const rect = countersSection.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        countersStarted = true;
-        animateCounter(document.querySelector('[data-count="500"]'), 500, '+', 1800);
-        animateCounter(document.querySelector('[data-count="15"]'),  15,  '+', 1400);
-        animateCounter(document.querySelector('[data-count="24"]'),  24,  'h', 1200);
-        animateCounter(document.querySelector('[data-count="98"]'),  98,  '%', 1600);
-      }
-    }
-    window.addEventListener('scroll', startCounters, { passive: true });
-    startCounters(); // run once in case already in view
 
     /* ── DEVIS SERVICE TOGGLE ── */
     let currentService = 'auto';
