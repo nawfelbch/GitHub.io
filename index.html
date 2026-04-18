@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SECOTO – Convoyage Auto & Moto · France & Europe</title>
+  <style>
+    /* Chargement polices via @import dans style pour maximum compatibilité */
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
@@ -171,31 +175,30 @@ header {
   transition: background var(--dur), backdrop-filter var(--dur), box-shadow var(--dur);
 }
 header.scrolled {
-  background: rgba(7,11,20,.75);
+  background: rgba(7,11,20,.85) !important;
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-  box-shadow: 0 1px 0 var(--border), 0 8px 32px rgba(0,0,0,.3);
+  box-shadow: 0 1px 0 rgba(255,255,255,.08), 0 8px 32px rgba(0,0,0,.3);
 }
-[data-theme="light"] header.scrolled {
-  background: rgba(240,243,248,.82);
-}
+[data-theme="light"] header.scrolled { background: rgba(240,243,248,.85) !important; }
 
 .logo {
-  font-family: var(--font-h);
+  font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important;
   font-size: 2rem;
   letter-spacing: .1em;
-  color: var(--txt);
+  color: #e8edf5 !important;
   text-decoration: none;
   display: flex; align-items: center;
   position: relative;
 }
-.logo .o { color: var(--orange); position: relative; }
+[data-theme="light"] .logo { color: #0a1628 !important; }
+.logo .o { color: #f5620f !important; position: relative; }
 .logo .o::after {
   content: '';
   position: absolute;
   bottom: -2px; left: 0; right: 0;
   height: 2px;
-  background: var(--orange-g);
+  background: linear-gradient(135deg, #f5620f, #ff9a3c);
   border-radius: 2px;
 }
 
@@ -206,7 +209,7 @@ nav {
   gap: 2.2rem;
 }
 nav a:not(.btn-nav) {
-  color: var(--txt2);
+  color: rgba(232,237,245,.6) !important;
   text-decoration: none;
   font-size: .88rem;
   font-weight: 500;
@@ -214,21 +217,22 @@ nav a:not(.btn-nav) {
   position: relative;
   transition: color .2s;
 }
+[data-theme="light"] nav a:not(.btn-nav) { color: #3a4a6b !important; }
 nav a:not(.btn-nav)::after {
   content: '';
   position: absolute;
   bottom: -3px; left: 0; right: 100%;
   height: 1px;
-  background: var(--orange);
+  background: #f5620f;
   transition: right .25s;
 }
-nav a:not(.btn-nav):hover { color: var(--txt); }
+nav a:not(.btn-nav):hover { color: #e8edf5 !important; }
 nav a:not(.btn-nav):hover::after { right: 0; }
 
 .btn-nav {
-  background: var(--orange-g);
+  background: linear-gradient(135deg, #f5620f, #ff9a3c) !important;
   color: #fff !important;
-  font-family: var(--font-h);
+  font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important;
   font-size: .95rem;
   letter-spacing: .1em;
   padding: .55rem 1.4rem;
@@ -272,9 +276,9 @@ nav a:not(.btn-nav):hover::after { right: 0; }
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  background: var(--orange-g);
-  color: #fff;
-  font-family: var(--font-h);
+  background: linear-gradient(135deg, #f5620f, #ff9a3c) !important;
+  color: #fff !important;
+  font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important;
   font-size: 1rem;
   letter-spacing: .1em;
   padding: .75rem 1.8rem;
@@ -298,12 +302,13 @@ nav a:not(.btn-nav):hover::after { right: 0; }
 .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(245,98,15,.5); }
 .btn:hover::after { opacity: 1; }
 .btn-ghost {
-  background: transparent;
-  border: 1.5px solid var(--border2);
-  color: var(--txt);
+  background: transparent !important;
+  border: 1.5px solid rgba(255,255,255,.18) !important;
+  color: #e8edf5 !important;
   box-shadow: none;
 }
-.btn-ghost:hover { border-color: var(--orange); color: var(--orange); background: rgba(245,98,15,.06); box-shadow: none; }
+[data-theme="light"] .btn-ghost { border-color: rgba(0,0,0,.2) !important; color: #0a1628 !important; }
+.btn-ghost:hover { border-color: #f5620f !important; color: #f5620f !important; background: rgba(245,98,15,.06) !important; box-shadow: none; }
 
 /* ══════════════════════════════════════════
    HERO
@@ -322,15 +327,11 @@ nav a:not(.btn-nav):hover::after { right: 0; }
 .hero-mesh {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(245,98,15,.08) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(13,31,60,.8) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(30,60,120,.2) 0%, transparent 50%);
-  animation: meshFloat 10s ease-in-out infinite alternate;
+  background: transparent;
 }
 @keyframes meshFloat {
-  from { transform: scale(1) rotate(0deg); }
-  to   { transform: scale(1.05) rotate(1deg); }
+  from { transform: scale(1); }
+  to   { transform: scale(1.02); }
 }
 
 /* Grid lines */
@@ -338,10 +339,9 @@ nav a:not(.btn-nav):hover::after { right: 0; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
   background-size: 80px 80px;
-  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%);
 }
 
 /* Floating orbs */
@@ -378,7 +378,7 @@ nav a:not(.btn-nav):hover::after { right: 0; }
   gap: .5rem;
   background: rgba(245,98,15,.1);
   border: 1px solid rgba(245,98,15,.25);
-  color: var(--orange2);
+  color: #ff7c35 !important;
   font-size: .77rem;
   font-weight: 600;
   letter-spacing: .16em;
@@ -389,31 +389,31 @@ nav a:not(.btn-nav):hover::after { right: 0; }
 }
 .hero-pill-dot {
   width: 6px; height: 6px;
-  background: var(--orange);
+  background: #f5620f;
   border-radius: 50%;
   animation: pulse 1.8s ease-in-out infinite;
 }
 @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.5)} }
 
 .hero-title {
-  font-family: var(--font-h);
+  font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important;
   font-size: clamp(3.2rem, 6vw, 5.5rem);
   line-height: .95;
   letter-spacing: .02em;
-  color: var(--txt);
+  color: #e8edf5 !important;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
 .hero-title .line-2 {
-  background: var(--orange-g);
+  background: linear-gradient(135deg, #f5620f, #ff9a3c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.hero-title .line-3 { color: var(--txt2); }
+.hero-title .line-3 { color: rgba(232,237,245,.4) !important; -webkit-text-fill-color: rgba(232,237,245,.4) !important; }
 
 .hero-desc {
-  color: var(--txt2);
+  color: rgba(232,237,245,.6) !important;
   font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.75;
@@ -635,9 +635,9 @@ section { padding: 110px 5%; }
 ══════════════════════════════════════════ */
 #counters {
   padding: 70px 5%;
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: #070b14;
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .counters-grid {
   max-width: 1100px;
@@ -649,13 +649,13 @@ section { padding: 110px 5%; }
 .counter-item {
   text-align: center;
   padding: 2rem 1rem;
-  border-right: 1px solid var(--border);
+  border-right: 1px solid rgba(255,255,255,.08);
 }
 .counter-item:last-child { border-right: none; }
 .counter-num {
-  font-family: var(--font-h);
+  font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important;
   font-size: 4rem;
-  color: var(--orange);
+  color: #f5620f !important;
   line-height: 1;
   display: block;
   margin-bottom: .3rem;
@@ -2306,26 +2306,40 @@ footer {
     reveals.forEach(r => ro.observe(r));
 
     /* ── COUNTERS ── */
-    const counters = document.querySelectorAll('.counter-num');
-    const co = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        const el = e.target;
-        const target = +el.dataset.target;
-        const suffix = el.dataset.suffix || '+';
-        const duration = 1800;
-        const step = 16;
-        const increment = target / (duration / step);
-        let current = 0;
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) { current = target; clearInterval(timer); }
-          el.textContent = Math.floor(current) + suffix;
-        }, step);
-        co.unobserve(el);
+    var counterData = {
+      'vehicles':     { target: 500, suffix: '+' },
+      'countries':    { target: 15,  suffix: '+' },
+      'delay':        { target: 24,  suffix: 'h' },
+      'satisfaction': { target: 98,  suffix: '%' },
+    };
+    var counterDone = false;
+    var co = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (!e.isIntersecting || counterDone) return;
+        counterDone = true;
+        Object.keys(counterData).forEach(function(key) {
+          var el = document.querySelector('[data-counter="' + key + '"]');
+          if (!el) return;
+          var d = counterData[key];
+          var current = 0;
+          var duration = 2000;
+          var frameRate = 30;
+          var totalFrames = duration / frameRate;
+          var inc = d.target / totalFrames;
+          el.textContent = '0' + d.suffix;
+          var timer = setInterval(function() {
+            current += inc;
+            if (current >= d.target) {
+              current = d.target;
+              clearInterval(timer);
+            }
+            el.textContent = Math.floor(current) + d.suffix;
+          }, frameRate);
+        });
       });
-    }, { threshold: 0.5 });
-    counters.forEach(c => co.observe(c));
+    }, { threshold: 0.3 });
+    var counterSection = document.getElementById('counters');
+    if (counterSection) co.observe(counterSection);
 
     /* ── 3D TILT ── */
     document.querySelectorAll('.tilt-card').forEach(card => {
