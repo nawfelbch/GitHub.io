@@ -4,460 +4,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SECOTO – Convoyage Auto & Moto · France & Europe</title>
+
+  <title>SECOTO – Convoyage Auto & Moto · France & Europe | Devis Gratuit</title>
+  <meta name="description" content="SECOTO assure le convoyage professionnel de vos véhicules partout en France et en Europe. Convoyeur dédié, état des lieux photo, bon de livraison signé. Devis gratuit sous 2h. 1,00€/km." />
+  <meta name="keywords" content="convoyage voiture, convoyeur automobile, transport moto, convoyage professionnel, livraison véhicule, convoyage France, convoyage Europe, transport voiture particulier, convoyeur certifié, SECOTO" />
+  <meta name="author" content="SECOTO" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://secoto-transport.fr" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://secoto-transport.fr" />
+  <meta property="og:title" content="SECOTO – Convoyage Auto & Moto · France & Europe" />
+  <meta property="og:description" content="Convoyage professionnel de véhicules partout en France et en Europe. Convoyeur certifié, suivi temps réel, bon de livraison signé. Devis gratuit sous 2h." />
+  <meta property="og:image" content="https://secoto-transport.fr/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="SECOTO" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SECOTO – Convoyage Auto & Moto · France & Europe" />
+  <meta name="twitter:description" content="Convoyage professionnel de véhicules. Convoyeur certifié, suivi temps réel, devis gratuit sous 2h." />
+  <meta name="twitter:image" content="https://secoto-transport.fr/og-image.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SECOTO",
+    "description": "Convoyage professionnel de véhicules automobiles et motos en France et en Europe. Convoyeurs certifiés, état des lieux photo, bon de livraison signé.",
+    "url": "https://secoto-transport.fr",
+    "telephone": "+33783278231",
+    "email": "contact@secoto.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "70 Avenue du Maréchal Foch",
+      "addressLocality": "Fontenay-aux-Roses",
+      "postalCode": "92260",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["France", "Europe"],
+    "serviceType": ["Convoyage automobile", "Transport moto", "Convoyage professionnel"],
+    "priceRange": "À partir de 1,00€/km",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "sameAs": [],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services de convoyage",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Convoyage automobile",
+          "description": "Convoyage de voiture par chauffeur dédié certifié",
+          "price": "1.00",
+          "priceCurrency": "EUR",
+          "unitText": "km"
+        },
+        {
+          "@type": "Offer",
+          "name": "Transport moto par camionnette",
+          "description": "Transport de moto par camionnette dédiée avec arrimage professionnel",
+          "price": "Sur devis",
+          "priceCurrency": "EUR"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f5620f'/><text y='.9em' font-size='80' x='10'>🚗</text></svg>" />
+  <meta name="theme-color" content="#f5620f" />
+
+  <!-- Preload critical font for faster rendering -->
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}:root{--orange:#f5620f;--orange2:#ff7c35;--orange-g:linear-gradient(135deg,#f5620f,#ff9a3c);--font-h:'Bebas Neue','Arial Narrow',Arial,sans-serif;--font-b:'DM Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;--radius:10px;--dur:.3s;}[data-theme="dark"]{--bg:#070b14;--bg2:#0c1220;--bg3:#101828;--surface:rgba(255,255,255,.04);--surface2:rgba(255,255,255,.07);--border:rgba(255,255,255,.08);--border2:rgba(255,255,255,.14);--txt:#e8edf5;--txt2:rgba(232,237,245,.55);--txt3:rgba(232,237,245,.3);--navy:#0d1f3c;--glow:rgba(245,98,15,.18);}[data-theme="light"]{--bg:#f0f3f8;--bg2:#e6eaf2;--bg3:#ffffff;--surface:rgba(0,0,0,.04);--surface2:rgba(0,0,0,.07);--border:rgba(0,0,0,.10);--border2:rgba(0,0,0,.18);--txt:#0a1628;--txt2:#3a4a6b;--txt3:#6b7a9a;--navy:#0d1f3c;--glow:rgba(245,98,15,.12);}[data-theme="light"] .btn-nav{background:linear-gradient(135deg,#f5620f,#ff9a3c);color:#fff !important;box-shadow:0 4px 18px rgba(245,98,15,.4);}[data-theme="light"] header.scrolled{background:rgba(240,243,248,.92);box-shadow:0 1px 0 rgba(0,0,0,.1),0 8px 32px rgba(0,0,0,.08);}[data-theme="light"] .btn{color:#fff !important;}[data-theme="light"] .btn-ghost{color:#e8edf5 !important;border-color:rgba(255,255,255,.14);}[data-theme="light"] .btn-ghost:hover{color:#f5620f !important;}[data-theme="light"] .chip{color:#3a4a6b;background:rgba(0,0,0,.06);border-color:rgba(0,0,0,.15);}[data-theme="light"] .tilt-card h3,[data-theme="light"] .why-card h3,[data-theme="light"] .s-title,[data-theme="light"] .hero-title .line-1,[data-theme="light"] .hero-title .line-3{color:#0a1628;}[data-theme="light"] .svc-label{color:#0a1628;}[data-theme="light"] .svc-btn.active .svc-label{color:#f5620f;}[data-theme="light"] .devis-block-title{color:#f5620f;}[data-theme="light"] .est-price-num{color:#f5620f;}[data-theme="light"] .glass-stat{background:rgba(255,255,255,.9);border-color:rgba(0,0,0,.12);}[data-theme="light"] .glass-stat-num{color:#0a1628;}[data-theme="light"] .testi-text{color:#3a4a6b;}[data-theme="light"] nav a:not(.btn-nav){color:#3a4a6b;}[data-theme="light"] nav a:not(.btn-nav):hover{color:#0a1628;}[data-theme="light"] .logo{color:#0a1628;}html{scroll-behavior:smooth;background:#070b14 !important;color-scheme:dark;}body{font-family:'DM Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;background:#070b14 !important;color:#e8edf5;overflow-x:hidden;transition:background .3s,color .3s;cursor:none;-webkit-text-size-adjust:100%;}[data-theme="light"] body,[data-theme="light"] html{background:#f0f3f8 !important;}@media (hover:none){body{cursor:auto;}}#cursor-dot,#cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transition:opacity .3s;}#cursor-dot{width:8px;height:8px;background:#f5620f;transform:translate(-50%,-50%);transition:width .15s,height .15s,background .15s;}#cursor-ring{width:36px;height:36px;border:1.5px solid rgba(245,98,15,.55);transform:translate(-50%,-50%);transition:width .2s,height .2s,border-color .2s,transform .08s;}body.cursor-hover #cursor-dot{width:14px;height:14px;background:#ff7c35;}body.cursor-hover #cursor-ring{width:52px;height:52px;border-color:#f5620f;}@media (hover:none){#cursor-dot,#cursor-ring{display:none;}}body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");opacity:.022;pointer-events:none;z-index:9998;}header{position:fixed;top:0;left:0;right:0;z-index:1000;height:70px;display:flex;align-items:center;padding:0 5%;transition:background .3s,backdrop-filter .3s,box-shadow .3s;}header.scrolled{background:rgba(7,11,20,.85) !important;backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:0 1px 0 rgba(255,255,255,.08),0 8px 32px rgba(0,0,0,.3);}[data-theme="light"] header.scrolled{background:rgba(240,243,248,.85) !important;}.logo{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:2rem;letter-spacing:.1em;color:#e8edf5 !important;text-decoration:none;display:flex;align-items:center;position:relative;}[data-theme="light"] .logo{color:#0a1628 !important;}.logo .o{color:#f5620f !important;position:relative;}.logo .o::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:linear-gradient(135deg,#f5620f,#ff9a3c);border-radius:2px;}nav{margin-left:auto;display:flex;align-items:center;gap:2.2rem;}nav a:not(.btn-nav){color:rgba(232,237,245,.6) !important;text-decoration:none;font-size:.88rem;font-weight:500;letter-spacing:.06em;position:relative;transition:color .2s;}[data-theme="light"] nav a:not(.btn-nav){color:#3a4a6b !important;}nav a:not(.btn-nav)::after{content:'';position:absolute;bottom:-3px;left:0;right:100%;height:1px;background:#f5620f;transition:right .25s;}nav a:not(.btn-nav):hover{color:#e8edf5 !important;}nav a:not(.btn-nav):hover::after{right:0;}.btn-nav{background:linear-gradient(135deg,#f5620f,#ff9a3c) !important;color:#fff !important;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:.95rem;letter-spacing:.1em;padding:.55rem 1.4rem;border-radius:4px;text-decoration:none;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 18px rgba(245,98,15,.35);}.btn-nav:hover{opacity:.9;transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,98,15,.45);}.theme-toggle{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:.3rem .35rem;cursor:pointer;display:flex;align-items:center;gap:.3rem;transition:background .2s;}.theme-toggle span{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font-size:.85rem;transition:background .2s;}[data-theme="dark"] .theme-toggle .t-light{background:rgba(255,255,255,.04);}[data-theme="light"] .theme-toggle .t-dark{background:rgba(255,255,255,.04);}[data-theme="light"] .theme-toggle .t-light{background:rgba(245,98,15,.2);}.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;}.hamburger span{display:block;width:22px;height:2px;background:#e8edf5;margin:5px 0;transition:all .3s;}.btn{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,#f5620f,#ff9a3c) !important;color:#fff !important;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:1rem;letter-spacing:.1em;padding:.75rem 1.8rem;border-radius:4px;border:none;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s,opacity .2s;box-shadow:0 4px 20px rgba(245,98,15,.35);}.btn::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);opacity:0;transition:opacity .2s;}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(245,98,15,.5);}.btn:hover::after{opacity:1;}.btn-ghost{background:transparent !important;border:1.5px solid rgba(255,255,255,.18) !important;color:#e8edf5 !important;box-shadow:none;}[data-theme="light"] .btn-ghost{border-color:rgba(0,0,0,.2) !important;color:#0a1628 !important;}.btn-ghost:hover{border-color:#f5620f !important;color:#f5620f !important;background:rgba(245,98,15,.06) !important;box-shadow:none;}#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 5% 80px;background:#070b14;}.hero-mesh{position:absolute;inset:0;background:transparent;}@keyframes meshFloat{from{transform:scale(1);}to{transform:scale(1.02);}}.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:80px 80px;}.orb{position:absolute;border-radius:50%;filter:blur(80px);animation:orbFloat 8s ease-in-out infinite;pointer-events:none;}.orb-1{width:500px;height:500px;background:rgba(245,98,15,.03);top:-100px;right:-100px;animation-delay:0s;}.orb-2{width:350px;height:350px;background:rgba(13,60,130,.05);bottom:0;left:-80px;animation-delay:-3s;}.orb-3{width:250px;height:250px;background:rgba(245,98,15,.02);top:40%;left:45%;animation-delay:-5s;}@keyframes orbFloat{0%,100%{transform:translateY(0) scale(1);}50%{transform:translateY(-40px) scale(1.05);}}.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:2;}.hero-pill{display:inline-flex;align-items:center;gap:.5rem;background:rgba(245,98,15,.1);border:1px solid rgba(245,98,15,.25);color:#ff7c35 !important;font-size:.77rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:.35rem 1rem .35rem .5rem;border-radius:30px;margin-bottom:1.6rem;}.hero-pill-dot{width:6px;height:6px;background:#f5620f;border-radius:50%;animation:pulse 1.8s ease-in-out infinite;}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}.hero-title{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:clamp(3.2rem,6vw,5.5rem);line-height:.95;letter-spacing:.02em;color:#e8edf5 !important;margin-bottom:1.5rem;text-transform:uppercase;}.hero-title .line-2{background:linear-gradient(135deg,#f5620f,#ff9a3c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.hero-title .line-3{color:rgba(232,237,245,.4) !important;-webkit-text-fill-color:rgba(232,237,245,.4) !important;}.hero-desc{color:rgba(232,237,245,.6) !important;font-size:1.05rem;font-weight:300;line-height:1.75;margin-bottom:2.5rem;max-width:460px;}.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;}.hero-trust{margin-top:3rem;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;}.trust-item{display:flex;align-items:center;gap:.5rem;color:rgba(232,237,245,.3);font-size:.82rem;}.trust-item span{color:#f5620f;font-weight:600;}.hero-right{display:flex;flex-direction:column;gap:1.2rem;}.glass-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:10px;padding:1.4rem 1.8rem;display:flex;align-items:center;gap:1.4rem;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;animation:fadeSlideIn .6s ease both;}.glass-stat:nth-child(2){animation-delay:.15s;margin-left:2rem;}.glass-stat:nth-child(3){animation-delay:.3s;margin-left:4rem;}.glass-stat::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(245,98,15,.06),transparent);opacity:0;transition:opacity .3s;}.glass-stat:hover{transform:translateX(-6px);border-color:rgba(245,98,15,.3);box-shadow:0 12px 40px rgba(0,0,0,.3),0 0 0 1px rgba(245,98,15,.1);}.glass-stat:hover::before{opacity:1;}@keyframes fadeSlideIn{from{opacity:0;transform:translateX(40px);}to{opacity:1;transform:translateX(0);}}.glass-stat-left{width:52px;height:52px;background:linear-gradient(135deg,#f5620f,#ff9a3c);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 6px 20px rgba(245,98,15,.35);}.glass-stat-num{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:2.2rem;color:#e8edf5;line-height:1;}.glass-stat-label{color:rgba(232,237,245,.55);font-size:.82rem;margin-top:.15rem;}.ticker-outer{background:linear-gradient(135deg,#f5620f,#ff9a3c);overflow:hidden;padding:.7rem 0;position:relative;}.ticker-track{display:flex;white-space:nowrap;}.ticker-run{display:flex;animation:run 25s linear infinite;flex-shrink:0;}.ticker-run span{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1rem;letter-spacing:.12em;color:rgba(255,255,255,.9);padding:0 2.5rem;text-transform:uppercase;display:flex;align-items:center;gap:.8rem;}.ticker-run span::before{content:"▶";opacity:.55;font-size:.7rem;}@keyframes run{from{transform:translateX(0);}to{transform:translateX(-100%);}}section{padding:110px 5%;}.stag{display:inline-block;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:#f5620f !important;margin-bottom:.8rem;}.s-title{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:.98;text-transform:uppercase;color:#e8edf5 !important;margin-bottom:1rem;}.s-title .acc{color:#f5620f !important;}.s-desc{color:rgba(232,237,245,.55) !important;font-size:1rem;font-weight:300;line-height:1.8;max-width:540px;}.s-sub{color:rgba(232,237,245,.55) !important;font-size:1rem;font-weight:300;line-height:1.8;max-width:540px;}.s-head{margin-bottom:5rem;}.s-head.c{text-align:center;}.s-head.c .s-desc{margin:0 auto;}.s-head.c .s-sub{margin:0 auto;}#services{background:#0c1220 !important;}.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.8rem;max-width:1200px;margin:0 auto;}.tilt-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:2.5rem;position:relative;overflow:hidden;transform-style:preserve-3d;transition:box-shadow .4s;cursor:default;}.tilt-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(245,98,15,.1) 0%,transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none;border-radius:inherit;}.tilt-card:hover::before{opacity:1;}.tilt-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(135deg,#f5620f,#ff9a3c);transform:scaleX(0);transform-origin:left;transition:transform .35s;}.tilt-card:hover::after{transform:scaleX(1);}.tilt-card:hover{box-shadow:0 28px 60px rgba(0,0,0,.35),0 0 0 1px rgba(245,98,15,.15);}.card-ico{width:58px;height:58px;background:linear-gradient(135deg,#f5620f,#ff9a3c);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:1.6rem;box-shadow:0 8px 24px rgba(245,98,15,.3);transform:translateZ(20px);}.tilt-card h3{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1.5rem;color:#e8edf5;margin-bottom:.75rem;transform:translateZ(15px);}.tilt-card p{color:rgba(232,237,245,.55);font-size:.93rem;line-height:1.75;margin-bottom:1.4rem;font-weight:300;}.chip-row{display:flex;flex-wrap:wrap;gap:.5rem;}.chip{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:rgba(232,237,245,.55);font-size:.75rem;font-weight:500;padding:.25rem .7rem;border-radius:30px;letter-spacing:.04em;transition:background .2s,color .2s,border-color .2s;}.tilt-card:hover .chip{border-color:rgba(245,98,15,.3);color:#ff7c35;background:rgba(245,98,15,.07);}#counters{padding:70px 5%;background:#070b14;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);}.counters-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}.counter-item{text-align:center;padding:2rem 1rem;border-right:1px solid rgba(255,255,255,.08);}.counter-item:last-child{border-right:none;}.counter-num{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:4rem;color:#f5620f !important;line-height:1;display:block;margin-bottom:.3rem;}.counter-label{color:rgba(232,237,245,.55);font-size:.88rem;font-weight:400;letter-spacing:.04em;}#why{background:#101828 !important;}.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;max-width:1200px;margin:0 auto;}.why-card{background:rgba(255,255,255,.04) !important;border:1px solid rgba(255,255,255,.08) !important;border-radius:10px;padding:2rem;position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;}.why-card:hover{transform:translateY(-6px);border-color:rgba(245,98,15,.25) !important;box-shadow:0 20px 50px rgba(0,0,0,.25);}.why-bg-num{position:absolute;top:-10px;right:10px;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:7rem;color:rgba(245,98,15,.05);line-height:1;pointer-events:none;user-select:none;}.why-ico{font-size:2rem;margin-bottom:1rem;display:block;}.why-card h3{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:1.3rem;color:#e8edf5 !important;margin-bottom:.6rem;text-transform:uppercase;}.why-card p{color:rgba(232,237,245,.55) !important;font-size:.9rem;line-height:1.7;font-weight:300;}#process{background:#0c1220 !important;}.process-steps{max-width:860px;margin:0 auto;display:flex;flex-direction:column;}.p-step{display:grid;grid-template-columns:72px 1fr;gap:2rem;padding-bottom:2.8rem;position:relative;}.p-step:last-child{padding-bottom:0;}.p-step:not(:last-child)::after{content:'';position:absolute;left:35px;top:72px;bottom:0;width:2px;background:linear-gradient(to bottom,#f5620f,transparent);}.p-num{width:70px;height:70px;border-radius:50%;border:2px solid #f5620f !important;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:1.6rem;color:#f5620f !important;flex-shrink:0;background:#070b14 !important;position:relative;z-index:1;box-shadow:0 0 0 6px #0c1220,0 0 30px rgba(245,98,15,.18);transition:background .3s,color .3s;}.p-step:hover .p-num{background:#f5620f !important;color:#fff !important;}.p-body{padding-top:1rem;}.p-body h3{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:1.4rem;color:#e8edf5 !important;margin-bottom:.5rem;text-transform:uppercase;}.p-body p{color:rgba(232,237,245,.55) !important;font-size:.93rem;line-height:1.75;font-weight:300;}#tarifs{background:#070b14 !important;}.tarifs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;max-width:1100px;margin:0 auto;align-items:start;}.tarif-card{background:rgba(255,255,255,.04) !important;border:1px solid rgba(255,255,255,.08) !important;border-radius:10px;padding:2.5rem;text-align:center;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;}.tarif-card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.3);}.tarif-card.feat{border-color:rgba(245,98,15,.4) !important;background:linear-gradient(160deg,rgba(245,98,15,.08),rgba(255,255,255,.04)) !important;box-shadow:0 0 0 1px rgba(245,98,15,.15),0 20px 50px rgba(0,0,0,.25);}.tarif-card.feat:hover{box-shadow:0 0 0 1px rgba(245,98,15,.3),0 28px 70px rgba(0,0,0,.35);}.feat-badge{position:absolute;top:0;left:50%;transform:translateX(-50%) translateY(-1px);background:linear-gradient(135deg,#f5620f,#ff9a3c) !important;color:#fff !important;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:.75rem;letter-spacing:.1em;padding:.25rem 1.2rem;border-radius:0 0 8px 8px;}.tarif-ico{font-size:2.5rem;margin-bottom:1rem;display:block;}.tarif-card h3{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:1.3rem;color:#e8edf5 !important;margin-bottom:1.2rem;text-transform:uppercase;}.tarif-price{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:3.5rem;color:#f5620f !important;line-height:1;}.tarif-unit{color:rgba(232,237,245,.3) !important;font-size:.82rem;margin:.4rem 0 1.4rem;}.tarif-feats{list-style:none;text-align:left;margin-bottom:2rem;}.tarif-feats li{color:rgba(232,237,245,.55) !important;font-size:.9rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.08) !important;display:flex;align-items:center;gap:.7rem;font-weight:300;}.tarif-feats li::before{content:"✓";color:#f5620f !important;font-weight:700;flex-shrink:0;}#testimonials{background:#0c1220 !important;}.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.8rem;max-width:1200px;margin:0 auto;}.testi-card{background:rgba(255,255,255,.04) !important;border:1px solid rgba(255,255,255,.08) !important;border-radius:10px;padding:2.2rem;position:relative;transition:transform .3s,border-color .3s;}.testi-card:hover{transform:translateY(-5px);border-color:rgba(245,98,15,.2) !important;}.testi-quote{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:4rem;color:#f5620f !important;opacity:.25;line-height:.8;margin-bottom:.5rem;}.stars{color:#f5620f !important;font-size:.9rem;letter-spacing:.1em;margin-bottom:1rem;}.testi-text{color:rgba(232,237,245,.55) !important;font-size:.95rem;font-weight:300;line-height:1.75;margin-bottom:1.5rem;font-style:italic;}.testi-author{display:flex;align-items:center;gap:.9rem;border-top:1px solid rgba(255,255,255,.08) !important;padding-top:1.2rem;}.testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#f5620f,#ff9a3c) !important;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif !important;font-size:1.2rem;color:#fff !important;flex-shrink:0;}.testi-name{font-weight:600;color:#e8edf5 !important;font-size:.92rem;}.testi-role{color:rgba(232,237,245,.3) !important;font-size:.8rem;}#contact{background:#101828 !important;}.contact-wrap{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;max-width:1100px;margin:0 auto;align-items:start;}.contact-info .s-title{margin-bottom:1rem;}.contact-info p{color:rgba(232,237,245,.55);font-size:.97rem;font-weight:300;line-height:1.8;margin-bottom:2rem;}.cinfo-item{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;}.cinfo-ico{width:46px;height:46px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}.cinfo-label{font-weight:600;color:#e8edf5;font-size:.9rem;}.cinfo-val{color:rgba(232,237,245,.55);font-size:.85rem;}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}.form-grid .full{grid-column:1 / -1;}.field{display:flex;flex-direction:column;gap:.45rem;}.field label{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(232,237,245,.55);}.field input,.field select,.field textarea{background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.14);border-radius:6px;padding:.8rem 1.1rem;font-family:'DM Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:.95rem;color:#e8edf5;outline:none;transition:border-color .2s,box-shadow .2s,background .2s;width:100%;}.field input::placeholder,.field textarea::placeholder{color:rgba(232,237,245,.3);}.field input:focus,.field select:focus,.field textarea:focus{border-color:#f5620f;box-shadow:0 0 0 3px rgba(245,98,15,.12);background:rgba(255,255,255,.04);}.field select option{background:#0c1220;}.field textarea{resize:vertical;min-height:120px;}.form-success{display:none;margin-top:1.2rem;padding:1rem 1.4rem;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);border-radius:6px;color:#4ade80;font-weight:600;font-size:.92rem;text-align:center;}footer{background:#070b14;border-top:1px solid rgba(255,255,255,.08);padding:70px 5% 30px;}.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:3rem;max-width:1200px;margin:0 auto;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.08);}.footer-brand p{color:rgba(232,237,245,.3);font-size:.88rem;line-height:1.75;margin:1rem 0 1.5rem;font-weight:300;}.footer-col h4{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:#e8edf5;margin-bottom:1.2rem;}.footer-col ul{list-style:none;}.footer-col ul li{margin-bottom:.6rem;}.footer-col ul li a{color:rgba(232,237,245,.3);text-decoration:none;font-size:.88rem;transition:color .2s;}.footer-col ul li a:hover{color:#f5620f;}.footer-bottom{max-width:1200px;margin:2rem auto 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}.footer-bottom p{color:rgba(232,237,245,.3);font-size:.8rem;}.footer-bottom a{color:#f5620f;text-decoration:none;}#btt{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;background:linear-gradient(135deg,#f5620f,#ff9a3c);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;text-decoration:none;opacity:0;transform:translateY(12px);transition:opacity .3s,transform .3s;z-index:800;box-shadow:0 6px 22px rgba(245,98,15,.4);}#btt.on{opacity:1;transform:translateY(0);}#btt:hover{box-shadow:0 10px 32px rgba(245,98,15,.55);transform:translateY(-2px);}.reveal{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease;}.reveal.in{opacity:1;transform:translateY(0);}.devis-shell{max-width:1200px;margin:0 auto;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden;}.svc-toggle-wrap{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid rgba(255,255,255,.14);}.svc-btn{display:flex;flex-direction:column;align-items:center;gap:.3rem;padding:1.8rem 2rem;background:none;border:none;cursor:pointer;border-right:1px solid rgba(255,255,255,.14);transition:background .25s;position:relative;}.svc-btn:last-child{border-right:none;}.svc-btn::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(135deg,#f5620f,#ff9a3c);transform:scaleX(0);transition:transform .3s;}.svc-btn.active{background:rgba(245,98,15,.06);}.svc-btn.active::after{transform:scaleX(1);}.svc-btn:hover:not(.active){background:rgba(255,255,255,.07);}.svc-ico{font-size:2rem;}.svc-label{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1.1rem;letter-spacing:.06em;color:#e8edf5;text-transform:uppercase;transition:color .2s;}.svc-btn.active .svc-label{color:#f5620f;}.svc-sub{color:rgba(232,237,245,.3);font-size:.78rem;}.devis-body{display:grid;grid-template-columns:1fr 340px;gap:0;}#devis-form{padding:2.5rem;border-right:1px solid rgba(255,255,255,.08);}.devis-block{margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08);}.devis-block:last-of-type{border-bottom:none;margin-bottom:1rem;}.devis-block-title{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;color:#f5620f;margin-bottom:1.2rem;}.dform-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}.dform-grid .dfull{grid-column:1 / -1;}.estimator-panel{padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1.5rem;background:rgba(255,255,255,.07);position:sticky;top:70px;align-self:start;}.est-header{display:flex;flex-direction:column;gap:.6rem;}.est-title{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(232,237,245,.55);}.est-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(245,98,15,.12);border:1px solid rgba(245,98,15,.25);color:#ff7c35;font-size:.8rem;font-weight:600;padding:.3rem .8rem;border-radius:20px;width:fit-content;transition:all .3s;}.est-price-block{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:1.5rem;text-align:center;}.est-price-label{color:rgba(232,237,245,.3);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;}.est-price-num{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:2.8rem;color:#f5620f;line-height:1;margin-bottom:.4rem;transition:all .4s;}.est-price-sub{color:rgba(232,237,245,.3);font-size:.78rem;line-height:1.5;}.est-rules{display:flex;flex-direction:column;gap:.8rem;}.est-rule{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1rem;}.est-rule-title{font-size:.78rem;font-weight:600;color:rgba(232,237,245,.55);margin-bottom:.7rem;letter-spacing:.04em;}.est-rule-row{display:flex;justify-content:space-between;align-items:center;padding:.35rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.85rem;color:rgba(232,237,245,.55);}.est-rule-row:last-of-type{border-bottom:none;}.est-rule-row strong{color:#f5620f;}.est-rule-note{color:rgba(232,237,245,.3);font-size:.75rem;margin-top:.6rem;line-height:1.5;}.est-includes{}.est-inc-title{font-size:.78rem;font-weight:600;color:rgba(232,237,245,.55);margin-bottom:.7rem;letter-spacing:.04em;}.est-inc-list{display:flex;flex-wrap:wrap;gap:.4rem;}.est-inc-list span{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.18);color:#4ade80;font-size:.75rem;padding:.2rem .6rem;border-radius:4px;}.est-disclaimer{color:rgba(232,237,245,.3);font-size:.75rem;line-height:1.6;font-style:italic;border-top:1px solid rgba(255,255,255,.08);padding-top:1rem;}@media (max-width:960px){.devis-body{grid-template-columns:1fr;}.estimator-panel{position:static;border-top:1px solid rgba(255,255,255,.08);}#devis-form{border-right:none;}}@media (max-width:640px){.dform-grid{grid-template-columns:1fr;}.dform-grid .dfull{grid-column:1;}.svc-btn{padding:1.2rem 1rem;}.svc-label{font-size:.9rem;}}@media (max-width:900px){.hero-inner{grid-template-columns:1fr;}.hero-right{display:none;}.contact-wrap{grid-template-columns:1fr;gap:3rem;}.footer-grid{grid-template-columns:1fr 1fr;}.counters-grid{grid-template-columns:repeat(2,1fr);}.counter-item:nth-child(2){border-right:none;}.counter-item:nth-child(3){border-right:1px solid rgba(255,255,255,.08);}.counter-item{border-right:1px solid rgba(255,255,255,.08);}}@media (max-width:640px){nav a:not(.btn-nav):not(.theme-toggle){display:none;}.hamburger{display:block;}section{padding:80px 5%;}.footer-grid{grid-template-columns:1fr;}.form-grid{grid-template-columns:1fr;}.form-grid .full{grid-column:1;}.counters-grid{grid-template-columns:repeat(2,1fr);}.counter-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.counter-item:last-child{border-bottom:none;}}#comment{background:#101828;}.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1100px;margin:3.5rem auto 0;position:relative;}.steps-grid::before{content:'';position:absolute;top:36px;left:calc(12.5% + 20px);right:calc(12.5% + 20px);height:2px;background:linear-gradient(90deg,#f5620f,transparent);opacity:.3;}.step-card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1rem;padding:1.8rem 1.2rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;transition:border-color .3s,transform .3s;}.step-card:hover{border-color:#f5620f;transform:translateY(-4px);}.step-num{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#f5620f,#ff9a3c);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1.4rem;color:#fff;flex-shrink:0;}.step-icon{font-size:1.6rem;}.step-title{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;color:#e8edf5;}.step-desc{font-size:.85rem;color:rgba(232,237,245,.55);line-height:1.6;}@media (max-width:800px){.steps-grid{grid-template-columns:1fr 1fr;}.steps-grid::before{display:none;}}@media (max-width:480px){.steps-grid{grid-template-columns:1fr;}}#faq{background:#0c1220;}.faq-wrap{max-width:800px;margin:3.5rem auto 0;}.faq-item{border-bottom:1px solid rgba(255,255,255,.08);overflow:hidden;}.faq-item:first-child{border-top:1px solid rgba(255,255,255,.08);}.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 0;cursor:pointer;gap:1rem;font-size:.97rem;font-weight:500;color:#e8edf5;transition:color .3s;user-select:none;}.faq-q:hover{color:#f5620f;}.faq-arrow{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;transition:transform .3s,background .3s;}.faq-item.open .faq-arrow{transform:rotate(180deg);background:#f5620f;border-color:#f5620f;}.faq-a{max-height:0;overflow:hidden;transition:max-height .38s ease,padding .38s ease;font-size:.88rem;color:rgba(232,237,245,.55);line-height:1.75;}.faq-item.open .faq-a{max-height:300px;padding-bottom:1.3rem;}#wa-btn{position:fixed;bottom:28px;right:28px;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45);z-index:999;text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:pointer;}#wa-btn:hover{transform:scale(1.1);box-shadow:0 10px 32px rgba(37,211,102,.6);}#wa-btn svg{width:30px;height:30px;fill:#fff;}#wa-tooltip{position:fixed;bottom:100px;right:28px;background:#101828;border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:.7rem 1rem;font-size:.82rem;color:#e8edf5;white-space:nowrap;box-shadow:0 4px 20px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:opacity .2s;}#wa-btn:hover + #wa-tooltip,#wa-tooltip:hover{opacity:1;pointer-events:all;}.legal-overlay{position:fixed;inset:0;background:rgba(7,11,20,.88);backdrop-filter:blur(10px);z-index:2000;display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .25s;}.legal-overlay.on{opacity:1;pointer-events:all;}.legal-modal{background:#101828;border:1px solid rgba(255,255,255,.14);border-radius:16px;width:100%;max-width:700px;max-height:85vh;display:flex;flex-direction:column;transform:translateY(20px);transition:transform .25s;}.legal-overlay.on .legal-modal{transform:translateY(0);}.legal-modal-head{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 1.8rem;border-bottom:1px solid rgba(255,255,255,.08);flex-shrink:0;}.legal-modal-head h3{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1.3rem;letter-spacing:.08em;text-transform:uppercase;color:#e8edf5;}.legal-close{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;color:rgba(232,237,245,.55);transition:background .2s;}.legal-close:hover{background:rgba(255,255,255,.07);color:#e8edf5;}.legal-modal-body{overflow-y:auto;padding:1.8rem;flex:1;}.legal-modal-body h4{font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:#f5620f;margin:1.5rem 0 .5rem;}.legal-modal-body h4:first-child{margin-top:0;}.legal-modal-body p{font-size:.88rem;color:rgba(232,237,245,.55);line-height:1.75;margin-bottom:.8rem;}.legal-modal-body ul{padding-left:1.2rem;margin-bottom:.8rem;}.legal-modal-body ul li{font-size:.88rem;color:rgba(232,237,245,.55);line-height:1.75;}.counter-num{transition:none;}
 
-```
-/* ══════════════════════════════════════════
-   TOKENS — DARK / LIGHT
-══════════════════════════════════════════ */
-:root {
-  --orange:   #f5620f;
-  --orange2:  #ff7c35;
-  --orange-g: linear-gradient(135deg, #f5620f, #ff9a3c);
-  --font-h:   'Bebas Neue', 'Arial Narrow', Arial, sans-serif;
-  --font-b:   'DM Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif;
-  --radius:   10px;
-  --dur:      .3s;
+/* ── CAROUSEL TESTIMONIALS ── */
+.testi-carousel-wrap{max-width:860px;margin:0 auto;position:relative;}
+.testi-carousel{display:flex;overflow:hidden;gap:0;cursor:grab;user-select:none;border-radius:14px;}
+.testi-carousel:active{cursor:grabbing;}
+.testi-carousel .testi-card{
+min-width:100%;flex-shrink:0;
+background:rgba(255,255,255,.04) !important;
+border:1px solid rgba(255,255,255,.08) !important;
+border-radius:14px;padding:2.5rem;
+position:relative;
+box-sizing:border-box;
+transition:none;
 }
-
-[data-theme="dark"] {
-  --bg:        #070b14;
-  --bg2:       #0c1220;
-  --bg3:       #101828;
-  --surface:   rgba(255,255,255,.04);
-  --surface2:  rgba(255,255,255,.07);
-  --border:    rgba(255,255,255,.08);
-  --border2:   rgba(255,255,255,.14);
-  --txt:       #e8edf5;
-  --txt2:      rgba(232,237,245,.55);
-  --txt3:      rgba(232,237,245,.3);
-  --navy:      #0d1f3c;
-  --glow:      rgba(245,98,15,.18);
+.testi-controls{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:2rem;}
+.testi-btn{
+width:44px;height:44px;border-radius:50%;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.12);
+color:#e8edf5;font-size:1.1rem;
+cursor:pointer;display:flex;align-items:center;justify-content:center;
+transition:background .2s,border-color .2s,transform .2s;
 }
-[data-theme="light"] {
-  --bg:        #f0f3f8;
-  --bg2:       #e6eaf2;
-  --bg3:       #ffffff;
-  --surface:   rgba(0,0,0,.04);
-  --surface2:  rgba(0,0,0,.07);
-  --border:    rgba(0,0,0,.10);
-  --border2:   rgba(0,0,0,.18);
-  --txt:       #0a1628;
-  --txt2:      #3a4a6b;
-  --txt3:      #6b7a9a;
-  --navy:      #0d1f3c;
-  --glow:      rgba(245,98,15,.12);
+.testi-btn:hover{background:rgba(245,98,15,.15);border-color:rgba(245,98,15,.4);transform:scale(1.08);}
+.testi-dots{display:flex;gap:.5rem;align-items:center;}
+.testi-dot{
+width:8px;height:8px;border-radius:50%;
+background:rgba(255,255,255,.2);
+cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
 }
+.testi-dot.active{background:#f5620f;transform:scale(1.3);}
+.testi-hint{text-align:center;color:rgba(232,237,245,.25);font-size:.75rem;margin-top:.8rem;letter-spacing:.06em;}
+@media(min-width:700px){.testi-hint{display:none;}}</style>
 
-/* Light theme overrides */
-[data-theme="light"] .btn-nav { background: linear-gradient(135deg,#f5620f,#ff9a3c); color: #fff !important; box-shadow: 0 4px 18px rgba(245,98,15,.4); }
-[data-theme="light"] header.scrolled { background: rgba(240,243,248,.92); box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 8px 32px rgba(0,0,0,.08); }
-[data-theme="light"] .btn { color: #fff !important; }
-[data-theme="light"] .btn-ghost { color: #e8edf5 !important; border-color: rgba(255,255,255,.14); }
-[data-theme="light"] .btn-ghost:hover { color: #f5620f !important; }
-[data-theme="light"] .chip { color: #3a4a6b; background: rgba(0,0,0,.06); border-color: rgba(0,0,0,.15); }
-[data-theme="light"] .tilt-card h3, [data-theme="light"] .why-card h3, [data-theme="light"] .s-title, [data-theme="light"] .hero-title .line-1, [data-theme="light"] .hero-title .line-3 { color: #0a1628; }
-[data-theme="light"] .svc-label { color: #0a1628; }
-[data-theme="light"] .svc-btn.active .svc-label { color: #f5620f; }
-[data-theme="light"] .devis-block-title { color: #f5620f; }
-[data-theme="light"] .est-price-num { color: #f5620f; }
-[data-theme="light"] .glass-stat { background: rgba(255,255,255,.9); border-color: rgba(0,0,0,.12); }
-[data-theme="light"] .glass-stat-num { color: #0a1628; }
-[data-theme="light"] .testi-text { color: #3a4a6b; }
-[data-theme="light"] nav a:not(.btn-nav) { color: #3a4a6b; }
-[data-theme="light"] nav a:not(.btn-nav):hover { color: #0a1628; }
-[data-theme="light"] .logo { color: #0a1628; }
-
-/* ══════════════════════════════════════════
-   BASE
-══════════════════════════════════════════ */
-html { scroll-behavior: smooth; background: #070b14 !important; color-scheme: dark; }
-body {
-  font-family: 'DM Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif;
-  background: #070b14 !important;
-  color: #e8edf5;
-  overflow-x: hidden;
-  transition: background .3s, color .3s;
-  cursor: none;
-  -webkit-text-size-adjust: 100%;
-}
-[data-theme="light"] body, [data-theme="light"] html { background: #f0f3f8 !important; }
-@media (hover: none) { body { cursor: auto; } }
-
-/* ══════════════════════════════════════════
-   CUSTOM CURSOR
-══════════════════════════════════════════ */
-#cursor-dot, #cursor-ring { position: fixed; border-radius: 50%; pointer-events: none; z-index: 9999; transition: opacity .3s; }
-#cursor-dot { width: 8px; height: 8px; background: #f5620f; transform: translate(-50%,-50%); transition: width .15s, height .15s, background .15s; }
-#cursor-ring { width: 36px; height: 36px; border: 1.5px solid rgba(245,98,15,.55); transform: translate(-50%,-50%); transition: width .2s, height .2s, border-color .2s, transform .08s; }
-body.cursor-hover #cursor-dot { width: 14px; height: 14px; background: #ff7c35; }
-body.cursor-hover #cursor-ring { width: 52px; height: 52px; border-color: #f5620f; }
-@media (hover: none) { #cursor-dot, #cursor-ring { display: none; } }
-
-/* ══════════════════════════════════════════
-   NOISE OVERLAY
-══════════════════════════════════════════ */
-body::before {
-  content: '';
-  position: fixed; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  opacity: .022; pointer-events: none; z-index: 9998;
-}
-
-/* ══════════════════════════════════════════
-   HEADER
-══════════════════════════════════════════ */
-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: 70px; display: flex; align-items: center; padding: 0 5%; transition: background .3s, backdrop-filter .3s, box-shadow .3s; }
-header.scrolled { background: rgba(7,11,20,.85) !important; backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); box-shadow: 0 1px 0 rgba(255,255,255,.08), 0 8px 32px rgba(0,0,0,.3); }
-[data-theme="light"] header.scrolled { background: rgba(240,243,248,.85) !important; }
-
-.logo { font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 2rem; letter-spacing: .1em; color: #e8edf5 !important; text-decoration: none; display: flex; align-items: center; position: relative; }
-[data-theme="light"] .logo { color: #0a1628 !important; }
-.logo .o { color: #f5620f !important; position: relative; }
-.logo .o::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: linear-gradient(135deg, #f5620f, #ff9a3c); border-radius: 2px; }
-
-nav { margin-left: auto; display: flex; align-items: center; gap: 2.2rem; }
-nav a:not(.btn-nav) { color: rgba(232,237,245,.6) !important; text-decoration: none; font-size: .88rem; font-weight: 500; letter-spacing: .06em; position: relative; transition: color .2s; }
-[data-theme="light"] nav a:not(.btn-nav) { color: #3a4a6b !important; }
-nav a:not(.btn-nav)::after { content: ''; position: absolute; bottom: -3px; left: 0; right: 100%; height: 1px; background: #f5620f; transition: right .25s; }
-nav a:not(.btn-nav):hover { color: #e8edf5 !important; }
-nav a:not(.btn-nav):hover::after { right: 0; }
-
-.btn-nav { background: linear-gradient(135deg, #f5620f, #ff9a3c) !important; color: #fff !important; font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: .95rem; letter-spacing: .1em; padding: .55rem 1.4rem; border-radius: 4px; text-decoration: none; transition: opacity .2s, transform .15s, box-shadow .2s; box-shadow: 0 4px 18px rgba(245,98,15,.35); }
-.btn-nav:hover { opacity: .9; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(245,98,15,.45); }
-
-.theme-toggle { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 20px; padding: .3rem .35rem; cursor: pointer; display: flex; align-items: center; gap: .3rem; transition: background .2s; }
-.theme-toggle span { display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; font-size: .85rem; transition: background .2s; }
-[data-theme="dark"] .theme-toggle .t-light { background: rgba(255,255,255,.04); }
-[data-theme="light"] .theme-toggle .t-dark { background: rgba(255,255,255,.04); }
-[data-theme="light"] .theme-toggle .t-light { background: rgba(245,98,15,.2); }
-
-.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
-.hamburger span { display: block; width: 22px; height: 2px; background: #e8edf5; margin: 5px 0; transition: all .3s; }
-
-/* ══════════════════════════════════════════
-   BTN
-══════════════════════════════════════════ */
-.btn { display: inline-flex; align-items: center; gap: .5rem; background: linear-gradient(135deg, #f5620f, #ff9a3c) !important; color: #fff !important; font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 1rem; letter-spacing: .1em; padding: .75rem 1.8rem; border-radius: 4px; border: none; cursor: pointer; text-decoration: none; position: relative; overflow: hidden; transition: transform .2s, box-shadow .2s, opacity .2s; box-shadow: 0 4px 20px rgba(245,98,15,.35); }
-.btn::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,.15), transparent); opacity: 0; transition: opacity .2s; }
-.btn:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(245,98,15,.5); }
-.btn:hover::after { opacity: 1; }
-.btn-ghost { background: transparent !important; border: 1.5px solid rgba(255,255,255,.18) !important; color: #e8edf5 !important; box-shadow: none; }
-[data-theme="light"] .btn-ghost { border-color: rgba(0,0,0,.2) !important; color: #0a1628 !important; }
-.btn-ghost:hover { border-color: #f5620f !important; color: #f5620f !important; background: rgba(245,98,15,.06) !important; box-shadow: none; }
-
-/* ══════════════════════════════════════════
-   HERO
-══════════════════════════════════════════ */
-#hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 120px 5% 80px; background: #070b14; }
-.hero-mesh { position: absolute; inset: 0; background: transparent; }
-.hero-grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 80px 80px; }
-.orb { position: absolute; border-radius: 50%; filter: blur(80px); animation: orbFloat 8s ease-in-out infinite; pointer-events: none; }
-.orb-1 { width: 500px; height: 500px; background: rgba(245,98,15,.03); top: -100px; right: -100px; animation-delay: 0s; }
-.orb-2 { width: 350px; height: 350px; background: rgba(13,60,130,.05); bottom: 0; left: -80px; animation-delay: -3s; }
-.orb-3 { width: 250px; height: 250px; background: rgba(245,98,15,.02); top: 40%; left: 45%; animation-delay: -5s; }
-@keyframes orbFloat { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-40px) scale(1.05); } }
-
-.hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 2; }
-.hero-pill { display: inline-flex; align-items: center; gap: .5rem; background: rgba(245,98,15,.1); border: 1px solid rgba(245,98,15,.25); color: #ff7c35 !important; font-size: .77rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; padding: .35rem 1rem .35rem .5rem; border-radius: 30px; margin-bottom: 1.6rem; }
-.hero-pill-dot { width: 6px; height: 6px; background: #f5620f; border-radius: 50%; animation: pulse 1.8s ease-in-out infinite; }
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.5)} }
-
-.hero-title { font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: clamp(3.2rem, 6vw, 5.5rem); line-height: .95; letter-spacing: .02em; color: #e8edf5 !important; margin-bottom: 1.5rem; text-transform: uppercase; }
-.hero-title .line-2 { background: linear-gradient(135deg, #f5620f, #ff9a3c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.hero-title .line-3 { color: rgba(232,237,245,.4) !important; -webkit-text-fill-color: rgba(232,237,245,.4) !important; }
-.hero-desc { color: rgba(232,237,245,.6) !important; font-size: 1.05rem; font-weight: 300; line-height: 1.75; margin-bottom: 2.5rem; max-width: 460px; }
-.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
-.hero-trust { margin-top: 3rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
-.trust-item { display: flex; align-items: center; gap: .5rem; color: rgba(232,237,245,.3); font-size: .82rem; }
-.trust-item span { color: #f5620f; font-weight: 600; }
-
-.hero-right { display: flex; flex-direction: column; gap: 1.2rem; }
-.glass-stat { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.14); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 10px; padding: 1.4rem 1.8rem; display: flex; align-items: center; gap: 1.4rem; position: relative; overflow: hidden; transition: transform .3s, box-shadow .3s, border-color .3s; animation: fadeSlideIn .6s ease both; }
-.glass-stat:nth-child(2) { animation-delay: .15s; margin-left: 2rem; }
-.glass-stat:nth-child(3) { animation-delay: .3s; margin-left: 4rem; }
-.glass-stat::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(245,98,15,.06), transparent); opacity: 0; transition: opacity .3s; }
-.glass-stat:hover { transform: translateX(-6px); border-color: rgba(245,98,15,.3); box-shadow: 0 12px 40px rgba(0,0,0,.3), 0 0 0 1px rgba(245,98,15,.1); }
-.glass-stat:hover::before { opacity: 1; }
-@keyframes fadeSlideIn { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
-.glass-stat-left { width: 52px; height: 52px; background: linear-gradient(135deg, #f5620f, #ff9a3c); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; box-shadow: 0 6px 20px rgba(245,98,15,.35); }
-.glass-stat-num { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 2.2rem; color: #e8edf5; line-height: 1; }
-.glass-stat-label { color: rgba(232,237,245,.55); font-size: .82rem; margin-top: .15rem; }
-
-/* ══════════════════════════════════════════
-   TICKER
-══════════════════════════════════════════ */
-.ticker-outer { background: linear-gradient(135deg,#f5620f,#ff9a3c); overflow: hidden; padding: .7rem 0; position: relative; }
-.ticker-track { display: flex; white-space: nowrap; }
-.ticker-run { display: flex; animation: run 25s linear infinite; flex-shrink: 0; }
-.ticker-run span { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1rem; letter-spacing: .12em; color: rgba(255,255,255,.9); padding: 0 2.5rem; text-transform: uppercase; display: flex; align-items: center; gap: .8rem; }
-.ticker-run span::before { content: "▶"; opacity: .55; font-size: .7rem; }
-@keyframes run { from { transform: translateX(0); } to { transform: translateX(-100%); } }
-
-/* ══════════════════════════════════════════
-   SHARED SECTION
-══════════════════════════════════════════ */
-section { padding: 110px 5%; }
-.stag { display: inline-block; font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif !important; font-size: .82rem; letter-spacing: .2em; text-transform: uppercase; color: #f5620f !important; margin-bottom: .8rem; }
-.s-title { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif !important; font-size: clamp(2.2rem, 4.5vw, 3.4rem); line-height: .98; text-transform: uppercase; color: #e8edf5 !important; margin-bottom: 1rem; }
-.s-title .acc { color: #f5620f !important; }
-.s-desc { color: rgba(232,237,245,.55) !important; font-size: 1rem; font-weight: 300; line-height: 1.8; max-width: 540px; }
-.s-sub  { color: rgba(232,237,245,.55) !important; font-size: 1rem; font-weight: 300; line-height: 1.8; max-width: 540px; }
-.s-head { margin-bottom: 5rem; }
-.s-head.c { text-align: center; }
-.s-head.c .s-desc, .s-head.c .s-sub { margin: 0 auto; }
-
-/* ══════════════════════════════════════════
-   SERVICES — 3D TILT
-══════════════════════════════════════════ */
-#services { background: #0c1220 !important; }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.8rem; max-width: 1200px; margin: 0 auto; }
-.tilt-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 10px; padding: 2.5rem; position: relative; overflow: hidden; transform-style: preserve-3d; transition: box-shadow .4s; cursor: default; }
-.tilt-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(245,98,15,.1) 0%, transparent 60%); opacity: 0; transition: opacity .3s; pointer-events: none; border-radius: inherit; }
-.tilt-card:hover::before { opacity: 1; }
-.tilt-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(135deg,#f5620f,#ff9a3c); transform: scaleX(0); transform-origin: left; transition: transform .35s; }
-.tilt-card:hover::after { transform: scaleX(1); }
-.tilt-card:hover { box-shadow: 0 28px 60px rgba(0,0,0,.35), 0 0 0 1px rgba(245,98,15,.15); }
-.card-ico { width: 58px; height: 58px; background: linear-gradient(135deg, #f5620f, #ff9a3c); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.6rem; box-shadow: 0 8px 24px rgba(245,98,15,.3); transform: translateZ(20px); }
-.tilt-card h3 { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1.5rem; color: #e8edf5; margin-bottom: .75rem; transform: translateZ(15px); }
-.tilt-card p { color: rgba(232,237,245,.55); font-size: .93rem; line-height: 1.75; margin-bottom: 1.4rem; font-weight: 300; }
-.chip-row { display: flex; flex-wrap: wrap; gap: .5rem; }
-.chip { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: rgba(232,237,245,.55); font-size: .75rem; font-weight: 500; padding: .25rem .7rem; border-radius: 30px; letter-spacing: .04em; transition: background .2s, color .2s, border-color .2s; }
-.tilt-card:hover .chip { border-color: rgba(245,98,15,.3); color: #ff7c35; background: rgba(245,98,15,.07); }
-
-/* ══════════════════════════════════════════
-   COUNTERS
-══════════════════════════════════════════ */
-#counters { padding: 70px 5%; background: #070b14; border-top: 1px solid rgba(255,255,255,.08); border-bottom: 1px solid rgba(255,255,255,.08); }
-.counters-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
-.counter-item { text-align: center; padding: 2rem 1rem; border-right: 1px solid rgba(255,255,255,.08); }
-.counter-item:last-child { border-right: none; }
-.counter-num { font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 4rem; color: #f5620f !important; line-height: 1; display: block; margin-bottom: .3rem; }
-.counter-label { color: rgba(232,237,245,.55); font-size: .88rem; font-weight: 400; letter-spacing: .04em; }
-
-/* ══════════════════════════════════════════
-   WHY
-══════════════════════════════════════════ */
-#why { background: #101828 !important; }
-.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
-.why-card { background: rgba(255,255,255,.04) !important; border: 1px solid rgba(255,255,255,.08) !important; border-radius: 10px; padding: 2rem; position: relative; overflow: hidden; transition: transform .3s, border-color .3s, box-shadow .3s; }
-.why-card:hover { transform: translateY(-6px); border-color: rgba(245,98,15,.25) !important; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
-.why-bg-num { position: absolute; top: -10px; right: 10px; font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif !important; font-size: 7rem; color: rgba(245,98,15,.05); line-height: 1; pointer-events: none; user-select: none; }
-.why-ico { font-size: 2rem; margin-bottom: 1rem; display: block; }
-.why-card h3 { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif !important; font-size: 1.3rem; color: #e8edf5 !important; margin-bottom: .6rem; text-transform: uppercase; }
-.why-card p { color: rgba(232,237,245,.55) !important; font-size: .9rem; line-height: 1.7; font-weight: 300; }
-
-/* ══════════════════════════════════════════
-   PROCESS
-══════════════════════════════════════════ */
-#process { background: #0c1220 !important; }
-.process-steps { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; }
-.p-step { display: grid; grid-template-columns: 72px 1fr; gap: 2rem; padding-bottom: 2.8rem; position: relative; }
-.p-step:last-child { padding-bottom: 0; }
-.p-step:not(:last-child)::after { content: ''; position: absolute; left: 35px; top: 72px; bottom: 0; width: 2px; background: linear-gradient(to bottom, #f5620f, transparent); }
-.p-num { width: 70px; height: 70px; border-radius: 50%; border: 2px solid #f5620f !important; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 1.6rem; color: #f5620f !important; flex-shrink: 0; background: #070b14 !important; position: relative; z-index: 1; box-shadow: 0 0 0 6px #0c1220, 0 0 30px rgba(245,98,15,.18); transition: background .3s, color .3s; }
-.p-step:hover .p-num { background: #f5620f !important; color: #fff !important; }
-.p-body { padding-top: 1rem; }
-.p-body h3 { font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 1.4rem; color: #e8edf5 !important; margin-bottom: .5rem; text-transform: uppercase; }
-.p-body p { color: rgba(232,237,245,.55) !important; font-size: .93rem; line-height: 1.75; font-weight: 300; }
-
-/* ══════════════════════════════════════════
-   TARIFS
-══════════════════════════════════════════ */
-#tarifs { background: #070b14 !important; }
-.tarifs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1100px; margin: 0 auto; align-items: start; }
-.tarif-card { background: rgba(255,255,255,.04) !important; border: 1px solid rgba(255,255,255,.08) !important; border-radius: 10px; padding: 2.5rem; text-align: center; position: relative; overflow: hidden; transition: transform .3s, box-shadow .3s, border-color .3s; }
-.tarif-card:hover { transform: translateY(-8px); box-shadow: 0 24px 60px rgba(0,0,0,.3); }
-.tarif-card.feat { border-color: rgba(245,98,15,.4) !important; background: linear-gradient(160deg, rgba(245,98,15,.08), rgba(255,255,255,.04)) !important; box-shadow: 0 0 0 1px rgba(245,98,15,.15), 0 20px 50px rgba(0,0,0,.25); }
-.tarif-card.feat:hover { box-shadow: 0 0 0 1px rgba(245,98,15,.3), 0 28px 70px rgba(0,0,0,.35); }
-.feat-badge { position: absolute; top: 0; left: 50%; transform: translateX(-50%) translateY(-1px); background: linear-gradient(135deg, #f5620f, #ff9a3c) !important; color: #fff !important; font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: .75rem; letter-spacing: .1em; padding: .25rem 1.2rem; border-radius: 0 0 8px 8px; }
-.tarif-ico { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
-.tarif-card h3 { font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 1.3rem; color: #e8edf5 !important; margin-bottom: 1.2rem; text-transform: uppercase; }
-.tarif-price { font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 3.5rem; color: #f5620f !important; line-height: 1; }
-.tarif-unit { color: rgba(232,237,245,.3) !important; font-size: .82rem; margin: .4rem 0 1.4rem; }
-.tarif-feats { list-style: none; text-align: left; margin-bottom: 2rem; }
-.tarif-feats li { color: rgba(232,237,245,.55) !important; font-size: .9rem; padding: .5rem 0; border-bottom: 1px solid rgba(255,255,255,.08) !important; display: flex; align-items: center; gap: .7rem; font-weight: 300; }
-.tarif-feats li::before { content: "✓"; color: #f5620f !important; font-weight: 700; flex-shrink: 0; }
-
-/* ══════════════════════════════════════════
-   TESTIMONIALS
-══════════════════════════════════════════ */
-#testimonials { background: #0c1220 !important; }
-.testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.8rem; max-width: 1200px; margin: 0 auto; }
-.testi-card { background: rgba(255,255,255,.04) !important; border: 1px solid rgba(255,255,255,.08) !important; border-radius: 10px; padding: 2.2rem; position: relative; transition: transform .3s, border-color .3s; }
-.testi-card:hover { transform: translateY(-5px); border-color: rgba(245,98,15,.2) !important; }
-.testi-quote { font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 4rem; color: #f5620f !important; opacity: .25; line-height: .8; margin-bottom: .5rem; }
-.stars { color: #f5620f !important; font-size: .9rem; letter-spacing: .1em; margin-bottom: 1rem; }
-.testi-text { color: rgba(232,237,245,.55) !important; font-size: .95rem; font-weight: 300; line-height: 1.75; margin-bottom: 1.5rem; font-style: italic; }
-.testi-author { display: flex; align-items: center; gap: .9rem; border-top: 1px solid rgba(255,255,255,.08) !important; padding-top: 1.2rem; }
-.testi-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #f5620f, #ff9a3c) !important; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif !important; font-size: 1.2rem; color: #fff !important; flex-shrink: 0; }
-.testi-name { font-weight: 600; color: #e8edf5 !important; font-size: .92rem; }
-.testi-role { color: rgba(232,237,245,.3) !important; font-size: .8rem; }
-
-/* ══════════════════════════════════════════
-   CONTACT
-══════════════════════════════════════════ */
-#contact { background: #101828 !important; }
-.contact-wrap { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem; max-width: 1100px; margin: 0 auto; align-items: start; }
-.contact-info .s-title { margin-bottom: 1rem; }
-.contact-info p { color: rgba(232,237,245,.55); font-size: .97rem; font-weight: 300; line-height: 1.8; margin-bottom: 2rem; }
-.cinfo-item { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem; }
-.cinfo-ico { width: 46px; height: 46px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
-.cinfo-label { font-weight: 600; color: #e8edf5; font-size: .9rem; }
-.cinfo-val { color: rgba(232,237,245,.55); font-size: .85rem; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
-.form-grid .full { grid-column: 1 / -1; }
-.field { display: flex; flex-direction: column; gap: .45rem; }
-.field label { font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(232,237,245,.55); }
-.field input, .field select, .field textarea { background: rgba(255,255,255,.07); border: 1.5px solid rgba(255,255,255,.14); border-radius: 6px; padding: .8rem 1.1rem; font-family: 'DM Sans',-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: .95rem; color: #e8edf5; outline: none; transition: border-color .2s, box-shadow .2s, background .2s; width: 100%; }
-.field input::placeholder, .field textarea::placeholder { color: rgba(232,237,245,.3); }
-.field input:focus, .field select:focus, .field textarea:focus { border-color: #f5620f; box-shadow: 0 0 0 3px rgba(245,98,15,.12); background: rgba(255,255,255,.04); }
-.field select option { background: #0c1220; }
-.field textarea { resize: vertical; min-height: 120px; }
-.form-success { display: none; margin-top: 1.2rem; padding: 1rem 1.4rem; background: rgba(34,197,94,.1); border: 1px solid rgba(34,197,94,.25); border-radius: 6px; color: #4ade80; font-weight: 600; font-size: .92rem; text-align: center; }
-
-/* ══════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════ */
-footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); padding: 70px 5% 30px; }
-.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,.08); }
-.footer-brand p { color: rgba(232,237,245,.3); font-size: .88rem; line-height: 1.75; margin: 1rem 0 1.5rem; font-weight: 300; }
-.footer-col h4 { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; color: #e8edf5; margin-bottom: 1.2rem; }
-.footer-col ul { list-style: none; }
-.footer-col ul li { margin-bottom: .6rem; }
-.footer-col ul li a { color: rgba(232,237,245,.3); text-decoration: none; font-size: .88rem; transition: color .2s; }
-.footer-col ul li a:hover { color: #f5620f; }
-.footer-bottom { max-width: 1200px; margin: 2rem auto 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-.footer-bottom p { color: rgba(232,237,245,.3); font-size: .8rem; }
-.footer-bottom a { color: #f5620f; text-decoration: none; }
-
-/* ══════════════════════════════════════════
-   BACK TO TOP
-══════════════════════════════════════════ */
-#btt { position: fixed; bottom: 2rem; right: 2rem; width: 48px; height: 48px; background: linear-gradient(135deg,#f5620f,#ff9a3c); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.2rem; text-decoration: none; opacity: 0; transform: translateY(12px); transition: opacity .3s, transform .3s; z-index: 800; box-shadow: 0 6px 22px rgba(245,98,15,.4); }
-#btt.on { opacity: 1; transform: translateY(0); }
-#btt:hover { box-shadow: 0 10px 32px rgba(245,98,15,.55); transform: translateY(-2px); }
-
-/* ══════════════════════════════════════════
-   REVEAL
-══════════════════════════════════════════ */
-.reveal { opacity: 0; transform: translateY(32px); transition: opacity .65s ease, transform .65s ease; }
-.reveal.in { opacity: 1; transform: translateY(0); }
-
-/* ══════════════════════════════════════════
-   DEVIS FORM
-══════════════════════════════════════════ */
-.devis-shell { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.14); border-radius: 16px; overflow: hidden; }
-.svc-toggle-wrap { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid rgba(255,255,255,.14); }
-.svc-btn { display: flex; flex-direction: column; align-items: center; gap: .3rem; padding: 1.8rem 2rem; background: none; border: none; cursor: pointer; border-right: 1px solid rgba(255,255,255,.14); transition: background .25s; position: relative; }
-.svc-btn:last-child { border-right: none; }
-.svc-btn::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(135deg,#f5620f,#ff9a3c); transform: scaleX(0); transition: transform .3s; }
-.svc-btn.active { background: rgba(245,98,15,.06); }
-.svc-btn.active::after { transform: scaleX(1); }
-.svc-btn:hover:not(.active) { background: rgba(255,255,255,.07); }
-.svc-ico { font-size: 2rem; }
-.svc-label { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1.1rem; letter-spacing: .06em; color: #e8edf5; text-transform: uppercase; transition: color .2s; }
-.svc-btn.active .svc-label { color: #f5620f; }
-.svc-sub { color: rgba(232,237,245,.3); font-size: .78rem; }
-.devis-body { display: grid; grid-template-columns: 1fr 340px; gap: 0; }
-#devis-form { padding: 2.5rem; border-right: 1px solid rgba(255,255,255,.08); }
-.devis-block { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,.08); }
-.devis-block:last-of-type { border-bottom: none; margin-bottom: 1rem; }
-.devis-block-title { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: .95rem; letter-spacing: .12em; text-transform: uppercase; color: #f5620f; margin-bottom: 1.2rem; }
-.dform-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.dform-grid .dfull { grid-column: 1 / -1; }
-.estimator-panel { padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1.5rem; background: rgba(255,255,255,.07); position: sticky; top: 70px; align-self: start; }
-.est-header { display: flex; flex-direction: column; gap: .6rem; }
-.est-title { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(232,237,245,.55); }
-.est-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(245,98,15,.12); border: 1px solid rgba(245,98,15,.25); color: #ff7c35; font-size: .8rem; font-weight: 600; padding: .3rem .8rem; border-radius: 20px; width: fit-content; transition: all .3s; }
-.est-price-block { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.14); border-radius: 10px; padding: 1.5rem; text-align: center; }
-.est-price-label { color: rgba(232,237,245,.3); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .4rem; }
-.est-price-num { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 2.8rem; color: #f5620f; line-height: 1; margin-bottom: .4rem; transition: all .4s; }
-.est-price-sub { color: rgba(232,237,245,.3); font-size: .78rem; line-height: 1.5; }
-.est-rules { display: flex; flex-direction: column; gap: .8rem; }
-.est-rule { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 8px; padding: 1rem; }
-.est-rule-title { font-size: .78rem; font-weight: 600; color: rgba(232,237,245,.55); margin-bottom: .7rem; letter-spacing: .04em; }
-.est-rule-row { display: flex; justify-content: space-between; align-items: center; padding: .35rem 0; border-bottom: 1px solid rgba(255,255,255,.08); font-size: .85rem; color: rgba(232,237,245,.55); }
-.est-rule-row:last-of-type { border-bottom: none; }
-.est-rule-row strong { color: #f5620f; }
-.est-rule-note { color: rgba(232,237,245,.3); font-size: .75rem; margin-top: .6rem; line-height: 1.5; }
-.est-inc-title { font-size: .78rem; font-weight: 600; color: rgba(232,237,245,.55); margin-bottom: .7rem; letter-spacing: .04em; }
-.est-inc-list { display: flex; flex-wrap: wrap; gap: .4rem; }
-.est-inc-list span { background: rgba(34,197,94,.08); border: 1px solid rgba(34,197,94,.18); color: #4ade80; font-size: .75rem; padding: .2rem .6rem; border-radius: 4px; }
-.est-disclaimer { color: rgba(232,237,245,.3); font-size: .75rem; line-height: 1.6; font-style: italic; border-top: 1px solid rgba(255,255,255,.08); padding-top: 1rem; }
-
-/* ══════════════════════════════════════════
-   COMMENT ÇA MARCHE
-══════════════════════════════════════════ */
-#comment { background: #101828; }
-.steps-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; max-width: 1100px; margin: 3.5rem auto 0; position: relative; }
-.steps-grid::before { content: ''; position: absolute; top: 36px; left: calc(12.5% + 20px); right: calc(12.5% + 20px); height: 2px; background: linear-gradient(90deg, #f5620f, transparent); opacity: .3; }
-.step-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 1.8rem 1.2rem; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; transition: border-color .3s, transform .3s; }
-.step-card:hover { border-color: #f5620f; transform: translateY(-4px); }
-.step-num { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg,#f5620f,#ff9a3c); display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1.4rem; color: #fff; flex-shrink: 0; }
-.step-icon { font-size: 1.6rem; }
-.step-title { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; color: #e8edf5; }
-.step-desc { font-size: .85rem; color: rgba(232,237,245,.55); line-height: 1.6; }
-
-/* ══════════════════════════════════════════
-   FAQ
-══════════════════════════════════════════ */
-#faq { background: #0c1220; }
-.faq-wrap { max-width: 800px; margin: 3.5rem auto 0; }
-.faq-item { border-bottom: 1px solid rgba(255,255,255,.08); overflow: hidden; }
-.faq-item:first-child { border-top: 1px solid rgba(255,255,255,.08); }
-.faq-q { display: flex; justify-content: space-between; align-items: center; padding: 1.3rem 0; cursor: pointer; gap: 1rem; font-size: .97rem; font-weight: 500; color: #e8edf5; transition: color .3s; user-select: none; }
-.faq-q:hover { color: #f5620f; }
-.faq-arrow { width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; font-size: .85rem; flex-shrink: 0; transition: transform .3s, background .3s; }
-.faq-item.open .faq-arrow { transform: rotate(180deg); background: #f5620f; border-color: #f5620f; }
-.faq-a { max-height: 0; overflow: hidden; transition: max-height .38s ease, padding .38s ease; font-size: .88rem; color: rgba(232,237,245,.55); line-height: 1.75; }
-.faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.3rem; }
-
-/* ══════════════════════════════════════════
-   WHATSAPP
-══════════════════════════════════════════ */
-#wa-btn { position: fixed; bottom: 28px; right: 28px; width: 58px; height: 58px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,.45); z-index: 999; text-decoration: none; transition: transform .2s, box-shadow .2s; cursor: pointer; }
-#wa-btn:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,.6); }
-#wa-btn svg { width: 30px; height: 30px; fill: #fff; }
-#wa-tooltip { position: fixed; bottom: 100px; right: 28px; background: #101828; border: 1px solid rgba(255,255,255,.14); border-radius: 10px; padding: .7rem 1rem; font-size: .82rem; color: #e8edf5; white-space: nowrap; box-shadow: 0 4px 20px rgba(0,0,0,.2); opacity: 0; pointer-events: none; transition: opacity .2s; }
-#wa-btn:hover + #wa-tooltip, #wa-tooltip:hover { opacity: 1; pointer-events: all; }
-
-/* ══════════════════════════════════════════
-   LEGAL MODALS
-══════════════════════════════════════════ */
-.legal-overlay { position: fixed; inset: 0; background: rgba(7,11,20,.88); backdrop-filter: blur(10px); z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 1.5rem; opacity: 0; pointer-events: none; transition: opacity .25s; }
-.legal-overlay.on { opacity: 1; pointer-events: all; }
-.legal-modal { background: #101828; border: 1px solid rgba(255,255,255,.14); border-radius: 16px; width: 100%; max-width: 700px; max-height: 85vh; display: flex; flex-direction: column; transform: translateY(20px); transition: transform .25s; }
-.legal-overlay.on .legal-modal { transform: translateY(0); }
-.legal-modal-head { display: flex; justify-content: space-between; align-items: center; padding: 1.4rem 1.8rem; border-bottom: 1px solid rgba(255,255,255,.08); flex-shrink: 0; }
-.legal-modal-head h3 { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1.3rem; letter-spacing: .08em; text-transform: uppercase; color: #e8edf5; }
-.legal-close { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.1rem; color: rgba(232,237,245,.55); transition: background .2s; }
-.legal-close:hover { background: rgba(255,255,255,.07); color: #e8edf5; }
-.legal-modal-body { overflow-y: auto; padding: 1.8rem; flex: 1; }
-.legal-modal-body h4 { font-family: 'Bebas Neue','Arial Narrow',Arial,sans-serif; font-size: 1rem; letter-spacing: .06em; text-transform: uppercase; color: #f5620f; margin: 1.5rem 0 .5rem; }
-.legal-modal-body h4:first-child { margin-top: 0; }
-.legal-modal-body p { font-size: .88rem; color: rgba(232,237,245,.55); line-height: 1.75; margin-bottom: .8rem; }
-.legal-modal-body ul { padding-left: 1.2rem; margin-bottom: .8rem; }
-.legal-modal-body ul li { font-size: .88rem; color: rgba(232,237,245,.55); line-height: 1.75; }
-
-/* ══════════════════════════════════════════
-   RESPONSIVE
-══════════════════════════════════════════ */
-@media (max-width: 960px) { .devis-body { grid-template-columns: 1fr; } .estimator-panel { position: static; border-top: 1px solid rgba(255,255,255,.08); } #devis-form { border-right: none; } }
-@media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; } .hero-right { display: none; } .contact-wrap { grid-template-columns: 1fr; gap: 3rem; } .footer-grid { grid-template-columns: 1fr 1fr; } .counters-grid { grid-template-columns: repeat(2,1fr); } .counter-item:nth-child(2) { border-right: none; } .counter-item:nth-child(3) { border-right: 1px solid rgba(255,255,255,.08); } }
-@media (max-width: 800px) { .steps-grid { grid-template-columns: 1fr 1fr; } .steps-grid::before { display: none; } }
-@media (max-width: 640px) { nav a:not(.btn-nav):not(.theme-toggle) { display: none; } .hamburger { display: block; } section { padding: 80px 5%; } .footer-grid { grid-template-columns: 1fr; } .form-grid { grid-template-columns: 1fr; } .form-grid .full { grid-column: 1; } .counters-grid { grid-template-columns: repeat(2,1fr); } .counter-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); } .counter-item:last-child { border-bottom: none; } .dform-grid { grid-template-columns: 1fr; } .dform-grid .dfull { grid-column: 1; } .svc-btn { padding: 1.2rem 1rem; } .svc-label { font-size: .9rem; } }
-@media (max-width: 480px) { .steps-grid { grid-template-columns: 1fr; } }
-```
-
-  </style>
 </head>
 <body>
+
   <div id="cursor-dot"></div>
   <div id="cursor-ring"></div>
 
@@ -506,26 +165,64 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
         </div>
       </div>
       <div class="hero-right">
-        <div class="glass-stat"><div class="glass-stat-left">🚗</div><div><div class="glass-stat-num">500+</div><div class="glass-stat-label">Véhicules convoyés / mois</div></div></div>
-        <div class="glass-stat"><div class="glass-stat-left">🇪🇺</div><div><div class="glass-stat-num">15+</div><div class="glass-stat-label">Pays couverts en Europe</div></div></div>
-        <div class="glass-stat"><div class="glass-stat-left">⚡</div><div><div class="glass-stat-num">24h</div><div class="glass-stat-label">Délai de prise en charge</div></div></div>
+        <div class="glass-stat">
+          <div class="glass-stat-left">🚗</div>
+          <div>
+            <div class="glass-stat-num">500+</div>
+            <div class="glass-stat-label">Véhicules convoyés / mois</div>
+          </div>
+        </div>
+        <div class="glass-stat">
+          <div class="glass-stat-left">🇪🇺</div>
+          <div>
+            <div class="glass-stat-num">15+</div>
+            <div class="glass-stat-label">Pays couverts en Europe</div>
+          </div>
+        </div>
+        <div class="glass-stat">
+          <div class="glass-stat-left">⚡</div>
+          <div>
+            <div class="glass-stat-num">24h</div>
+            <div class="glass-stat-label">Délai de prise en charge</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <div class="ticker-outer">
     <div class="ticker-track">
-      <div class="ticker-run"><span>Paris → Marseille → Paris</span><span>Lyon → Bordeaux</span><span>Lille → Nice</span><span>Strasbourg → Paris</span><span>Toulouse → Lyon</span><span>Nantes → Bordeaux</span><span>Paris → Berlin</span><span>Lyon → Madrid</span><span>Nice → Bruxelles</span></div>
-      <div class="ticker-run" aria-hidden="true"><span>Paris → Marseille → Paris</span><span>Lyon → Bordeaux</span><span>Lille → Nice</span><span>Strasbourg → Paris</span><span>Toulouse → Lyon</span><span>Nantes → Bordeaux</span><span>Paris → Berlin</span><span>Lyon → Madrid</span><span>Nice → Bruxelles</span></div>
+      <div class="ticker-run" id="t1">
+        <span>Paris → Marseille → Paris</span><span>Lyon → Bordeaux</span><span>Lille → Nice</span>
+        <span>Strasbourg → Paris</span><span>Toulouse → Lyon</span><span>Nantes → Bordeaux</span>
+        <span>Paris → Berlin</span><span>Lyon → Madrid</span><span>Nice → Bruxelles</span>
+      </div>
+      <div class="ticker-run" aria-hidden="true">
+        <span>Paris → Marseille → Paris</span><span>Lyon → Bordeaux</span><span>Lille → Nice</span>
+        <span>Strasbourg → Paris</span><span>Toulouse → Lyon</span><span>Nantes → Bordeaux</span>
+        <span>Paris → Berlin</span><span>Lyon → Madrid</span><span>Nice → Bruxelles</span>
+      </div>
     </div>
   </div>
 
   <section id="counters">
     <div class="counters-grid">
-      <div class="counter-item reveal"><span class="counter-num">500+</span><span class="counter-label">Véhicules convoyés / mois</span></div>
-      <div class="counter-item reveal"><span class="counter-num">15+</span><span class="counter-label">Pays couverts en Europe</span></div>
-      <div class="counter-item reveal"><span class="counter-num">24h</span><span class="counter-label">Délai de prise en charge</span></div>
-      <div class="counter-item reveal"><span class="counter-num">98%</span><span class="counter-label">Taux de satisfaction</span></div>
+      <div class="counter-item reveal">
+        <span class="counter-num">500+</span>
+        <span class="counter-label">Véhicules convoyés / mois</span>
+      </div>
+      <div class="counter-item reveal">
+        <span class="counter-num">15+</span>
+        <span class="counter-label">Pays couverts en Europe</span>
+      </div>
+      <div class="counter-item reveal">
+        <span class="counter-num">24h</span>
+        <span class="counter-label">Délai de prise en charge</span>
+      </div>
+      <div class="counter-item reveal">
+        <span class="counter-num">98%</span>
+        <span class="counter-label">Taux de satisfaction</span>
+      </div>
     </div>
   </section>
 
@@ -536,14 +233,42 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
       <p class="s-desc">Des solutions sur mesure pour les professionnels de l'automobile : garages, concessions, loueurs et entreprises.</p>
     </div>
     <div class="services-grid">
-      <div class="tilt-card reveal"><div class="card-ico">🚘</div><h3>Convoyage Automobile</h3><p>Un chauffeur convoyeur professionnel prend en charge votre véhicule et le conduit jusqu'à destination. Pas de transport par camion : votre voiture arrive sur ses propres roues, en toute sécurité.</p><div class="chip-row"><span class="chip">Chauffeur dédié</span><span class="chip">Assurance incluse</span><span class="chip">État des lieux photo</span><span class="chip">France & Europe</span></div></div>
-      <div class="tilt-card reveal"><div class="card-ico">🏍️</div><h3>Transport Moto par Camionnette</h3><p>Vos motos sont chargées et arrimées dans nos camionnettes équipées pour un transport sans risque. Idéal pour concessions moto, marchands et professionnels.</p><div class="chip-row"><span class="chip">Arrimage professionnel</span><span class="chip">Camionnette dédiée</span><span class="chip">Toutes cylindrées</span><span class="chip">Express 24h</span></div></div>
-      <div class="tilt-card reveal"><div class="card-ico">🏢</div><h3>Solutions Entreprises</h3><p>Partenaire de confiance pour les flottes d'entreprise. Contrats sur mesure, enlèvements groupés, facturation simplifiée et interlocuteur dédié.</p><div class="chip-row"><span class="chip">Contrat mensuel</span><span class="chip">Enlèvement groupé</span><span class="chip">Facturation facile</span><span class="chip">Rapport mensuel</span></div></div>
+      <div class="tilt-card reveal">
+        <div class="card-ico">🚘</div>
+        <h3>Convoyage Automobile</h3>
+        <p>Un chauffeur convoyeur professionnel prend en charge votre véhicule et le conduit jusqu'à destination. Pas de transport par camion : votre voiture arrive sur ses propres roues, en toute sécurité.</p>
+        <div class="chip-row">
+          <span class="chip">Chauffeur dédié</span><span class="chip">Assurance incluse</span>
+          <span class="chip">État des lieux photo</span><span class="chip">France & Europe</span>
+        </div>
+      </div>
+      <div class="tilt-card reveal">
+        <div class="card-ico">🏍️</div>
+        <h3>Transport Moto par Camionnette</h3>
+        <p>Vos motos sont chargées et arrimées dans nos camionnettes équipées pour un transport sans risque. Idéal pour concessions moto, marchands et professionnels.</p>
+        <div class="chip-row">
+          <span class="chip">Arrimage professionnel</span><span class="chip">Camionnette dédiée</span>
+          <span class="chip">Toutes cylindrées</span><span class="chip">Express 24h</span>
+        </div>
+      </div>
+      <div class="tilt-card reveal">
+        <div class="card-ico">🏢</div>
+        <h3>Solutions Entreprises</h3>
+        <p>Partenaire de confiance pour les flottes d'entreprise. Contrats sur mesure, enlèvements groupés, facturation simplifiée et interlocuteur dédié.</p>
+        <div class="chip-row">
+          <span class="chip">Contrat mensuel</span><span class="chip">Enlèvement groupé</span>
+          <span class="chip">Facturation facile</span><span class="chip">Rapport mensuel</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="why">
-    <div class="s-head reveal"><div class="stag">Nos engagements</div><h2 class="s-title">Pourquoi <span class="acc">SECOTO</span> ?</h2><p class="s-desc">Chaque convoyage est traité avec le même niveau d'exigence, quelle que soit la distance ou le véhicule.</p></div>
+    <div class="s-head reveal">
+      <div class="stag">Nos engagements</div>
+      <h2 class="s-title">Pourquoi <span class="acc">SECOTO</span> ?</h2>
+      <p class="s-desc">Chaque convoyage est traité avec le même niveau d'exigence, quelle que soit la distance ou le véhicule.</p>
+    </div>
     <div class="why-grid">
       <div class="why-card reveal"><span class="why-bg-num">01</span><span class="why-ico">⚡</span><h3>Rapidité</h3><p>Intervention sous 24h en France. Planification flexible pour répondre aux urgences de vos ateliers, même en dernière minute.</p></div>
       <div class="why-card reveal"><span class="why-bg-num">02</span><span class="why-ico">🛡️</span><h3>Fiabilité</h3><p>Convoyeurs sélectionnés, véhicules assurés, état des lieux systématique. Zéro mauvaise surprise, 100% de transparence.</p></div>
@@ -553,24 +278,58 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
   </section>
 
   <section id="process">
-    <div class="s-head c reveal"><div class="stag">Comment ça marche</div><h2 class="s-title">Un process <span class="acc">en 3 étapes</span></h2><p class="s-desc">Simple, rapide, professionnel. Confiez-nous votre véhicule en quelques étapes.</p></div>
+    <div class="s-head c reveal">
+      <div class="stag">Comment ça marche</div>
+      <h2 class="s-title">Un process <span class="acc">en 3 étapes</span></h2>
+      <p class="s-desc">Simple, rapide, professionnel. Confiez-nous votre véhicule en quelques étapes.</p>
+    </div>
     <div class="process-steps">
-      <div class="p-step reveal"><div class="p-num">01</div><div class="p-body"><h3>Prise en charge</h3><p>Notre convoyeur se déplace à l'adresse de votre choix. Un état des lieux complet est réalisé — photos HD, kilométrage, niveau carburant — pour garantir une transparence totale avant le départ.</p></div></div>
-      <div class="p-step reveal"><div class="p-num">02</div><div class="p-body"><h3>Transport sécurisé</h3><p>Votre véhicule est conduit par un convoyeur certifié ou chargé dans notre camionnette dédiée pour les motos. Suivi en temps réel disponible et équipe joignable à tout moment.</p></div></div>
-      <div class="p-step reveal"><div class="p-num">03</div><div class="p-body"><h3>Livraison & confirmation</h3><p>Le véhicule est remis à l'heure convenue. Second état des lieux, bon de livraison signé transmis immédiatement. Mission accomplie, traçabilité complète.</p></div></div>
+      <div class="p-step reveal">
+        <div class="p-num">01</div>
+        <div class="p-body">
+          <h3>Prise en charge</h3>
+          <p>Notre convoyeur se déplace à l'adresse de votre choix. Un état des lieux complet est réalisé — photos HD, kilométrage, niveau carburant — pour garantir une transparence totale avant le départ.</p>
+        </div>
+      </div>
+      <div class="p-step reveal">
+        <div class="p-num">02</div>
+        <div class="p-body">
+          <h3>Transport sécurisé</h3>
+          <p>Votre véhicule est conduit par un convoyeur certifié ou chargé dans notre camionnette dédiée pour les motos. Suivi en temps réel disponible et équipe joignable à tout moment.</p>
+        </div>
+      </div>
+      <div class="p-step reveal">
+        <div class="p-num">03</div>
+        <div class="p-body">
+          <h3>Livraison & confirmation</h3>
+          <p>Le véhicule est remis à l'heure convenue. Second état des lieux, bon de livraison signé transmis immédiatement. Mission accomplie, traçabilité complète.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="tarifs">
-    <div class="s-head c reveal"><div class="stag">Tarification</div><h2 class="s-title">Prix <span class="acc">clairs</span></h2><p class="s-desc">Tarification au kilomètre, sans frais cachés. Vous connaissez le prix avant toute intervention.</p></div>
+    <div class="s-head c reveal">
+      <div class="stag">Tarification</div>
+      <h2 class="s-title">Prix <span class="acc">clairs</span></h2>
+      <p class="s-desc">Tarification au kilomètre, sans frais cachés. Vous connaissez le prix avant toute intervention.</p>
+    </div>
     <div class="tarifs-grid">
       <div class="tarif-card reveal">
         <span class="tarif-ico">🚗</span>
         <h3>Convoyage Auto</h3>
         <div class="tarif-price">1€<small style="font-size:1.3rem">/km</small></div>
         <div class="tarif-unit">jusqu'à 300 km — par convoyeur dédié</div>
-        <ul class="tarif-feats"><li>Convoyage par chauffeur professionnel</li><li>Prise en charge sur site</li><li>État des lieux photo complet</li><li>Assurance incluse</li><li>Bon de livraison signé</li></ul>
-        <div style="margin-bottom:1.2rem;padding:.8rem 1rem;background:rgba(245,98,15,.08);border:1px solid rgba(245,98,15,.2);border-radius:6px;font-size:.84rem;color:rgba(232,237,245,.55);text-align:center;"><strong style="color:#f5620f">0,90€/km</strong> au-delà de 300 km</div>
+        <ul class="tarif-feats">
+          <li>Convoyage par chauffeur professionnel</li>
+          <li>Prise en charge sur site</li>
+          <li>État des lieux photo complet</li>
+          <li>Assurance incluse</li>
+          <li>Bon de livraison signé</li>
+        </ul>
+        <div style="margin-bottom:1.2rem;padding:.8rem 1rem;background:rgba(245,98,15,.08);border:1px solid rgba(245,98,15,.2);border-radius:6px;font-size:.84rem;color:rgba(232,237,245,.55);text-align:center;">
+          <strong style="color:#f5620f">0,90€/km</strong> au-delà de 300 km
+        </div>
         <a href="#devis" class="btn btn-ghost" style="width:100%;justify-content:center">Estimer mon trajet</a>
       </div>
       <div class="tarif-card feat reveal">
@@ -579,8 +338,16 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
         <h3>Transport Moto</h3>
         <div class="tarif-price">Sur devis</div>
         <div class="tarif-unit">Camionnette dédiée · tarif selon distance</div>
-        <ul class="tarif-feats"><li>Chargement & arrimage professionnel</li><li>Camionnette sécurisée dédiée</li><li>Assurance transport moto incluse</li><li>Plusieurs motos acceptées</li><li>Express 24h disponible</li></ul>
-        <div style="margin-bottom:1.2rem;padding:.8rem 1rem;background:rgba(245,98,15,.08);border:1px solid rgba(245,98,15,.2);border-radius:6px;font-size:.84rem;color:rgba(232,237,245,.55);text-align:center;">Tarif dégressif selon volume et distance</div>
+        <ul class="tarif-feats">
+          <li>Chargement & arrimage professionnel</li>
+          <li>Camionnette sécurisée dédiée</li>
+          <li>Assurance transport moto incluse</li>
+          <li>Plusieurs motos acceptées</li>
+          <li>Express 24h disponible</li>
+        </ul>
+        <div style="margin-bottom:1.2rem;padding:.8rem 1rem;background:rgba(245,98,15,.08);border:1px solid rgba(245,98,15,.2);border-radius:6px;font-size:.84rem;color:rgba(232,237,245,.55);text-align:center;">
+          Tarif dégressif selon volume et distance
+        </div>
         <a href="#devis" class="btn" style="width:100%;justify-content:center">Demander un devis</a>
       </div>
       <div class="tarif-card reveal">
@@ -588,88 +355,265 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
         <h3>Contrat Entreprise</h3>
         <div class="tarif-price">–15%</div>
         <div class="tarif-unit">dès 10 convoyages / mois</div>
-        <ul class="tarif-feats"><li>Tarif dégressif sur volume</li><li>Interlocuteur dédié</li><li>Facturation mensuelle</li><li>Reporting mensuel</li><li>Priorité de planification</li></ul>
-        <div style="margin-bottom:1.2rem;padding:.8rem 1rem;background:rgba(245,98,15,.08);border:1px solid rgba(245,98,15,.2);border-radius:6px;font-size:.84rem;color:rgba(232,237,245,.55);text-align:center;">Garages, concessions, loueurs — tarif négocié</div>
+        <ul class="tarif-feats">
+          <li>Tarif dégressif sur volume</li>
+          <li>Interlocuteur dédié</li>
+          <li>Facturation mensuelle</li>
+          <li>Reporting mensuel</li>
+          <li>Priorité de planification</li>
+        </ul>
+        <div style="margin-bottom:1.2rem;padding:.8rem 1rem;background:rgba(245,98,15,.08);border:1px solid rgba(245,98,15,.2);border-radius:6px;font-size:.84rem;color:rgba(232,237,245,.55);text-align:center;">
+          Garages, concessions, loueurs — tarif négocié
+        </div>
         <a href="#devis" class="btn btn-ghost" style="width:100%;justify-content:center">Nous contacter</a>
       </div>
     </div>
   </section>
 
   <section id="testimonials">
-    <div class="s-head c reveal"><div class="stag">Ils nous font confiance</div><h2 class="s-title">Avis <span class="acc">clients</span></h2><p class="s-desc">Des professionnels de l'automobile qui ont choisi SECOTO pour la fiabilité et la réactivité de nos équipes.</p></div>
-    <div class="testi-grid">
-      <div class="testi-card reveal"><div class="testi-quote">"</div><div class="stars">★★★★★</div><p class="testi-text">Service impeccable, véhicule livré à l'heure et en parfait état. L'état des lieux photo à la prise en charge nous a vraiment rassurés. On renouvelle à chaque fois sans hésiter.</p><div class="testi-author"><div class="testi-avatar">TM</div><div><div class="testi-name">Thomas M.</div><div class="testi-role">Directeur — Garage Mécauto, Lyon</div></div></div></div>
-      <div class="testi-card reveal"><div class="testi-quote">"</div><div class="stars">★★★★★</div><p class="testi-text">En tant que concessionnaire moto, j'ai besoin d'un partenaire de confiance pour mes transports. SECOTO est réactif, professionnel, et les tarifs sont transparents. Exactement ce qu'il me fallait.</p><div class="testi-author"><div class="testi-avatar">SL</div><div><div class="testi-name">Sophie L.</div><div class="testi-role">Gérante — MotoCity Bordeaux</div></div></div></div>
-      <div class="testi-card reveal"><div class="testi-quote">"</div><div class="stars">★★★★★</div><p class="testi-text">Nous faisons appel à SECOTO pour notre flotte d'entreprise depuis 2 ans. Zéro incident, facturation claire, interlocuteur toujours disponible. Un partenariat sur le long terme.</p><div class="testi-author"><div class="testi-avatar">PD</div><div><div class="testi-name">Pierre D.</div><div class="testi-role">Responsable Flotte — Groupe Dupré & Fils</div></div></div></div>
+    <div class="s-head c reveal">
+      <div class="stag">Ils nous font confiance</div>
+      <h2 class="s-title">Avis <span class="acc">clients</span></h2>
+      <p class="s-desc">Des professionnels de l'automobile qui ont choisi SECOTO pour la fiabilité et la réactivité de nos équipes.</p>
     </div>
-  </section>
 
-  <section id="devis" style="background:#0c1220;padding:110px 5%;">
-    <div class="s-head c reveal"><div class="stag">Devis gratuit</div><h2 class="s-title">Estimez votre <span class="acc">convoyage</span></h2><p class="s-desc">Sélectionnez votre service, renseignez les informations et obtenez une estimation instantanée du tarif.</p></div>
-    <div class="devis-shell reveal">
-      <div class="svc-toggle-wrap">
-        <button class="svc-btn active" id="btn-auto" onclick="switchService('auto')"><span class="svc-ico">🚗</span><span class="svc-label">Convoyage Automobile</span><span class="svc-sub">Par chauffeur convoyeur</span></button>
-        <button class="svc-btn" id="btn-moto" onclick="switchService('moto')"><span class="svc-ico">🏍️</span><span class="svc-label">Transport Moto</span><span class="svc-sub">Par camionnette dédiée</span></button>
-      </div>
-      <div class="devis-body">
-        <form id="devis-form" name="devis" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitDevis(event)">
-          <input type="hidden" name="form-name" value="devis" />
-          <input type="hidden" name="service" id="hidden-service" value="Convoyage Automobile" />
-          <p style="display:none"><input name="bot-field" /></p>
-          <div class="devis-block">
-            <div class="devis-block-title">01 — Vos coordonnées</div>
-            <div class="dform-grid">
-              <div class="field"><label>Prénom *</label><input type="text" name="prenom" placeholder="Jean" required /></div>
-              <div class="field"><label>Nom *</label><input type="text" name="nom" placeholder="Dupont" required /></div>
-              <div class="field"><label>Société</label><input type="text" name="societe" placeholder="Votre entreprise" /></div>
-              <div class="field"><label>Téléphone</label><input type="tel" name="telephone" placeholder="+33 6 00 00 00 00" /></div>
-              <div class="field dfull"><label>Email *</label><input type="email" name="email" placeholder="jean.dupont@entreprise.fr" required /></div>
-            </div>
-          </div>
-          <div class="devis-block">
-            <div class="devis-block-title">02 — Le trajet</div>
-            <div class="dform-grid">
-              <div class="field"><label>Ville de départ *</label><input type="text" name="depart" id="f-depart" placeholder="Paris" required oninput="estimatePrice()" /></div>
-              <div class="field"><label>Ville d'arrivée *</label><input type="text" name="arrivee" id="f-arrivee" placeholder="Marseille" required oninput="estimatePrice()" /></div>
-              <div class="field"><label>Distance estimée (km)</label><div style="position:relative"><input type="number" name="distance_km" id="f-km" placeholder="ex: 250" min="1" oninput="estimatePrice()" style="padding-right:3rem" /><span style="position:absolute;right:.9rem;top:50%;transform:translateY(-50%);color:rgba(232,237,245,.3);font-size:.82rem;pointer-events:none">km</span></div></div>
-              <div class="field"><label>Date souhaitée</label><input type="date" name="date" id="f-date" /></div>
-            </div>
-          </div>
-          <div class="devis-block" id="block-auto">
-            <div class="devis-block-title">03 — Le véhicule</div>
-            <div class="dform-grid">
-              <div class="field"><label>Marque</label><input type="text" name="marque" placeholder="Renault, BMW, Peugeot…" /></div>
-              <div class="field"><label>Modèle</label><input type="text" name="modele" placeholder="Clio, Série 3…" /></div>
-              <div class="field"><label>Immatriculation</label><input type="text" name="immatriculation" placeholder="AA-000-AA" /></div>
-              <div class="field"><label>Type</label><select name="type_vehicule"><option value="">Sélectionner</option><option>Berline</option><option>SUV / 4x4</option><option>Citadine</option><option>Break</option><option>Cabriolet</option><option>Utilitaire léger</option><option>Autre</option></select></div>
-              <div class="field dfull"><label>Informations complémentaires</label><textarea name="informations" placeholder="Véhicule en panne, clés à récupérer chez un tiers, heure de disponibilité…" style="min-height:80px"></textarea></div>
-            </div>
-          </div>
-          <div class="devis-block" id="block-moto" style="display:none">
-            <div class="devis-block-title">03 — La / les moto(s)</div>
-            <div class="dform-grid">
-              <div class="field"><label>Marque</label><input type="text" name="marque_moto" placeholder="Honda, Yamaha, Ducati…" /></div>
-              <div class="field"><label>Modèle</label><input type="text" name="modele_moto" placeholder="CBR, MT-07…" /></div>
-              <div class="field"><label>Nombre de motos</label><select name="nombre_motos" id="f-nb-motos" oninput="estimatePrice()"><option value="1">1 moto</option><option value="2">2 motos</option><option value="3">3 motos</option><option value="4+">4 motos et plus</option></select></div>
-              <div class="field"><label>Cylindrée</label><select name="cylindree"><option value="">Sélectionner</option><option>Moins de 125cc</option><option>125cc – 500cc</option><option>500cc – 1000cc</option><option>Plus de 1000cc</option></select></div>
-              <div class="field dfull"><label>Informations complémentaires</label><textarea name="informations_moto" placeholder="Moto en panne, accès particulier, heure de disponibilité…" style="min-height:80px"></textarea></div>
-            </div>
-          </div>
-          <button type="submit" class="btn" style="width:100%;justify-content:center;padding:1.1rem;font-size:1.05rem;margin-top:.5rem">Envoyer ma demande de devis →</button>
-          <div class="form-success" id="fs">✓ Demande envoyée ! Nous vous recontactons sous 2h.</div>
-        </form>
-        <div class="estimator-panel">
-          <div class="est-header"><div class="est-title">Estimation tarifaire</div><div class="est-badge" id="est-service-badge">🚗 Convoyage Auto</div></div>
-          <div class="est-price-block"><div class="est-price-label">Estimation</div><div class="est-price-num" id="est-price">—</div><div class="est-price-sub" id="est-price-sub">Renseignez la distance pour une estimation</div></div>
-          <div class="est-rules">
-            <div class="est-rule" id="rule-auto"><div class="est-rule-title">📐 Grille tarifaire — Convoyage Auto</div><div class="est-rule-row"><span>≤ 300 km</span><strong>1,00 € / km</strong></div><div class="est-rule-row"><span>&gt; 300 km</span><strong>0,90 € / km</strong></div><div class="est-rule-note">Tarif par convoyeur dédié · Assurance incluse</div></div>
-            <div class="est-rule" id="rule-moto" style="display:none"><div class="est-rule-title">📐 Grille tarifaire — Transport Moto</div><div class="est-rule-row"><span>Tarif de base</span><strong>Sur devis</strong></div><div class="est-rule-row"><span>Multi-motos</span><strong>Tarif dégressif</strong></div><div class="est-rule-note">Camionnette dédiée · Arrimage professionnel · Assurance incluse</div></div>
-          </div>
-          <div class="est-includes"><div class="est-inc-title">✓ Inclus dans chaque prestation</div><div class="est-inc-list" id="est-inc-list"><span>État des lieux photo</span><span>Assurance</span><span>Bon de livraison</span><span>Suivi en temps réel</span></div></div>
-          <div class="est-disclaimer">Estimation indicative. Le devis définitif est établi après étude de votre demande. Réponse sous 2h.</div>
+```
+<div class="testi-carousel-wrap reveal">
+  <div class="testi-carousel" id="testiCarousel">
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">Service impeccable, véhicule livré à l'heure et en parfait état. L'état des lieux photo à la prise en charge nous a vraiment rassurés. On renouvelle à chaque fois sans hésiter.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">TM</div>
+        <div>
+          <div class="testi-name">Thomas M.</div>
+          <div class="testi-role">Directeur — Garage Mécauto, Lyon</div>
         </div>
       </div>
     </div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">En tant que concessionnaire moto, j'ai besoin d'un partenaire de confiance pour mes transports. SECOTO est réactif, professionnel, et les tarifs sont transparents. Exactement ce qu'il me fallait.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SL</div>
+        <div>
+          <div class="testi-name">Sophie L.</div>
+          <div class="testi-role">Gérante — MotoCity Bordeaux</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">Nous faisons appel à SECOTO pour notre flotte d'entreprise depuis 2 ans. Zéro incident, facturation claire, interlocuteur toujours disponible. Un partenariat sur le long terme.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">PD</div>
+        <div>
+          <div class="testi-name">Pierre D.</div>
+          <div class="testi-role">Responsable Flotte — Groupe Dupré & Fils</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testi-controls">
+    <button class="testi-btn" id="testiBtnPrev" aria-label="Précédent">←</button>
+    <div class="testi-dots" id="testiDots"></div>
+    <button class="testi-btn" id="testiBtnNext" aria-label="Suivant">→</button>
+  </div>
+  <div class="testi-hint">← Swipe pour voir plus d'avis →</div>
+</div>
+```
+
+  </section>
+
+  <section id="devis" style="background:#0c1220;padding:110px 5%;">
+    <div class="s-head c reveal">
+      <div class="stag">Devis gratuit</div>
+      <h2 class="s-title">Estimez votre <span class="acc">convoyage</span></h2>
+      <p class="s-desc">Sélectionnez votre service, renseignez les informations et obtenez une estimation instantanée du tarif.</p>
+    </div>
+
+```
+<div class="devis-shell reveal">
+
+  <div class="svc-toggle-wrap">
+    <button class="svc-btn active" id="btn-auto" onclick="switchService('auto')">
+      <span class="svc-ico">🚗</span>
+      <span class="svc-label">Convoyage Automobile</span>
+      <span class="svc-sub">Par chauffeur convoyeur</span>
+    </button>
+    <button class="svc-btn" id="btn-moto" onclick="switchService('moto')">
+      <span class="svc-ico">🏍️</span>
+      <span class="svc-label">Transport Moto</span>
+      <span class="svc-sub">Par camionnette dédiée</span>
+    </button>
+  </div>
+
+  <div class="devis-body">
+    
+    <form id="devis-form" onsubmit="submitDevis(event)">
+
+      <div class="devis-block">
+        <div class="devis-block-title">01 — Vos coordonnées</div>
+        <div class="dform-grid">
+          <div class="field"><label>Prénom *</label><input type="text" placeholder="Jean" required /></div>
+          <div class="field"><label>Nom *</label><input type="text" placeholder="Dupont" required /></div>
+          <div class="field"><label>Société</label><input type="text" placeholder="Votre entreprise" /></div>
+          <div class="field"><label>Téléphone</label><input type="tel" id="f-tel" placeholder="+33 6 00 00 00 00" /></div>
+          <div class="field dfull"><label>Email *</label><input type="email" placeholder="jean.dupont@entreprise.fr" required /></div>
+        </div>
+      </div>
+
+      <div class="devis-block">
+        <div class="devis-block-title">02 — Le trajet</div>
+        <div class="dform-grid">
+          <div class="field">
+            <label>Ville de départ *</label>
+            <input type="text" id="f-depart" placeholder="Paris" required oninput="estimatePrice()" />
+          </div>
+          <div class="field">
+            <label>Ville d'arrivée *</label>
+            <input type="text" id="f-arrivee" placeholder="Marseille" required oninput="estimatePrice()" />
+          </div>
+          <div class="field">
+            <label>Distance estimée (km)</label>
+            <div style="position:relative">
+              <input type="number" id="f-km" placeholder="ex: 250" min="1" oninput="estimatePrice()" style="padding-right:3rem" />
+              <span style="position:absolute;right:.9rem;top:50%;transform:translateY(-50%);color:rgba(232,237,245,.3);font-size:.82rem;pointer-events:none">km</span>
+            </div>
+          </div>
+          <div class="field">
+            <label>Date souhaitée</label>
+            <input type="date" id="f-date" />
+          </div>
+        </div>
+      </div>
+
+      <div class="devis-block" id="block-auto">
+        <div class="devis-block-title">03 — Le véhicule</div>
+        <div class="dform-grid">
+          <div class="field">
+            <label>Marque</label>
+            <input type="text" placeholder="Renault, BMW, Peugeot…" />
+          </div>
+          <div class="field">
+            <label>Modèle</label>
+            <input type="text" placeholder="Clio, Série 3…" />
+          </div>
+          <div class="field">
+            <label>Immatriculation</label>
+            <input type="text" placeholder="AA-000-AA" />
+          </div>
+          <div class="field">
+            <label>Type</label>
+            <select>
+              <option value="">Sélectionner</option>
+              <option>Berline</option>
+              <option>SUV / 4x4</option>
+              <option>Citadine</option>
+              <option>Break</option>
+              <option>Cabriolet</option>
+              <option>Utilitaire léger</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field dfull">
+            <label>Informations complémentaires</label>
+            <textarea placeholder="Véhicule en panne, clés à récupérer chez un tiers, heure de disponibilité…" style="min-height:80px"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="devis-block" id="block-moto" style="display:none">
+        <div class="devis-block-title">03 — La / les moto(s)</div>
+        <div class="dform-grid">
+          <div class="field">
+            <label>Marque</label>
+            <input type="text" placeholder="Honda, Yamaha, Ducati…" />
+          </div>
+          <div class="field">
+            <label>Modèle</label>
+            <input type="text" placeholder="CBR, MT-07…" />
+          </div>
+          <div class="field">
+            <label>Nombre de motos</label>
+            <select id="f-nb-motos" oninput="estimatePrice()">
+              <option value="1">1 moto</option>
+              <option value="2">2 motos</option>
+              <option value="3">3 motos</option>
+              <option value="4+">4 motos et plus</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Cylindrée</label>
+            <select>
+              <option value="">Sélectionner</option>
+              <option>Moins de 125cc</option>
+              <option>125cc – 500cc</option>
+              <option>500cc – 1000cc</option>
+              <option>Plus de 1000cc</option>
+            </select>
+          </div>
+          <div class="field dfull">
+            <label>Informations complémentaires</label>
+            <textarea placeholder="Moto en panne, accès particulier, heure de disponibilité…" style="min-height:80px"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn" style="width:100%;justify-content:center;padding:1.1rem;font-size:1.05rem;margin-top:.5rem">
+        Envoyer ma demande de devis →
+      </button>
+      <div class="form-success" id="fs">✓ Demande envoyée ! Nous vous recontactons sous 2h.</div>
+    </form>
+
+    <div class="estimator-panel">
+      <div class="est-header">
+        <div class="est-title">Estimation tarifaire</div>
+        <div class="est-badge" id="est-service-badge">🚗 Convoyage Auto</div>
+      </div>
+
+      <div class="est-price-block" id="est-price-block">
+        <div class="est-price-label">Estimation</div>
+        <div class="est-price-num" id="est-price">—</div>
+        <div class="est-price-sub" id="est-price-sub">Renseignez la distance pour une estimation</div>
+      </div>
+
+      <div class="est-rules">
+        <div class="est-rule" id="rule-auto">
+          <div class="est-rule-title">📐 Grille tarifaire — Convoyage Auto</div>
+          <div class="est-rule-row"><span>≤ 300 km</span><strong>1,00 € / km</strong></div>
+          <div class="est-rule-row"><span>&gt; 300 km</span><strong>0,90 € / km</strong></div>
+          <div class="est-rule-note">Tarif par convoyeur dédié · Assurance incluse</div>
+        </div>
+        <div class="est-rule" id="rule-moto" style="display:none">
+          <div class="est-rule-title">📐 Grille tarifaire — Transport Moto</div>
+          <div class="est-rule-row"><span>Tarif de base</span><strong>Sur devis</strong></div>
+          <div class="est-rule-row"><span>Multi-motos</span><strong>Tarif dégressif</strong></div>
+          <div class="est-rule-note">Camionnette dédiée · Arrimage professionnel · Assurance incluse</div>
+        </div>
+      </div>
+
+      <div class="est-includes">
+        <div class="est-inc-title">✓ Inclus dans chaque prestation</div>
+        <div class="est-inc-list" id="est-inc-list">
+          <span>État des lieux photo</span>
+          <span>Assurance</span>
+          <span>Bon de livraison</span>
+          <span>Suivi en temps réel</span>
+        </div>
+      </div>
+
+      <div class="est-disclaimer">
+        Estimation indicative. Le devis définitif est établi après étude de votre demande. Réponse sous 2h.
+      </div>
+    </div>
+  </div>
+</div>
+```
+
   </section>
 
   <section id="contact">
@@ -678,9 +622,18 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
         <div class="stag">Nous contacter</div>
         <h2 class="s-title">Une question ?<br><span class="acc">Parlons-en</span></h2>
         <p>Notre équipe est disponible 7j/7 pour répondre à vos questions et vous accompagner dans votre projet de convoyage.</p>
-        <div class="cinfo-item"><div class="cinfo-ico">📍</div><div><div class="cinfo-label">Zone d'intervention</div><div class="cinfo-val">France entière &amp; Europe</div></div></div>
-        <div class="cinfo-item"><div class="cinfo-ico">📞</div><div><div class="cinfo-label">Téléphone</div><div class="cinfo-val">Disponible 7j/7</div></div></div>
-        <div class="cinfo-item"><div class="cinfo-ico">✉️</div><div><div class="cinfo-label">Email</div><div class="cinfo-val">contact@secoto.fr</div></div></div>
+        <div class="cinfo-item">
+          <div class="cinfo-ico">📍</div>
+          <div><div class="cinfo-label">Zone d'intervention</div><div class="cinfo-val">France entière &amp; Europe</div></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ico">📞</div>
+          <div><div class="cinfo-label">Téléphone</div><div class="cinfo-val">Disponible 7j/7</div></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ico">✉️</div>
+          <div><div class="cinfo-label">Email</div><div class="cinfo-val">contact@secoto.fr</div></div>
+        </div>
         <div style="margin-top:2rem;padding:1.5rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;">
           <div style="font-family:'Bebas Neue','Arial Narrow',Arial,sans-serif;font-size:1rem;color:#e8edf5;margin-bottom:.8rem;text-transform:uppercase;letter-spacing:.06em;">Rappel tarifs</div>
           <div style="display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.88rem;color:rgba(232,237,245,.55)"><span>Convoyage auto ≤ 300 km</span><strong style="color:#f5620f">1,00 €/km</strong></div>
@@ -688,15 +641,15 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
           <div style="display:flex;justify-content:space-between;padding:.5rem 0;font-size:.88rem;color:rgba(232,237,245,.55)"><span>Transport moto</span><strong style="color:#f5620f">Sur devis</strong></div>
         </div>
       </div>
-      <form class="reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitContact(event)">
-        <input type="hidden" name="form-name" value="contact" />
-        <p style="display:none"><input name="bot-field" /></p>
+      <form class="reveal" onsubmit="submitContact(event)">
         <div class="form-grid">
-          <div class="field"><label>Prénom</label><input type="text" name="prenom" placeholder="Jean" required /></div>
-          <div class="field"><label>Nom</label><input type="text" name="nom" placeholder="Dupont" required /></div>
-          <div class="field full"><label>Email</label><input type="email" name="email" placeholder="jean.dupont@entreprise.fr" required /></div>
-          <div class="field full"><label>Message</label><textarea name="message" placeholder="Votre question…" style="min-height:140px"></textarea></div>
-          <div class="field full"><button type="submit" class="btn" style="width:100%;justify-content:center;padding:1rem;font-size:1.05rem">Envoyer →</button></div>
+          <div class="field"><label>Prénom</label><input type="text" placeholder="Jean" required /></div>
+          <div class="field"><label>Nom</label><input type="text" placeholder="Dupont" required /></div>
+          <div class="field full"><label>Email</label><input type="email" placeholder="jean.dupont@entreprise.fr" required /></div>
+          <div class="field full"><label>Message</label><textarea placeholder="Votre question…" style="min-height:140px"></textarea></div>
+          <div class="field full">
+            <button type="submit" class="btn" style="width:100%;justify-content:center;padding:1rem;font-size:1.05rem">Envoyer →</button>
+          </div>
         </div>
         <div class="form-success" id="fc">✓ Message envoyé ! Nous vous répondons sous 2h.</div>
       </form>
@@ -708,10 +661,30 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
     <h2 class="s-title reveal">Comment ça <span class="acc">marche ?</span></h2>
     <p class="s-sub reveal" style="max-width:560px;margin:0 auto">De la demande à la livraison, tout est pensé pour que votre véhicule arrive à destination en toute sérénité.</p>
     <div class="steps-grid">
-      <div class="step-card reveal"><div class="step-num">1</div><div class="step-icon">📋</div><div class="step-title">Demande de devis</div><div class="step-desc">Remplissez notre formulaire en ligne. Vous recevez un devis personnalisé sous 2h, 7j/7.</div></div>
-      <div class="step-card reveal"><div class="step-num">2</div><div class="step-icon">🤝</div><div class="step-title">Confirmation</div><div class="step-desc">Vous validez le devis et choisissez la date. Nous affectons un convoyeur certifié à votre mission.</div></div>
-      <div class="step-card reveal"><div class="step-num">3</div><div class="step-icon">📸</div><div class="step-title">Prise en charge</div><div class="step-desc">État des lieux photo complet. Le convoyeur part avec votre véhicule. Vous suivez en temps réel.</div></div>
-      <div class="step-card reveal"><div class="step-num">4</div><div class="step-icon">✅</div><div class="step-title">Livraison</div><div class="step-desc">Le destinataire signe le bon de livraison. Mission accomplie — votre véhicule est arrivé.</div></div>
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <div class="step-icon">📋</div>
+        <div class="step-title">Demande de devis</div>
+        <div class="step-desc">Remplissez notre formulaire en ligne. Vous recevez un devis personnalisé sous 2h, 7j/7.</div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">2</div>
+        <div class="step-icon">🤝</div>
+        <div class="step-title">Confirmation</div>
+        <div class="step-desc">Vous validez le devis et choisissez la date. Nous affectons un convoyeur certifié à votre mission.</div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">3</div>
+        <div class="step-icon">📸</div>
+        <div class="step-title">Prise en charge</div>
+        <div class="step-desc">État des lieux photo complet. Le convoyeur part avec votre véhicule. Vous suivez en temps réel.</div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">4</div>
+        <div class="step-icon">✅</div>
+        <div class="step-title">Livraison</div>
+        <div class="step-desc">Le destinataire signe le bon de livraison. Mission accomplie — votre véhicule est arrivé.</div>
+      </div>
     </div>
   </section>
 
@@ -719,14 +692,62 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
     <div class="stag reveal">Questions fréquentes</div>
     <h2 class="s-title reveal">Tout ce que vous <span class="acc">voulez savoir</span></h2>
     <div class="faq-wrap">
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quelles zones géographiques couvrez-vous ?<div class="faq-arrow">▾</div></div><div class="faq-a">SECOTO assure le convoyage sur toute la France métropolitaine ainsi qu'en Europe. Qu'il s'agisse d'un trajet Paris-Marseille ou d'un convoyage transfrontalier, nos convoyeurs certifiés interviennent partout.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment fonctionne l'assurance pendant le transport ?<div class="faq-arrow">▾</div></div><div class="faq-a">Chaque convoyage est couvert par notre assurance responsabilité civile professionnelle. En cas de sinistre, vous êtes entièrement indemnisé. Nos convoyeurs sont également personnellement assurés pour la conduite de véhicules tiers.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quel est le délai de prise en charge ?<div class="faq-arrow">▾</div></div><div class="faq-a">Nous répondons à toute demande de devis sous 2h. La mission peut être planifiée dès le lendemain selon disponibilité. Pour les demandes urgentes, contactez-nous directement par téléphone ou WhatsApp.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment sont sélectionnés vos convoyeurs ?<div class="faq-arrow">▾</div></div><div class="faq-a">Tous nos convoyeurs passent par un processus rigoureux de sélection : vérification du permis de conduire, extrait de casier judiciaire, attestation d'assurance, et entretien individuel. Ils sont certifiés et formés aux standards SECOTO avant leur première mission.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Puis-je suivre mon véhicule en temps réel ?<div class="faq-arrow">▾</div></div><div class="faq-a">Oui. Dès le départ du convoyeur, vous avez accès à un suivi en temps réel. Vous recevez également des notifications à chaque étape clé : départ, étape intermédiaire, arrivée et signature du bon de livraison.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Les motos sont-elles transportées différemment ?<div class="faq-arrow">▾</div></div><div class="faq-a">Absolument. Les motos sont transportées dans une camionnette dédiée avec arrimage professionnel. Elles ne sont pas conduites sur route. Nous pouvons prendre en charge plusieurs motos simultanément avec un tarif dégressif.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quels types de véhicules acceptez-vous ?<div class="faq-arrow">▾</div></div><div class="faq-a">Nous convoyons toutes les catégories de véhicules : berlines, SUV, citadines, breaks, cabriolets, utilitaires légers et motos de toutes cylindrées. Pour les véhicules de collection ou de luxe, contactez-nous pour un accompagnement personnalisé.</div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Que se passe-t-il si mon véhicule tombe en panne en route ?<div class="faq-arrow">▾</div></div><div class="faq-a">En cas de panne mécanique, le véhicule reste couvert par l'assurance du propriétaire ou du garage client. Notre convoyeur reste sur place et coordonne la prise en charge avec vous jusqu'à la résolution. Vous êtes informé immédiatement et nous restons disponibles pour vous accompagner dans les démarches.</div></div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Quelles zones géographiques couvrez-vous ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">SECOTO assure le convoyage sur toute la France métropolitaine ainsi qu'en Europe. Qu'il s'agisse d'un trajet Paris-Marseille ou d'un convoyage transfrontalier, nos convoyeurs certifiés interviennent partout.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Comment fonctionne l'assurance pendant le transport ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">Chaque convoyage est couvert par notre assurance responsabilité civile professionnelle. En cas de sinistre, vous êtes entièrement indemnisé. Nos convoyeurs sont également personnellement assurés pour la conduite de véhicules tiers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Quel est le délai de prise en charge ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">Nous répondons à toute demande de devis sous 2h. La mission peut être planifiée dès le lendemain selon disponibilité. Pour les demandes urgentes, contactez-nous directement par téléphone ou WhatsApp.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Comment sont sélectionnés vos convoyeurs ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">Tous nos convoyeurs passent par un processus rigoureux de sélection : vérification du permis de conduire, extrait de casier judiciaire, attestation d'assurance, et entretien individuel. Ils sont certifiés et formés aux standards SECOTO avant leur première mission.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Puis-je suivre mon véhicule en temps réel ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">Oui. Dès le départ du convoyeur, vous avez accès à un suivi en temps réel. Vous recevez également des notifications à chaque étape clé : départ, étape intermédiaire, arrivée et signature du bon de livraison.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Les motos sont-elles transportées différemment ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">Absolument. Les motos sont transportées dans une camionnette dédiée avec arrimage professionnel. Elles ne sont pas conduites sur route. Nous pouvons prendre en charge plusieurs motos simultanément avec un tarif dégressif.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Quels types de véhicules acceptez-vous ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">Nous convoyons toutes les catégories de véhicules : berlines, SUV, citadines, breaks, cabriolets, utilitaires légers et motos de toutes cylindrées. Pour les véhicules de collection ou de luxe, contactez-nous pour un accompagnement personnalisé.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Que se passe-t-il si mon véhicule tombe en panne en route ?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-a">En cas de panne mécanique, le véhicule reste couvert par l'assurance du propriétaire ou du garage client. Notre convoyeur reste sur place et coordonne la prise en charge avec vous jusqu'à la résolution. Vous êtes informé immédiatement et nous restons disponibles pour vous accompagner dans les démarches.</div>
+      </div>
     </div>
   </section>
 
@@ -737,13 +758,41 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
         <p>Spécialiste du convoyage automobile et moto en France et en Europe. La sécurité pour vos transports, la tranquillité pour votre business.</p>
         <a href="#devis" class="btn" style="font-size:.85rem;padding:.6rem 1.3rem">Demander un devis</a>
       </div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Convoyage automobile</a></li><li><a href="#services">Transport moto</a></li><li><a href="#services">Solutions entreprises</a></li><li><a href="#tarifs">Tarifs</a></li></ul></div>
-      <div class="footer-col"><h4>Informations</h4><ul><li><a href="#comment">Comment ça marche</a></li><li><a href="#faq">FAQ</a></li><li><a href="#why">Nos engagements</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Légal</h4><ul><li><a href="#" onclick="openLegal('mentions');return false;">Mentions légales</a></li><li><a href="#" onclick="openLegal('cgv');return false;">CGV</a></li><li><a href="#" onclick="openLegal('confidentialite');return false;">Confidentialité</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Convoyage automobile</a></li>
+          <li><a href="#services">Transport moto</a></li>
+          <li><a href="#services">Solutions entreprises</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#comment">Comment ça marche</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#why">Nos engagements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="#" onclick="openLegal('mentions');return false;">Mentions légales</a></li>
+          <li><a href="#" onclick="openLegal('cgv');return false;">CGV</a></li>
+          <li><a href="#" onclick="openLegal('confidentialite');return false;">Confidentialité</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 SECOTO — Tous droits réservés</p>
-      <p><a href="#" onclick="openLegal('mentions');return false;">Mentions légales</a> · <a href="#" onclick="openLegal('cgv');return false;">CGV</a> · <a href="mailto:contact@secoto.fr">contact@secoto.fr</a></p>
+      <p>© 2025 SECOTO — Convoyage automobile & transport moto · France & Europe</p>
+      <p>
+        <a href="#" onclick="openLegal('mentions');return false;">Mentions légales</a> ·
+        <a href="#" onclick="openLegal('cgv');return false;">CGV</a> ·
+        <a href="#" onclick="openLegal('confidentialite');return false;">Confidentialité</a> ·
+        <a href="mailto:contact@secoto.fr">contact@secoto.fr</a>
+      </p>
     </div>
   </footer>
 
@@ -752,46 +801,89 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
   </a>
   <div id="wa-tooltip">💬 Discuter sur WhatsApp</div>
 
-  <!-- MENTIONS LÉGALES MODAL -->
-
   <div class="legal-overlay" id="modal-mentions">
     <div class="legal-modal">
-      <div class="legal-modal-head"><h3>Mentions légales</h3><div class="legal-close" onclick="closeLegal('mentions')">✕</div></div>
+      <div class="legal-modal-head">
+        <h3>Mentions légales</h3>
+        <div class="legal-close" onclick="closeLegal('mentions')">✕</div>
+      </div>
       <div class="legal-modal-body">
-        <h4>Éditeur du site</h4><p>SECOTO — Société par actions simplifiée (SAS)<br>Capital social : 1 000 €<br>SIRET : en cours d'immatriculation<br>Siège social : France<br>Email : contact@secoto.fr</p>
-        <h4>Directeur de la publication</h4><p>Nawfal Benchiha, en qualité de représentant légal de SECOTO.</p>
-        <h4>Hébergement</h4><p>Ce site est hébergé par GitHub Pages — GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
-        <h4>Propriété intellectuelle</h4><p>L'ensemble des éléments composant ce site sont la propriété exclusive de SECOTO. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable.</p>
-        <h4>Données personnelles</h4><p>Les informations collectées via les formulaires sont destinées exclusivement à SECOTO. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression en contactant contact@secoto.fr.</p>
-        <h4>Cookies</h4><p>Ce site n'utilise pas de cookies de traçage.</p>
+        <h4>Éditeur du site</h4>
+        <p>SECOTO — Société par actions simplifiée (SAS)<br>Capital social : 1 000 €<br>SIRET : en cours d'immatriculation<br>Siège social : France<br>Email : contact@secoto.fr</p>
+        <h4>Directeur de la publication</h4>
+        <p>Nawfal Benchiha, en qualité de représentant légal de SECOTO.</p>
+        <h4>Hébergement</h4>
+        <p>Ce site est hébergé par GitHub Pages — GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
+        <h4>Propriété intellectuelle</h4>
+        <p>L'ensemble des éléments composant ce site (textes, images, logos, graphismes) sont la propriété exclusive de SECOTO. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable.</p>
+        <h4>Données personnelles</h4>
+        <p>Les informations collectées via les formulaires de ce site sont destinées exclusivement à SECOTO et ne sont jamais cédées à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en contactant contact@secoto.fr.</p>
+        <h4>Cookies</h4>
+        <p>Ce site n'utilise pas de cookies de traçage. Seuls des cookies techniques nécessaires au bon fonctionnement du site peuvent être déposés.</p>
+        <h4>Responsabilité</h4>
+        <p>SECOTO ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site ou de l'impossibilité d'y accéder.</p>
       </div>
     </div>
   </div>
-
-  <!-- CGV MODAL -->
 
   <div class="legal-overlay" id="modal-cgv">
     <div class="legal-modal">
-      <div class="legal-modal-head"><h3>Conditions générales de vente</h3><div class="legal-close" onclick="closeLegal('cgv')">✕</div></div>
+      <div class="legal-modal-head">
+        <h3>Conditions générales de vente</h3>
+        <div class="legal-close" onclick="closeLegal('cgv')">✕</div>
+      </div>
       <div class="legal-modal-body">
-        <h4>Article 1 — Objet</h4><p>Les présentes CGV régissent les relations entre SECOTO et tout client ayant recours à ses services de convoyage.</p>
-        <h4>Article 2 — Tarifs</h4><p>Les tarifs applicables sont :</p><ul><li>Convoyage automobile ≤ 300 km : 1,00 € / km</li><li>Convoyage automobile &gt; 300 km : 0,90 € / km</li><li>Transport moto par camionnette : sur devis</li></ul>
-        <h4>Article 3 — Paiement</h4><p>Le paiement est dû à la livraison du véhicule, sauf accord préalable.</p>
-        <h4>Article 4 — Responsabilités</h4><p>SECOTO est responsable du véhicule dès la prise en charge et jusqu'à la signature du bon de livraison. Un état des lieux photographique est réalisé au départ et à l'arrivée.</p>
-        <h4>Article 5 — Annulation</h4><p>Toute annulation moins de 24h avant la mission peut entraîner des frais de 30% du devis.</p>
+        <h4>Article 1 — Objet</h4>
+        <p>Les présentes CGV régissent les relations contractuelles entre SECOTO et tout client ayant recours à ses services de convoyage automobile et de transport de moto.</p>
+        <h4>Article 2 — Tarifs</h4>
+        <p>Les tarifs applicables sont les suivants :</p>
+        <ul>
+          <li>Convoyage automobile ≤ 300 km : 1,00 € / km</li>
+          <li>Convoyage automobile &gt; 300 km : 0,90 € / km</li>
+          <li>Transport moto par camionnette : sur devis</li>
+        </ul>
+        <p>Tout devis accepté par le client vaut bon de commande et engage les deux parties.</p>
+        <h4>Article 3 — Modalités de paiement</h4>
+        <p>Le paiement est dû à la livraison du véhicule, sauf accord préalable. Les règlements s'effectuent par virement bancaire ou tout autre moyen convenu.</p>
+        <h4>Article 4 — Responsabilités</h4>
+        <p>SECOTO est responsable du véhicule dès la prise en charge et jusqu'à la signature du bon de livraison par le destinataire. Un état des lieux photographique est réalisé au départ et à l'arrivée. Tout dommage constaté à la livraison non présent au départ est pris en charge par l'assurance de SECOTO.</p>
+        <h4>Article 5 — Assurance</h4>
+        <p>SECOTO dispose d'une assurance responsabilité civile professionnelle couvrant l'ensemble de ses prestations de convoyage sur le territoire français et européen.</p>
+        <h4>Article 6 — Annulation</h4>
+        <p>Toute annulation doit être notifiée par email à contact@secoto.fr. En cas d'annulation moins de 24h avant la mission, des frais correspondant à 30% du devis pourront être facturés.</p>
+        <h4>Article 7 — Litiges</h4>
+        <p>En cas de litige, les parties s'engagent à rechercher une solution amiable avant toute action judiciaire. À défaut, les tribunaux compétents seront ceux du siège social de SECOTO.</p>
+        <h4>Article 8 — Droit applicable</h4>
+        <p>Les présentes CGV sont soumises au droit français. Toute disposition déclarée nulle ou inapplicable ne remet pas en cause la validité des autres dispositions.</p>
       </div>
     </div>
   </div>
 
-  <!-- CONFIDENTIALITÉ MODAL -->
-
   <div class="legal-overlay" id="modal-confidentialite">
     <div class="legal-modal">
-      <div class="legal-modal-head"><h3>Politique de confidentialité</h3><div class="legal-close" onclick="closeLegal('confidentialite')">✕</div></div>
+      <div class="legal-modal-head">
+        <h3>Politique de confidentialité</h3>
+        <div class="legal-close" onclick="closeLegal('confidentialite')">✕</div>
+      </div>
       <div class="legal-modal-body">
-        <h4>Données collectées</h4><p>SECOTO collecte uniquement les données nécessaires : nom, prénom, email, téléphone, informations relatives à votre véhicule et trajet.</p>
-        <h4>Utilisation</h4><p>Vos données sont utilisées exclusivement pour établir votre devis et réaliser votre mission. Elles ne sont jamais vendues ni cédées à des tiers.</p>
-        <h4>Vos droits</h4><p>Conformément au RGPD, vous disposez des droits d'accès, de rectification, d'effacement, de portabilité et d'opposition. Contactez : contact@secoto.fr</p>
+        <h4>Données collectées</h4>
+        <p>SECOTO collecte uniquement les données nécessaires au traitement de vos demandes : nom, prénom, email, téléphone, informations relatives à votre véhicule et à votre trajet.</p>
+        <h4>Utilisation des données</h4>
+        <p>Vos données sont utilisées exclusivement pour établir votre devis, réaliser votre mission de convoyage et vous tenir informé de l'avancement. Elles ne sont jamais vendues ni cédées à des tiers.</p>
+        <h4>Durée de conservation</h4>
+        <p>Vos données sont conservées pendant 3 ans à compter de la dernière prestation, conformément aux obligations légales comptables et contractuelles.</p>
+        <h4>Vos droits</h4>
+        <p>Conformément au RGPD (Règlement Général sur la Protection des Données), vous disposez des droits suivants :</p>
+        <ul>
+          <li>Droit d'accès à vos données</li>
+          <li>Droit de rectification</li>
+          <li>Droit à l'effacement (droit à l'oubli)</li>
+          <li>Droit à la portabilité</li>
+          <li>Droit d'opposition au traitement</li>
+        </ul>
+        <p>Pour exercer ces droits, contactez-nous à : contact@secoto.fr</p>
+        <h4>Sécurité</h4>
+        <p>SECOTO met en œuvre les mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte ou divulgation.</p>
       </div>
     </div>
   </div>
@@ -800,14 +892,18 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
 
   <script>
   (() => {
-    const dot = document.getElementById('cursor-dot');
+    
+    const dot  = document.getElementById('cursor-dot');
     const ring = document.getElementById('cursor-ring');
     let mx = 0, my = 0, rx = 0, ry = 0;
     document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
     function animCursor() {
-      dot.style.left = mx + 'px'; dot.style.top = my + 'px';
-      rx += (mx - rx) * .12; ry += (my - ry) * .12;
-      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+      dot.style.left  = mx + 'px';
+      dot.style.top   = my + 'px';
+      rx += (mx - rx) * .12;
+      ry += (my - ry) * .12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
       requestAnimationFrame(animCursor);
     }
     animCursor();
@@ -830,28 +926,79 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
         nav.setAttribute('data-open','1');
         nav.style.cssText = 'position:fixed;top:70px;left:0;right:0;flex-direction:column;background:#0c1220;padding:1.5rem 5%;gap:1.2rem;border-top:1px solid rgba(255,255,255,.08);backdrop-filter:blur(20px);z-index:999';
         nav.querySelectorAll('a:not(.btn-nav)').forEach(a => a.style.display = 'block');
-      } else { nav.removeAttribute('data-open'); nav.removeAttribute('style'); }
+      } else {
+        nav.removeAttribute('data-open');
+        nav.removeAttribute('style');
+      }
     });
-    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.removeAttribute('data-open'); nav.removeAttribute('style'); }));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.removeAttribute('data-open');
+      nav.removeAttribute('style');
+    }));
 
-    document.getElementById('themeBtn').addEventListener('click', () => {
+    const themeBtn = document.getElementById('themeBtn');
+    themeBtn.addEventListener('click', () => {
       const html = document.documentElement;
-      html.setAttribute('data-theme', html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
     });
 
-    const ro = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }), { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(r => ro.observe(r));
+    const reveals = document.querySelectorAll('.reveal');
+    const ro = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => ro.observe(r));
+
+    var counterData = {
+      'vehicles':     { target: 500, suffix: '+' },
+      'countries':    { target: 15,  suffix: '+' },
+      'delay':        { target: 24,  suffix: 'h' },
+      'satisfaction': { target: 98,  suffix: '%' },
+    };
+    var counterDone = false;
+    var co = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (!e.isIntersecting || counterDone) return;
+        counterDone = true;
+        Object.keys(counterData).forEach(function(key) {
+          var el = document.querySelector('[data-counter="' + key + '"]');
+          if (!el) return;
+          var d = counterData[key];
+          var current = 0;
+          var duration = 2000;
+          var frameRate = 30;
+          var totalFrames = duration / frameRate;
+          var inc = d.target / totalFrames;
+          el.textContent = '0' + d.suffix;
+          var timer = setInterval(function() {
+            current += inc;
+            if (current >= d.target) {
+              current = d.target;
+              clearInterval(timer);
+            }
+            el.textContent = Math.floor(current) + d.suffix;
+          }, frameRate);
+        });
+      });
+    }, { threshold: 0.3 });
+    var counterSection = document.getElementById('counters');
+    if (counterSection) co.observe(counterSection);
 
     document.querySelectorAll('.tilt-card').forEach(card => {
       card.addEventListener('mousemove', e => {
         const r = card.getBoundingClientRect();
-        const x = e.clientX - r.left, y = e.clientY - r.top;
+        const x = e.clientX - r.left;
+        const y = e.clientY - r.top;
         const cx = r.width / 2, cy = r.height / 2;
-        card.style.transform = `perspective(800px) rotateX(${-((y-cy)/cy)*6}deg) rotateY(${((x-cx)/cx)*9}deg) translateZ(6px)`;
+        const rotY = ((x - cx) / cx) * 9;
+        const rotX = -((y - cy) / cy) * 6;
+        card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(6px)`;
         card.style.setProperty('--mx', (x / r.width * 100) + '%');
         card.style.setProperty('--my', (y / r.height * 100) + '%');
       });
-      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
     });
 
     const mesh = document.querySelector('.hero-mesh');
@@ -864,84 +1011,165 @@ footer { background: #070b14; border-top: 1px solid rgba(255,255,255,.08); paddi
       }
     }, { passive: true });
 
-    window.toggleFaq = el => {
+    window.submitForm = function(e) {
+      const fs = document.getElementById('fs');
+      if (fs) { e.preventDefault(); fs.style.display = 'block'; e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true); setTimeout(() => { fs.style.display = 'none'; }, 6000); }
+    };
+
+    window.toggleFaq = function(el) {
       const item = el.parentElement;
       const isOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
     };
 
-    window.openLegal = type => { document.getElementById('modal-'+type).classList.add('on'); document.body.style.overflow = 'hidden'; };
-    window.closeLegal = type => { document.getElementById('modal-'+type).classList.remove('on'); document.body.style.overflow = ''; };
-    document.querySelectorAll('.legal-overlay').forEach(overlay => overlay.addEventListener('click', function(e) { if (e.target === this) { this.classList.remove('on'); document.body.style.overflow = ''; } }));
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') { document.querySelectorAll('.legal-overlay.on').forEach(m => m.classList.remove('on')); document.body.style.overflow = ''; } });
+    window.openLegal = function(type) {
+      document.getElementById('modal-'+type).classList.add('on');
+      document.body.style.overflow = 'hidden';
+    };
+    window.closeLegal = function(type) {
+      document.getElementById('modal-'+type).classList.remove('on');
+      document.body.style.overflow = '';
+    };
+    // Close on overlay click
+    document.querySelectorAll('.legal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.remove('on');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+    // Close on Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.legal-overlay.on').forEach(m => m.classList.remove('on'));
+        document.body.style.overflow = '';
+      }
+    });
 
     let currentService = 'auto';
-    window.switchService = svc => {
+
+    window.switchService = function(svc) {
       currentService = svc;
       document.getElementById('btn-auto').classList.toggle('active', svc === 'auto');
       document.getElementById('btn-moto').classList.toggle('active', svc === 'moto');
       document.getElementById('block-auto').style.display = svc === 'auto' ? '' : 'none';
       document.getElementById('block-moto').style.display = svc === 'moto' ? '' : 'none';
-      document.getElementById('rule-auto').style.display = svc === 'auto' ? '' : 'none';
-      document.getElementById('rule-moto').style.display = svc === 'moto' ? '' : 'none';
-      document.getElementById('est-service-badge').textContent = svc === 'auto' ? '🚗 Convoyage Auto' : '🏍️ Transport Moto';
-      document.getElementById('hidden-service').value = svc === 'auto' ? 'Convoyage Automobile' : 'Transport Moto';
-      document.getElementById('est-inc-list').innerHTML = svc === 'auto'
+      document.getElementById('rule-auto').style.display  = svc === 'auto' ? '' : 'none';
+      document.getElementById('rule-moto').style.display  = svc === 'moto' ? '' : 'none';
+      const badge = document.getElementById('est-service-badge');
+      badge.textContent = svc === 'auto' ? '🚗 Convoyage Auto' : '🏍️ Transport Moto';
+      const incList = document.getElementById('est-inc-list');
+      incList.innerHTML = svc === 'auto'
         ? '<span>État des lieux photo</span><span>Assurance</span><span>Bon de livraison</span><span>Suivi en temps réel</span>'
         : '<span>Arrimage professionnel</span><span>Assurance moto</span><span>Bon de livraison</span><span>Multi-motos</span>';
       estimatePrice();
     };
 
-    window.estimatePrice = () => {
+    window.estimatePrice = function() {
       const km = parseFloat(document.getElementById('f-km').value);
       const priceEl = document.getElementById('est-price');
-      const subEl = document.getElementById('est-price-sub');
-      if (currentService === 'moto') { priceEl.textContent = 'Sur devis'; subEl.textContent = 'Devis personnalisé selon distance, nombre de motos et disponibilité.'; return; }
-      if (!km || km < 1) { priceEl.textContent = '—'; subEl.textContent = 'Renseignez la distance pour une estimation'; return; }
-      const rate = km <= 300 ? 1.00 : 0.90;
-      const note = km <= 300 ? `${km} km × 1,00 €/km (≤ 300 km)` : `${km} km × 0,90 €/km (> 300 km)`;
-      priceEl.textContent = `≈ ${Number((km * rate).toFixed(0)).toLocaleString('fr-FR')} €`;
+      const subEl   = document.getElementById('est-price-sub');
+
+      if (currentService === 'moto') {
+        priceEl.textContent = 'Sur devis';
+        subEl.textContent = 'Devis personnalisé selon distance, nombre de motos et disponibilité.';
+        return;
+      }
+
+      if (!km || km < 1) {
+        priceEl.textContent = '—';
+        subEl.textContent = 'Renseignez la distance pour une estimation';
+        return;
+      }
+
+      let rate, note;
+      if (km <= 300) {
+        rate = 1.00;
+        note = `${km} km × 1,00 €/km (≤ 300 km)`;
+      } else {
+        rate = 0.90;
+        note = `${km} km × 0,90 €/km (> 300 km)`;
+      }
+      const total = (km * rate).toFixed(0);
+      priceEl.textContent = `≈ ${Number(total).toLocaleString('fr-FR')} €`;
       subEl.textContent = note + ' · hors options';
     };
 
-    window.submitDevis = e => {
+    window.submitDevis = function(e) {
       e.preventDefault();
-      const form = e.target;
-      const btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Envoi en cours…';
-      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
-        .then(() => {
-          document.getElementById('fs').style.display = 'block';
-          form.querySelectorAll('input,select,textarea').forEach(el => el.disabled = true);
-          btn.textContent = '✓ Demande envoyée';
-        })
-        .catch(() => {
-          btn.disabled = false;
-          btn.textContent = 'Envoyer ma demande de devis →';
-          alert('Une erreur est survenue. Merci de réessayer ou de nous contacter par WhatsApp.');
-        });
+      const fs = document.getElementById('fs');
+      fs.style.display = 'block';
+      e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true);
+      setTimeout(() => { fs.style.display = 'none'; }, 7000);
     };
 
-    window.submitContact = e => {
+    window.submitContact = function(e) {
       e.preventDefault();
-      const form = e.target;
-      const btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Envoi en cours…';
-      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
-        .then(() => {
-          document.getElementById('fc').style.display = 'block';
-          form.querySelectorAll('input,textarea').forEach(el => el.disabled = true);
-          btn.textContent = '✓ Message envoyé';
-        })
-        .catch(() => {
-          btn.disabled = false;
-          btn.textContent = 'Envoyer →';
-          alert('Une erreur est survenue. Merci de réessayer ou de nous contacter par email.');
-        });
+      const fc = document.getElementById('fc');
+      fc.style.display = 'block';
+      e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true);
+      setTimeout(() => { fc.style.display = 'none'; }, 6000);
     };
+    /* ── TESTIMONIALS CAROUSEL ── */
+    (function(){
+      var carousel = document.getElementById('testiCarousel');
+      var dotsWrap = document.getElementById('testiDots');
+      var btnPrev  = document.getElementById('testiBtnPrev');
+      var btnNext  = document.getElementById('testiBtnNext');
+      if(!carousel) return;
+
+      var cards = carousel.querySelectorAll('.testi-card');
+      var total = cards.length;
+      var current = 0;
+      var startX = 0, isDragging = false, dragDelta = 0;
+
+      // Build dots
+      for(var i=0;i<total;i++){
+        var d = document.createElement('button');
+        d.className = 'testi-dot' + (i===0?' active':'');
+        d.setAttribute('aria-label','Avis '+(i+1));
+        (function(idx){d.addEventListener('click',function(){goTo(idx);});})(i);
+        dotsWrap.appendChild(d);
+      }
+
+      function goTo(idx){
+        current = (idx + total) % total;
+        carousel.style.transition = 'transform .4s cubic-bezier(.4,0,.2,1)';
+        carousel.style.transform = 'translateX(-'+current+'00%)';
+        dotsWrap.querySelectorAll('.testi-dot').forEach(function(d,i){
+          d.classList.toggle('active', i===current);
+        });
+      }
+
+      btnNext.addEventListener('click', function(){ goTo(current+1); });
+      btnPrev.addEventListener('click', function(){ goTo(current-1); });
+
+      // Touch / mouse swipe
+      carousel.addEventListener('mousedown', function(e){ startX=e.clientX; isDragging=true; carousel.style.transition='none'; });
+      carousel.addEventListener('mousemove', function(e){ if(!isDragging) return; dragDelta=e.clientX-startX; carousel.style.transform='translateX(calc(-'+current+'00% + '+dragDelta+'px))'; });
+      carousel.addEventListener('mouseup',   function(){ endDrag(); });
+      carousel.addEventListener('mouseleave',function(){ if(isDragging) endDrag(); });
+
+      carousel.addEventListener('touchstart', function(e){ startX=e.touches[0].clientX; isDragging=true; carousel.style.transition='none'; },{passive:true});
+      carousel.addEventListener('touchmove',  function(e){ if(!isDragging) return; dragDelta=e.touches[0].clientX-startX; carousel.style.transform='translateX(calc(-'+current+'00% + '+dragDelta+'px))'; },{passive:true});
+      carousel.addEventListener('touchend',   function(){ endDrag(); });
+
+      function endDrag(){
+        isDragging=false;
+        if(dragDelta < -60) goTo(current+1);
+        else if(dragDelta > 60) goTo(current-1);
+        else goTo(current);
+        dragDelta=0;
+      }
+
+      // Auto-play every 6s
+      var autoplay = setInterval(function(){ goTo(current+1); }, 6000);
+      carousel.addEventListener('mousedown', function(){ clearInterval(autoplay); });
+      carousel.addEventListener('touchstart', function(){ clearInterval(autoplay); },{passive:true});
+    })();
+
   })();
   </script>
 
