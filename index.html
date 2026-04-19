@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
@@ -74,7 +73,6 @@
   <meta name="theme-color" content="#f5620f" />
 
   <!-- Preload critical font for faster rendering -->
-
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,56 +82,57 @@
 /* ── CAROUSEL TESTIMONIALS ── */
 .testi-carousel-wrap{max-width:860px;margin:0 auto;position:relative;}
 .testi-carousel{
-display:flex;
-transition:transform .4s cubic-bezier(.4,0,.2,1);
-cursor:grab;
-user-select:none;
-will-change:transform;
+  display:flex;
+  transition:transform .4s cubic-bezier(.4,0,.2,1);
+  cursor:grab;
+  user-select:none;
+  will-change:transform;
 }
 .testi-carousel:active{cursor:grabbing;}
 .testi-carousel .testi-card{
-min-width:100%;
-width:100%;
-flex-shrink:0;
-background:rgba(255,255,255,.04) !important;
-border:1px solid rgba(255,255,255,.08) !important;
-border-radius:14px;
-padding:2.5rem;
-box-sizing:border-box;
+  min-width:100%;
+  width:100%;
+  flex-shrink:0;
+  background:rgba(255,255,255,.04) !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  border-radius:14px;
+  padding:2.5rem;
+  box-sizing:border-box;
 }
 .testi-carousel-outer{
-overflow:hidden;
-border-radius:14px;
-width:100%;
+  overflow:hidden;
+  border-radius:14px;
+  width:100%;
 }
 .testi-controls{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:2rem;}
 .testi-btn{
-width:44px;height:44px;border-radius:50%;
-background:rgba(255,255,255,.06);
-border:1px solid rgba(255,255,255,.12);
-color:#e8edf5;font-size:1.1rem;
-cursor:pointer;display:flex;align-items:center;justify-content:center;
-transition:background .2s,border-color .2s,transform .2s;
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  color:#e8edf5;font-size:1.1rem;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:background .2s,border-color .2s,transform .2s;
 }
 .testi-btn:hover{background:rgba(245,98,15,.15);border-color:rgba(245,98,15,.4);transform:scale(1.08);}
 .testi-dots{display:flex;gap:.5rem;align-items:center;}
 .testi-dot{
-width:8px;height:8px;border-radius:50%;
-background:rgba(255,255,255,.2);
-cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
+  width:8px;height:8px;border-radius:50%;
+  background:rgba(255,255,255,.2);
+  cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
 }
 .testi-dot.active{background:#f5620f;transform:scale(1.3);}
 .testi-hint{text-align:center;color:rgba(232,237,245,.25);font-size:.75rem;margin-top:.8rem;letter-spacing:.06em;}
 @media(min-width:700px){.testi-hint{display:none;}}</style>
-
 </head>
 <body>
-
+  
   <div id="cursor-dot"></div>
   <div id="cursor-ring"></div>
 
   <header id="hdr">
-    <a href="#hero" class="logo">SEC<span class="o">O</span>TO</a>
+    <a href="#hero" class="logo">
+      <img src="https://nawfelbch.github.io/logo.png" alt="SECOTO" style="height:38px;width:auto;object-fit:contain;filter:brightness(0) invert(1);" />
+    </a>
     <nav id="nav">
       <a href="#services">Services</a>
       <a href="#comment">Comment ça marche</a>
@@ -389,57 +388,54 @@ cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
       <p class="s-desc">Des professionnels de l'automobile qui ont choisi SECOTO pour la fiabilité et la réactivité de nos équipes.</p>
     </div>
 
-```
-<div class="testi-carousel-wrap reveal">
-  <div class="testi-carousel-outer">
-    <div class="testi-carousel" id="testiCarousel">
-    <div class="testi-card">
-      <div class="testi-quote">"</div>
-      <div class="stars">★★★★★</div>
-      <p class="testi-text">Service impeccable, véhicule livré à l'heure et en parfait état. L'état des lieux photo à la prise en charge nous a vraiment rassurés. On renouvelle à chaque fois sans hésiter.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">TM</div>
-        <div>
-          <div class="testi-name">Thomas M.</div>
-          <div class="testi-role">Directeur — Garage Mécauto, Lyon</div>
+    <div class="testi-carousel-wrap reveal">
+      <div class="testi-carousel-outer">
+        <div class="testi-carousel" id="testiCarousel">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">Service impeccable, véhicule livré à l'heure et en parfait état. L'état des lieux photo à la prise en charge nous a vraiment rassurés. On renouvelle à chaque fois sans hésiter.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">TM</div>
+            <div>
+              <div class="testi-name">Thomas M.</div>
+              <div class="testi-role">Directeur — Garage Mécauto, Lyon</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-quote">"</div>
-      <div class="stars">★★★★★</div>
-      <p class="testi-text">En tant que concessionnaire moto, j'ai besoin d'un partenaire de confiance pour mes transports. SECOTO est réactif, professionnel, et les tarifs sont transparents. Exactement ce qu'il me fallait.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">SL</div>
-        <div>
-          <div class="testi-name">Sophie L.</div>
-          <div class="testi-role">Gérante — MotoCity Bordeaux</div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">En tant que concessionnaire moto, j'ai besoin d'un partenaire de confiance pour mes transports. SECOTO est réactif, professionnel, et les tarifs sont transparents. Exactement ce qu'il me fallait.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SL</div>
+            <div>
+              <div class="testi-name">Sophie L.</div>
+              <div class="testi-role">Gérante — MotoCity Bordeaux</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-quote">"</div>
-      <div class="stars">★★★★★</div>
-      <p class="testi-text">Nous faisons appel à SECOTO pour notre flotte d'entreprise depuis 2 ans. Zéro incident, facturation claire, interlocuteur toujours disponible. Un partenariat sur le long terme.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">PD</div>
-        <div>
-          <div class="testi-name">Pierre D.</div>
-          <div class="testi-role">Responsable Flotte — Groupe Dupré & Fils</div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">Nous faisons appel à SECOTO pour notre flotte d'entreprise depuis 2 ans. Zéro incident, facturation claire, interlocuteur toujours disponible. Un partenariat sur le long terme.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PD</div>
+            <div>
+              <div class="testi-name">Pierre D.</div>
+              <div class="testi-role">Responsable Flotte — Groupe Dupré & Fils</div>
+            </div>
+          </div>
         </div>
+      </div><!-- end carousel -->
+      </div><!-- end carousel-outer -->
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiBtnPrev" aria-label="Précédent">←</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiBtnNext" aria-label="Suivant">→</button>
       </div>
+      <div class="testi-hint">← Swipe pour voir plus d'avis →</div>
     </div>
-  </div><!-- end carousel -->
-  </div><!-- end carousel-outer -->
-  <div class="testi-controls">
-    <button class="testi-btn" id="testiBtnPrev" aria-label="Précédent">←</button>
-    <div class="testi-dots" id="testiDots"></div>
-    <button class="testi-btn" id="testiBtnNext" aria-label="Suivant">→</button>
-  </div>
-  <div class="testi-hint">← Swipe pour voir plus d'avis →</div>
-</div>
-```
-
   </section>
 
   <section id="devis" style="background:#0c1220;padding:110px 5%;">
@@ -449,185 +445,182 @@ cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
       <p class="s-desc">Sélectionnez votre service, renseignez les informations et obtenez une estimation instantanée du tarif.</p>
     </div>
 
-```
-<div class="devis-shell reveal">
+    <div class="devis-shell reveal">
 
-  <div class="svc-toggle-wrap">
-    <button class="svc-btn active" id="btn-auto" onclick="switchService('auto')">
-      <span class="svc-ico">🚗</span>
-      <span class="svc-label">Convoyage Automobile</span>
-      <span class="svc-sub">Par chauffeur convoyeur</span>
-    </button>
-    <button class="svc-btn" id="btn-moto" onclick="switchService('moto')">
-      <span class="svc-ico">🏍️</span>
-      <span class="svc-label">Transport Moto</span>
-      <span class="svc-sub">Par camionnette dédiée</span>
-    </button>
-  </div>
-
-  <div class="devis-body">
-    
-    <form id="devis-form" onsubmit="submitDevis(event)">
-
-      <div class="devis-block">
-        <div class="devis-block-title">01 — Vos coordonnées</div>
-        <div class="dform-grid">
-          <div class="field"><label>Prénom *</label><input type="text" placeholder="Jean" required /></div>
-          <div class="field"><label>Nom *</label><input type="text" placeholder="Dupont" required /></div>
-          <div class="field"><label>Société</label><input type="text" placeholder="Votre entreprise" /></div>
-          <div class="field"><label>Téléphone</label><input type="tel" id="f-tel" placeholder="+33 6 00 00 00 00" /></div>
-          <div class="field dfull"><label>Email *</label><input type="email" placeholder="jean.dupont@entreprise.fr" required /></div>
-        </div>
+      <div class="svc-toggle-wrap">
+        <button class="svc-btn active" id="btn-auto" onclick="switchService('auto')">
+          <span class="svc-ico">🚗</span>
+          <span class="svc-label">Convoyage Automobile</span>
+          <span class="svc-sub">Par chauffeur convoyeur</span>
+        </button>
+        <button class="svc-btn" id="btn-moto" onclick="switchService('moto')">
+          <span class="svc-ico">🏍️</span>
+          <span class="svc-label">Transport Moto</span>
+          <span class="svc-sub">Par camionnette dédiée</span>
+        </button>
       </div>
 
-      <div class="devis-block">
-        <div class="devis-block-title">02 — Le trajet</div>
-        <div class="dform-grid">
-          <div class="field">
-            <label>Ville de départ *</label>
-            <input type="text" id="f-depart" placeholder="Paris" required oninput="estimatePrice()" />
-          </div>
-          <div class="field">
-            <label>Ville d'arrivée *</label>
-            <input type="text" id="f-arrivee" placeholder="Marseille" required oninput="estimatePrice()" />
-          </div>
-          <div class="field">
-            <label>Distance estimée (km)</label>
-            <div style="position:relative">
-              <input type="number" id="f-km" placeholder="ex: 250" min="1" oninput="estimatePrice()" style="padding-right:3rem" />
-              <span style="position:absolute;right:.9rem;top:50%;transform:translateY(-50%);color:rgba(232,237,245,.3);font-size:.82rem;pointer-events:none">km</span>
+      <div class="devis-body">
+        
+        <form id="devis-form" onsubmit="submitDevis(event)">
+
+          <div class="devis-block">
+            <div class="devis-block-title">01 — Vos coordonnées</div>
+            <div class="dform-grid">
+              <div class="field"><label>Prénom *</label><input type="text" placeholder="Jean" required /></div>
+              <div class="field"><label>Nom *</label><input type="text" placeholder="Dupont" required /></div>
+              <div class="field"><label>Société</label><input type="text" placeholder="Votre entreprise" /></div>
+              <div class="field"><label>Téléphone</label><input type="tel" id="f-tel" placeholder="+33 6 00 00 00 00" /></div>
+              <div class="field dfull"><label>Email *</label><input type="email" placeholder="jean.dupont@entreprise.fr" required /></div>
             </div>
           </div>
-          <div class="field">
-            <label>Date souhaitée</label>
-            <input type="date" id="f-date" />
+
+          <div class="devis-block">
+            <div class="devis-block-title">02 — Le trajet</div>
+            <div class="dform-grid">
+              <div class="field">
+                <label>Ville de départ *</label>
+                <input type="text" id="f-depart" placeholder="Paris" required oninput="estimatePrice()" />
+              </div>
+              <div class="field">
+                <label>Ville d'arrivée *</label>
+                <input type="text" id="f-arrivee" placeholder="Marseille" required oninput="estimatePrice()" />
+              </div>
+              <div class="field">
+                <label>Distance estimée (km)</label>
+                <div style="position:relative">
+                  <input type="number" id="f-km" placeholder="ex: 250" min="1" oninput="estimatePrice()" style="padding-right:3rem" />
+                  <span style="position:absolute;right:.9rem;top:50%;transform:translateY(-50%);color:rgba(232,237,245,.3);font-size:.82rem;pointer-events:none">km</span>
+                </div>
+              </div>
+              <div class="field">
+                <label>Date souhaitée</label>
+                <input type="date" id="f-date" />
+              </div>
+            </div>
+          </div>
+
+          <div class="devis-block" id="block-auto">
+            <div class="devis-block-title">03 — Le véhicule</div>
+            <div class="dform-grid">
+              <div class="field">
+                <label>Marque</label>
+                <input type="text" placeholder="Renault, BMW, Peugeot…" />
+              </div>
+              <div class="field">
+                <label>Modèle</label>
+                <input type="text" placeholder="Clio, Série 3…" />
+              </div>
+              <div class="field">
+                <label>Immatriculation</label>
+                <input type="text" placeholder="AA-000-AA" />
+              </div>
+              <div class="field">
+                <label>Type</label>
+                <select>
+                  <option value="">Sélectionner</option>
+                  <option>Berline</option>
+                  <option>SUV / 4x4</option>
+                  <option>Citadine</option>
+                  <option>Break</option>
+                  <option>Cabriolet</option>
+                  <option>Utilitaire léger</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+              <div class="field dfull">
+                <label>Informations complémentaires</label>
+                <textarea placeholder="Véhicule en panne, clés à récupérer chez un tiers, heure de disponibilité…" style="min-height:80px"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="devis-block" id="block-moto" style="display:none">
+            <div class="devis-block-title">03 — La / les moto(s)</div>
+            <div class="dform-grid">
+              <div class="field">
+                <label>Marque</label>
+                <input type="text" placeholder="Honda, Yamaha, Ducati…" />
+              </div>
+              <div class="field">
+                <label>Modèle</label>
+                <input type="text" placeholder="CBR, MT-07…" />
+              </div>
+              <div class="field">
+                <label>Nombre de motos</label>
+                <select id="f-nb-motos" oninput="estimatePrice()">
+                  <option value="1">1 moto</option>
+                  <option value="2">2 motos</option>
+                  <option value="3">3 motos</option>
+                  <option value="4+">4 motos et plus</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Cylindrée</label>
+                <select>
+                  <option value="">Sélectionner</option>
+                  <option>Moins de 125cc</option>
+                  <option>125cc – 500cc</option>
+                  <option>500cc – 1000cc</option>
+                  <option>Plus de 1000cc</option>
+                </select>
+              </div>
+              <div class="field dfull">
+                <label>Informations complémentaires</label>
+                <textarea placeholder="Moto en panne, accès particulier, heure de disponibilité…" style="min-height:80px"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn" style="width:100%;justify-content:center;padding:1.1rem;font-size:1.05rem;margin-top:.5rem">
+            Envoyer ma demande de devis →
+          </button>
+          <div class="form-success" id="fs">✓ Demande envoyée ! Nous vous recontactons sous 2h.</div>
+        </form>
+
+        <div class="estimator-panel">
+          <div class="est-header">
+            <div class="est-title">Estimation tarifaire</div>
+            <div class="est-badge" id="est-service-badge">🚗 Convoyage Auto</div>
+          </div>
+
+          <div class="est-price-block" id="est-price-block">
+            <div class="est-price-label">Estimation</div>
+            <div class="est-price-num" id="est-price">—</div>
+            <div class="est-price-sub" id="est-price-sub">Renseignez la distance pour une estimation</div>
+          </div>
+
+          <div class="est-rules">
+            <div class="est-rule" id="rule-auto">
+              <div class="est-rule-title">📐 Grille tarifaire — Convoyage Auto</div>
+              <div class="est-rule-row"><span>≤ 300 km</span><strong>1,00 € / km</strong></div>
+              <div class="est-rule-row"><span>&gt; 300 km</span><strong>0,90 € / km</strong></div>
+              <div class="est-rule-note">Tarif par convoyeur dédié · Assurance incluse</div>
+            </div>
+            <div class="est-rule" id="rule-moto" style="display:none">
+              <div class="est-rule-title">📐 Grille tarifaire — Transport Moto</div>
+              <div class="est-rule-row"><span>Tarif de base</span><strong>Sur devis</strong></div>
+              <div class="est-rule-row"><span>Multi-motos</span><strong>Tarif dégressif</strong></div>
+              <div class="est-rule-note">Camionnette dédiée · Arrimage professionnel · Assurance incluse</div>
+            </div>
+          </div>
+
+          <div class="est-includes">
+            <div class="est-inc-title">✓ Inclus dans chaque prestation</div>
+            <div class="est-inc-list" id="est-inc-list">
+              <span>État des lieux photo</span>
+              <span>Assurance</span>
+              <span>Bon de livraison</span>
+              <span>Suivi en temps réel</span>
+            </div>
+          </div>
+
+          <div class="est-disclaimer">
+            Estimation indicative. Le devis définitif est établi après étude de votre demande. Réponse sous 2h.
           </div>
         </div>
-      </div>
-
-      <div class="devis-block" id="block-auto">
-        <div class="devis-block-title">03 — Le véhicule</div>
-        <div class="dform-grid">
-          <div class="field">
-            <label>Marque</label>
-            <input type="text" placeholder="Renault, BMW, Peugeot…" />
-          </div>
-          <div class="field">
-            <label>Modèle</label>
-            <input type="text" placeholder="Clio, Série 3…" />
-          </div>
-          <div class="field">
-            <label>Immatriculation</label>
-            <input type="text" placeholder="AA-000-AA" />
-          </div>
-          <div class="field">
-            <label>Type</label>
-            <select>
-              <option value="">Sélectionner</option>
-              <option>Berline</option>
-              <option>SUV / 4x4</option>
-              <option>Citadine</option>
-              <option>Break</option>
-              <option>Cabriolet</option>
-              <option>Utilitaire léger</option>
-              <option>Autre</option>
-            </select>
-          </div>
-          <div class="field dfull">
-            <label>Informations complémentaires</label>
-            <textarea placeholder="Véhicule en panne, clés à récupérer chez un tiers, heure de disponibilité…" style="min-height:80px"></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="devis-block" id="block-moto" style="display:none">
-        <div class="devis-block-title">03 — La / les moto(s)</div>
-        <div class="dform-grid">
-          <div class="field">
-            <label>Marque</label>
-            <input type="text" placeholder="Honda, Yamaha, Ducati…" />
-          </div>
-          <div class="field">
-            <label>Modèle</label>
-            <input type="text" placeholder="CBR, MT-07…" />
-          </div>
-          <div class="field">
-            <label>Nombre de motos</label>
-            <select id="f-nb-motos" oninput="estimatePrice()">
-              <option value="1">1 moto</option>
-              <option value="2">2 motos</option>
-              <option value="3">3 motos</option>
-              <option value="4+">4 motos et plus</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Cylindrée</label>
-            <select>
-              <option value="">Sélectionner</option>
-              <option>Moins de 125cc</option>
-              <option>125cc – 500cc</option>
-              <option>500cc – 1000cc</option>
-              <option>Plus de 1000cc</option>
-            </select>
-          </div>
-          <div class="field dfull">
-            <label>Informations complémentaires</label>
-            <textarea placeholder="Moto en panne, accès particulier, heure de disponibilité…" style="min-height:80px"></textarea>
-          </div>
-        </div>
-      </div>
-
-      <button type="submit" class="btn" style="width:100%;justify-content:center;padding:1.1rem;font-size:1.05rem;margin-top:.5rem">
-        Envoyer ma demande de devis →
-      </button>
-      <div class="form-success" id="fs">✓ Demande envoyée ! Nous vous recontactons sous 2h.</div>
-    </form>
-
-    <div class="estimator-panel">
-      <div class="est-header">
-        <div class="est-title">Estimation tarifaire</div>
-        <div class="est-badge" id="est-service-badge">🚗 Convoyage Auto</div>
-      </div>
-
-      <div class="est-price-block" id="est-price-block">
-        <div class="est-price-label">Estimation</div>
-        <div class="est-price-num" id="est-price">—</div>
-        <div class="est-price-sub" id="est-price-sub">Renseignez la distance pour une estimation</div>
-      </div>
-
-      <div class="est-rules">
-        <div class="est-rule" id="rule-auto">
-          <div class="est-rule-title">📐 Grille tarifaire — Convoyage Auto</div>
-          <div class="est-rule-row"><span>≤ 300 km</span><strong>1,00 € / km</strong></div>
-          <div class="est-rule-row"><span>&gt; 300 km</span><strong>0,90 € / km</strong></div>
-          <div class="est-rule-note">Tarif par convoyeur dédié · Assurance incluse</div>
-        </div>
-        <div class="est-rule" id="rule-moto" style="display:none">
-          <div class="est-rule-title">📐 Grille tarifaire — Transport Moto</div>
-          <div class="est-rule-row"><span>Tarif de base</span><strong>Sur devis</strong></div>
-          <div class="est-rule-row"><span>Multi-motos</span><strong>Tarif dégressif</strong></div>
-          <div class="est-rule-note">Camionnette dédiée · Arrimage professionnel · Assurance incluse</div>
-        </div>
-      </div>
-
-      <div class="est-includes">
-        <div class="est-inc-title">✓ Inclus dans chaque prestation</div>
-        <div class="est-inc-list" id="est-inc-list">
-          <span>État des lieux photo</span>
-          <span>Assurance</span>
-          <span>Bon de livraison</span>
-          <span>Suivi en temps réel</span>
-        </div>
-      </div>
-
-      <div class="est-disclaimer">
-        Estimation indicative. Le devis définitif est établi après étude de votre demande. Réponse sous 2h.
       </div>
     </div>
-  </div>
-</div>
-```
-
   </section>
 
   <section id="contact">
@@ -768,7 +761,9 @@ cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
   <footer>
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#hero" class="logo" style="font-size:1.7rem">SEC<span class="o">O</span>TO</a>
+        <a href="#hero" class="logo" style="font-size:1.7rem">
+          <img src="https://nawfelbch.github.io/logo.png" alt="SECOTO" style="height:42px;width:auto;object-fit:contain;filter:brightness(0) invert(1);" />
+        </a>
         <p>Spécialiste du convoyage automobile et moto en France et en Europe. La sécurité pour vos transports, la tranquillité pour votre business.</p>
         <a href="#devis" class="btn" style="font-size:.85rem;padding:.6rem 1.3rem">Demander un devis</a>
       </div>
@@ -902,7 +897,7 @@ cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
     </div>
   </div>
 
-<a href="#hero" id="btt" aria-label="Retour en haut">↑</a>
+  <a href="#hero" id="btt" aria-label="Retour en haut">↑</a>
 
   <script>
   (() => {
@@ -1188,6 +1183,5 @@ cursor:pointer;transition:background .25s,transform .25s;border:none;padding:0;
 
   })();
   </script>
-
 </body>
 </html>
