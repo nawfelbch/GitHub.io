@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://secoto-transport.fr/sitemap.xml
