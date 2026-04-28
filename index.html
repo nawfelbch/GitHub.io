@@ -846,7 +846,9 @@
   </div>
 
   <div class="devis-body">
-    <form id="devis-form" onsubmit="submitDevis(event)" novalidate>
+    <form id="devis-form" name="devis" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="submitDevis(event)" novalidate>
+      <input type="hidden" name="form-name" value="devis" />
+      <input type="hidden" name="bot-field" style="display:none" />
 
       <div class="devis-block">
         <div class="devis-block-title">01 — Vos coordonnées</div>
@@ -1069,7 +1071,9 @@
       </div>
 
 ```
-  <form class="reveal" onsubmit="submitContact(event)" novalidate aria-label="Formulaire de contact">
+  <form class="reveal" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="submitContact(event)" novalidate aria-label="Formulaire de contact">
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="bot-field" style="display:none" />
     <div class="form-grid">
       <div class="field">
         <label for="c-prenom">Prénom</label>
@@ -1561,22 +1565,33 @@
       subEl.textContent   = note + ' · hors options';
     };
 
+    /* ── Helper soumission Netlify ── */
+    function netlifySubmit(form, successId, delay) {
+      const data = new FormData(form);
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      })
+      .then(() => {
+        const el = document.getElementById(successId);
+        el.style.display = 'block';
+        form.querySelectorAll('input,select,textarea,button').forEach(f => f.disabled = true);
+        setTimeout(() => { el.style.display = 'none'; }, delay);
+      })
+      .catch(() => {
+        alert('Une erreur est survenue. Veuillez nous contacter directement au 07 83 27 82 31.');
+      });
+    }
+
     /* ── Devis form submit ── */
     window.submitDevis = function(e) {
       e.preventDefault();
-      const fs = document.getElementById('fs');
-      fs.style.display = 'block';
-      e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true);
-      setTimeout(() => { fs.style.display = 'none'; }, 7000);
+      netlifySubmit(e.target, 'fs', 7000);
     };
 
     /* ── Contact form submit ── */
     window.submitContact = function(e) {
       e.preventDefault();
-      const fc = document.getElementById('fc');
-      fc.style.display = 'block';
-      e.target.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true);
-      setTimeout(() => { fc.style.display = 'none'; }, 6000);
+      netlifySubmit(e.target, 'fc', 6000);
     };
 
     /* ── Testimonials carousel ── */
